@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+.monster-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.monster-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.monster-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.monster-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.monster-card p {
+    margin: 5px 0;
+    color: #555;
+}
+.favorite {
+    color: gold;
+    font-weight: bold;
+}

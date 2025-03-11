@@ -1,0 +1,90 @@
+[
+  {
+    "family_id": 8,
+    "name": "???",
+    "identifier": "boss",
+    "japanese_name": "???",
+    "bonuses": {
+      "hp": 1,
+      "att": 1,
+      "wis": 1
+    }
+  },
+  {
+    "family_id": 4,
+    "name": "Beast",
+    "identifier": "beast",
+    "japanese_name": "魔獣",
+    "bonuses": {
+      "mp": 1,
+      "def": 1,
+      "agi": 1
+    }
+  },
+  {
+    "family_id": 6,
+    "name": "Demon",
+    "identifier": "demon",
+    "japanese_name": "悪魔",
+    "bonuses": {
+      "mp": 1,
+      "att": 1,
+      "def": 1
+    }
+  },
+  {
+    "family_id": 2,
+    "name": "Dragon",
+    "identifier": "dragon",
+    "japanese_name": "ドラゴン",
+    "bonuses": {
+      "hp": 1,
+      "mp": 1,
+      "att": 1
+    }
+  },
+  {
+    "family_id": 5,
+    "name": "Material",
+    "identifier": "material",
+    "japanese_name": "物質",
+    "bonuses": {
+      "att": 1,
+      "def": 1,
+      "wis": 1
+    }
+  },
+  {
+    "family_id": 3,
+    "name": "Nature",
+    "identifier": "nature",
+    "japanese_name": "自然",
+    "bonuses": {
+      "def": 1,
+      "agi": 1,
+      "wis": 1
+    }
+  },
+  {
+    "family_id": 1,
+    "name": "Slime",
+    "identifier": "slime",
+    "japanese_name": "スライム",
+    "bonuses": {
+      "hp": 1,
+      "agi": 1,
+      "wis": 1
+    }
+  },
+  {
+    "family_id": 7,
+    "name": "Undead",
+    "identifier": "undead",
+    "japanese_name": "ゾンビ",
+    "bonuses": {
+      "hp": 1,
+      "mp": 1,
+      "agi": 1
+    }
+  }
+]
