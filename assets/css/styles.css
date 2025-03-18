@@ -1,18 +1,26 @@
+@font-face {
+    font-family: DragonQuest;
+    src: url('../font/dragon-quest-ix.otf') format("opentype");
+}
+
 body {
-    background: url('../images/scroll_bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Inter', sans-serif;
-    color: #3a1d0f;
-    text-align: center;
+    background: url('../images/background.png') repeat center center fixed;
+    background-size: 64px 64px;
+    font-family: 'DragonQuest';
     margin: 0;
     padding: 0;
 }
 
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #634229;
+}
+
 nav {
-    background-color: #e8d4b4;
-    border-color: #704214;
+    background: url('../images/bar.png') repeat-x center;
+    background-size: auto 100%;
     padding: 10px 0;
-    min-height: 2vh;
 }
 
 nav ul {
@@ -27,44 +35,20 @@ nav li {
 }
 
 nav a {
-    color: #704214;
+    color: white;
     text-decoration: none;
     padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #e0c08f;
-}
-
-.monster-detail {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
 }
 
 .error-page {
     text-align: center;
     padding: 50px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #e8d4b4;
-    color: #5b2c06;
-    border-color: #704214;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-button:hover {
-    transform: scale(1.1);
 }
 
 .monster-list {
@@ -76,37 +60,26 @@ button:hover {
 }
 
 .monster-card {
-    background-color: #e8d4b4;
-    border: 3px solid #704214;
+    background-color: #0000007f;
+    border: 3px solid white;
     padding: 15px;
     width: 100%;
     max-width: 180px;
     text-align: center;
-    border-radius: 15px;
-    font-size: 1rem;
-    color: #3a1d0f;
-    position: relative;
-    margin: 0 auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    transition: transform 0.3s ease;
 }
 
 .monster-card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-    border: 2px solid #5b2c06;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 5px;
     border-radius: 5px;
-    display: block;
     margin: 0 auto 10px;
 }
 
 .monster-card h2 {
     font-size: 1.2rem;
-    color: #5b2c06;
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 .monster-card:hover {
@@ -114,48 +87,43 @@ button:hover {
     cursor: pointer;
 }
 
-.monster-details {
+.monster-detail {
     padding: 20px;
-    display: none;
+    margin: 20px;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #e8d4b4;
-    border: 3px solid #704214;
-    border-radius: 15px;
-    margin: 40px auto;
-    max-width: 90%;
 }
 
-.details-container {
+.monster-title {
+    font-size: 2.5rem;
+    color: #634229;
+}
+
+.monster-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    text-align: left;
+    background: #c5a277;
+    border: 3px solid #634229;
 }
 
-.monster-details-image {
-    object-fit: contain;
-    border: 3px solid #704214;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    border-radius: 10px;
+.monster-image {
+    margin-right: 10px;
 }
 
-.details-text {
-    flex: 1;
-    padding: 10px;
+.monster-stats {
+    padding: 8px;
+    font-size: 14px;
 }
 
-.details-text h2 {
-    font-size: 1.8rem;
-    color: #5b2c06;
-    margin-bottom: 10px;
+#back-btn {
+    background: #7c5532;
+    color: white;
+    border: 3px solid #634229;
+    padding: 8px 12px;
+    font-family: 'DragonQuest';
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
 
-.details-text p {
-    font-size: 1rem;
-    margin: 5px 0;
-    line-height: 1.5;
+#back-btn:hover {
+    background: #634229;
 }

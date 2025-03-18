@@ -1,5 +1,5 @@
-import { Monster } from './models/monster.js';
-import { Family } from './models/family.js';
+import { Monster } from '../models/monster.js';
+import { Family } from '../models/family.js';
 
 
 export class Provider {
