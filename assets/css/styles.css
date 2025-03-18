@@ -1,38 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('../images/scroll_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    color: #3a1d0f;
+    text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
+
 h1 {
-    color: #333;
+    font-size: 2.5rem;
+    color: #5b2c06;
+    margin-bottom: 20px;
 }
+
 .monster-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    padding: 20px;
+    justify-content: center;
 }
+
 .monster-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.monster-card img {
+    background-color: #e8d4b4;
+    border: 3px solid #704214;
+    padding: 15px;
     width: 100%;
-    border-radius: 8px;
+    max-width: 180px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: #3a1d0f;
+    position: relative;
+    margin: 0 auto;
 }
+
+.monster-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: 2px solid #5b2c06;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
 .monster-card h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #5b2c06;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
 .monster-card p {
+    font-size: 0.9rem;
     margin: 5px 0;
-    color: #555;
+    text-align: center;
+    line-height: 1.4;
 }
-.favorite {
-    color: gold;
-    font-weight: bold;
+
+button {
+    background: #704214;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background: #5b2c06;
 }

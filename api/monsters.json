@@ -3775,7 +3775,7 @@
         "monster_id": 525,
         "family_id": 6,
         "rank": "e",
-        "name": null,
+        "name": "Démon McFlurry",
         "japanese_name": "フルーリーサタン",
         "identifier": "flurry-fiend",
         "stats": {
@@ -7202,7 +7202,7 @@
         "monster_id": 526,
         "family_id": 5,
         "rank": "d",
-        "name": null,
+        "name": "Big Mac mimic",
         "japanese_name": "バーガーミミック",
         "identifier": "mimic-with-cheese",
         "stats": {
@@ -11319,7 +11319,7 @@
         "monster_id": 524,
         "family_id": 1,
         "rank": "g",
-        "name": null,
+        "name": "Triple burger",
         "japanese_name": "バーガースライム",
         "identifier": "triple-splatty",
         "stats": {

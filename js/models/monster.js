@@ -1,3 +1,6 @@
+import { Stats } from './stats.js';
+
+
 export class Monster {
     constructor(data) {
         this.monster_id = data.monster_id;
@@ -10,10 +13,6 @@ export class Monster {
         this.trivia = data.trivia;
         this.favorite = false;
         this.rating = 0;
-    }
-
-    getTotalScore() {
-
     }
 
     getImageUrl() {
