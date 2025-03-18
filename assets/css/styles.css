@@ -28,13 +28,13 @@ h1 {
     padding: 15px;
     width: 100%;
     max-width: 180px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     border-radius: 15px;
     font-size: 1rem;
     color: #3a1d0f;
     position: relative;
     margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .monster-card img {
@@ -56,26 +56,73 @@ h1 {
     margin-bottom: 10px;
 }
 
-.monster-card p {
-    font-size: 0.9rem;
+.monster-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.monster-details {
+    width: 100%;
+    padding: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e8d4b4;
+    border: 3px solid #704214;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.details-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 90%;
+    text-align: left;
+}
+
+.monster-details-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 3px solid #704214;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.details-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.details-text h2 {
+    font-size: 1.8rem;
+    color: #5b2c06;
+    margin-bottom: 10px;
+}
+
+.details-text p {
+    font-size: 1rem;
     margin: 5px 0;
-    text-align: center;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-button {
-    background: #704214;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 0.9rem;
+#back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e8d4b4;
+    color: #5b2c06;
+    border-color: #704214;
     border-radius: 5px;
-    transition: background 0.3s;
-    display: block;
-    margin: 10px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-button:hover {
-    background: #5b2c06;
+#back-button:hover {
+    transform: scale(1.1);
 }
