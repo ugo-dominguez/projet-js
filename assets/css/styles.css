@@ -8,10 +8,63 @@ body {
     padding: 0;
 }
 
-h1 {
-    font-size: 2.5rem;
+nav {
+    background-color: #e8d4b4;
+    border-color: #704214;
+    padding: 10px 0;
+    min-height: 2vh;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #704214;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e0c08f;
+}
+
+.monster-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-page {
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e8d4b4;
     color: #5b2c06;
-    margin-bottom: 20px;
+    border-color: #704214;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 .monster-list {
@@ -58,11 +111,10 @@ h1 {
 
 .monster-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
 }
 
 .monster-details {
-    width: 100%;
     padding: 20px;
     display: none;
     justify-content: center;
@@ -71,9 +123,8 @@ h1 {
     background-color: #e8d4b4;
     border: 3px solid #704214;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
     margin: 40px auto;
+    max-width: 90%;
 }
 
 .details-container {
@@ -81,13 +132,10 @@ h1 {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    max-width: 90%;
     text-align: left;
 }
 
 .monster-details-image {
-    width: 150px;
-    height: 150px;
     object-fit: contain;
     border: 3px solid #704214;
     background: rgba(255, 255, 255, 0.5);
@@ -110,19 +158,4 @@ h1 {
     font-size: 1rem;
     margin: 5px 0;
     line-height: 1.5;
-}
-
-#back-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #e8d4b4;
-    color: #5b2c06;
-    border-color: #704214;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-#back-button:hover {
-    transform: scale(1.1);
 }

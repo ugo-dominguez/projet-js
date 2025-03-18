@@ -15,8 +15,12 @@ export class Monster {
         this.rating = 0;
     }
 
+    getThumbUrl() {
+        return `./assets/images/monsters_thumb/${this.identifier}-thumb.png`;
+    }
+
     getImageUrl() {
-        return `./assets/images/monsters/${this.identifier}-thumb.png`;
+        return `./assets/images/monsters_models/${this.monster_id}.jpg`;
     }
 
     toggleFavorite() {

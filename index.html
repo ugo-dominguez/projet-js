@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des monstres</title>
-    <link rel="stylesheet" href="assets/css/styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monstres de DQM3</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <h1>Liste des monstres</h1>
-    <div id="monster-details" class="monster-details" style="display: none;">
-        <button id="back-button">Retour</button>
-        <div id="details-content"></div>
-    </div>
-    <div id="monster-list" class="monster-list"></div>
-
-    <script type="module" src="./js/app.js"></script>
+  <nav>
+    <ul>
+      <li><a href="#/">Tous les Monstres</a></li>
+      <li><a href="#/favorites">Favoris</a></li>
+    </ul>
+  </nav>
+  
+  <div id="app-container"></div>
+  
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
