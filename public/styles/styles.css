@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #fdfdf9, #fef3d8);
+    min-height: 100vh;
+    font-family: 'DragonQuest', sans-serif;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    border: 2px solid #aca899;
+    background: linear-gradient(90deg, #242035, #127e8a 48.96%, #242036);
+    color: #fff;
+    padding: 15px;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://img.game8.jp/8877900/059e7acef2a13befdd2c4e3eae2cba64.png/show), 
+        url(https://img.game8.jp/8877900/059e7acef2a13befdd2c4e3eae2cba64.png/show), 
+        url(https://img.game8.jp/8877901/8330618a3513bc949d4cab9cafb964bb.png/show);
+}
+
+nav {
+    position: relative;
+    z-index: 1; 
+}
+
+nav button {
+    color: #fff;
+    padding: 8px 16px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #665418;
+}
+
+.page-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center; 
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.pagination-btn {
+    padding: 8px 12px;
+    border: 2px solid #aca899;
+    background-color: linear-gradient(180deg, #fdfdf9, #fef3d8);
+    color: #665418;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+  
+.pagination-btn:hover {
+    background-color: #f0f0f0;
+    outline: 3px solid #4CF8F1;
+}
+  
+.pagination-btn.active {
+    background-color: #0000001f;
+}
+  
+.page-btn {
+    min-width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.monster-card {
+    background: linear-gradient(180deg, #fdfdf9, #fef3d8);
+    border: 2px solid #aca899;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 20px;
+    max-height: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    animation: cardEntrance 0.6s ease-out forwards;
+}
+
+.monster-card:hover {
+    outline: 4px solid #4CF8F1;
+}
+
+.monster-card:hover img {
+    transform: scale(1.1);
+}
+
+.monster-card .image-container {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.monster-card img {
+    transition: 0.3s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.monster-card h2 {
+    color: #665418;
+}
