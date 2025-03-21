@@ -44,17 +44,12 @@
             "rank_id": 9,
             "name": "X",
             "identifier": "x"
-        },
-        {
-            "rank_id": 10,
-            "name": "Any",
-            "identifier": "any"
         }
     ],
     "families": [
         {
             "family_id": 1,
-            "name": "Slime",
+            "name": "Gluant",
             "identifier": "slime",
             "japanese_name": "スライム",
             "bonuses": {
@@ -76,7 +71,7 @@
         },
         {
             "family_id": 3,
-            "name": "Nature",
+            "name": "Naturel",
             "identifier": "nature",
             "japanese_name": "自然",
             "bonuses": {
@@ -87,7 +82,7 @@
         },
         {
             "family_id": 4,
-            "name": "Beast",
+            "name": "Bête",
             "identifier": "beast",
             "japanese_name": "魔獣",
             "bonuses": {
@@ -98,7 +93,7 @@
         },
         {
             "family_id": 5,
-            "name": "Material",
+            "name": "Materiel",
             "identifier": "material",
             "japanese_name": "物質",
             "bonuses": {
@@ -109,7 +104,7 @@
         },
         {
             "family_id": 6,
-            "name": "Demon",
+            "name": "Démon",
             "identifier": "demon",
             "japanese_name": "悪魔",
             "bonuses": {
@@ -120,7 +115,7 @@
         },
         {
             "family_id": 7,
-            "name": "Undead",
+            "name": "Mort-vivant",
             "identifier": "undead",
             "japanese_name": "ゾンビ",
             "bonuses": {

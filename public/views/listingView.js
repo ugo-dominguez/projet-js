@@ -1,5 +1,5 @@
 import { MONSTERS_PER_PAGE, MONSTERS_THUMB_PATH } from '../lib/config.js';
-import { getMonsters } from '../lib/provider.js';
+import { getMonsters, getMonstersbyFamily, getMonstersbyRank } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
 import { detailsView } from './detailsView.js';
 import { GenericView } from './genericView.js';
@@ -53,6 +53,17 @@ class ListingView extends GenericView {
                 this.monsters = await getMonsters();
                 break;
                 
+            case 'families':
+                this.title = "Petite liste des familles"; 
+                this.monsters = await getMonstersbyFamily();
+                break;
+            
+            case 'ranks':
+                this.title = "Liste des monstres par rangs"; 
+                this.monsters = await getMonstersbyRank();
+                break;
+
+            
             default:
                 this.title = "Liste des monstres";
                 this.monsters = await getMonsters();
