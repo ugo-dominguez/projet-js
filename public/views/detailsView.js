@@ -25,10 +25,6 @@ class DetailsView extends GenericView {
                 <img class="monster-img" src="${MONSTERS_MODELS_PATH + monster.monster_id}.jpg">
                 
                 <section>
-                    <div class="interaction-section">
-                        
-                    </div>
-
                     <div class="infos">
                         <h1>No. ${monster.monster_id} ${monster.name}</h1>
                         <p>${monster.japanese_name}</p>
