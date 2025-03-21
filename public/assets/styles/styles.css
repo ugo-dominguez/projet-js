@@ -47,6 +47,10 @@ nav button:hover {
     transform: scale(1.1);
 }
 
+main {
+    display: flex;
+}
+
 .title {
     text-align: center;
     font-size: 2.5rem;
@@ -130,4 +134,70 @@ nav button:hover {
 
 .monster-card h2 {
     color: #665418;
+}
+
+#details>div {
+    background: linear-gradient(180deg, #fdfdf9, #fef3d8);
+    border: 2px solid #aca899;
+    border-radius: 10px;
+    color: #665418;
+    margin: 20px 20px 20px 0px;
+    position: sticky;
+    top: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#details section {
+    padding: 20px;
+}
+
+#details .infos {
+    margin-bottom: 16px;
+}
+
+#details .infos * {
+    margin: 0px;
+}
+
+#details h1 {
+    font-size: 30px;
+}
+
+#details ul {
+    list-style: none;
+}
+
+#details .monster-img {
+    border-top: 2px solid #aca899;
+    border-bottom: 2px solid #aca899;
+    width: 512px;
+}
+
+#details .clickable-family {
+    cursor: pointer;
+}
+
+#details .clickable-family img {
+    margin-right: 8px;
+}
+
+.clickable-family, .stats * {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#details .stats {
+    padding: 0;
+}
+
+#details .stats * {
+    margin: 2px;
+}
+
+#details .stars {
+    display: flex;
+    margin-left: auto;
+    color: gold;
 }

@@ -1,6 +1,7 @@
 import { MONSTERS_PER_PAGE, MONSTERS_THUMB_PATH } from '../lib/config.js';
 import { getMonsters } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
+import { detailsView } from './detailsView.js';
 import { GenericView } from './genericView.js';
 
 
@@ -30,9 +31,9 @@ class ListingView extends GenericView {
         const detail = params.get('detail');
 
         if (detail) {
-            console.log('detail');
+            detailsView.render(detail);
         } else {
-            console.log('not detail');
+            detailsView.hide();
         }
 
         if (hash != "" && hash === GenericView.previousHash) {

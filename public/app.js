@@ -7,6 +7,9 @@ import { listingView } from "./views/listingView.js";
 const routes = {
     "": listingView,
     "listing": listingView,
+    "family": listingView,
+    "rank": listingView,
+    "favorites": listingView,
     "404": notFoundView,
     "game": notFoundView
 }

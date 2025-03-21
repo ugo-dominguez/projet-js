@@ -7,8 +7,9 @@ export async function getMonsters() {
 }
 
 export async function getMonster(id) {
-    const response = await fetch(`${ENDPOINT}/monsters/${id}`);
-    return response.json();
+    const response = await fetch(`${ENDPOINT}/monsters?monster_id=${id}`);
+    const data = await response.json();
+    return data[0];
 }
 
 export async function getFamilies() {
@@ -17,12 +18,29 @@ export async function getFamilies() {
 }
 
 export async function getFamily(id) {
-    const response = await fetch(`${ENDPOINT}/families/${id}`);
+    const response = await fetch(`${ENDPOINT}/families?family_id=${id}`);
+    const data = await response.json();
+    return data[0];
+}
+
+export async function getRanks() {
+    const response = await fetch(`${ENDPOINT}/ranks`);
     return response.json();
+}
+
+export async function getRank(id) {
+    const response = await fetch(`${ENDPOINT}/ranks?rank_id=${id}`);
+    const data = await response.json();
+    return data[0];
 }
 
 export async function getMonstersbyFamily(familyId) {
     const response = await fetch(`${ENDPOINT}/monsters?family_id=${familyId}`);
+    return response.json();
+}
+
+export async function getMonstersbyRank(rankId) {
+    const response = await fetch(`${ENDPOINT}/monsters?rank_id=${rankId}`);
     return response.json();
 }
 
