@@ -13,5 +13,5 @@ npm install -g json-server@0.17.0
 Pour démarrer le serveur JSON :  
 
 ```bash
-npx json-server --watch ./server/data/vaisseaux.json --middlewares ./server/middlewares.js
+npx json-server --watch ./server/data/monsters.json
 ```
