@@ -2,59 +2,59 @@
   "party": [],
   "ranks": [
     {
-      "id": 1,
+      "id": "1",
       "name": "G",
       "identifier": "g"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "F",
       "identifier": "f"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "E",
       "identifier": "e"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "D",
       "identifier": "d"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "C",
       "identifier": "c"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "B",
       "identifier": "b"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "A",
       "identifier": "a"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "S",
       "identifier": "s"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "X",
       "identifier": "x"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Any",
       "identifier": "any"
     }
   ],
   "families": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Slime",
       "identifier": "slime",
       "japaneseName": "スライム",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Dragon",
       "identifier": "dragon",
       "japaneseName": "ドラゴン",
@@ -76,7 +76,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Nature",
       "identifier": "nature",
       "japaneseName": "自然",
@@ -87,7 +87,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Beast",
       "identifier": "beast",
       "japaneseName": "魔獣",
@@ -98,7 +98,7 @@
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Material",
       "identifier": "material",
       "japaneseName": "物質",
@@ -109,7 +109,7 @@
       }
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Demon",
       "identifier": "demon",
       "japaneseName": "悪魔",
@@ -120,7 +120,7 @@
       }
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Undead",
       "identifier": "undead",
       "japaneseName": "ゾンビ",
@@ -131,7 +131,7 @@
       }
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "???",
       "identifier": "boss",
       "japaneseName": "???",
@@ -144,7 +144,7 @@
   ],
   "monsters": [
     {
-      "id": 1,
+      "id": "1",
       "familyId": 1,
       "rankId": 1,
       "name": "Gluant",
@@ -168,7 +168,7 @@
       "xp": 0
     },
     {
-      "id": 2,
+      "id": "2",
       "familyId": 1,
       "rankId": 1,
       "name": "Gluanduja",
@@ -192,7 +192,7 @@
       "xp": 0
     },
     {
-      "id": 3,
+      "id": "3",
       "familyId": 1,
       "rankId": 1,
       "name": "Gluanbulot",
@@ -216,7 +216,7 @@
       "xp": 0
     },
     {
-      "id": 4,
+      "id": "4",
       "familyId": 1,
       "rankId": 1,
       "name": "Tuberglule",
@@ -240,7 +240,7 @@
       "xp": 0
     },
     {
-      "id": 5,
+      "id": "5",
       "familyId": 1,
       "rankId": 1,
       "name": "Gluître",
@@ -264,7 +264,7 @@
       "xp": 0
     },
     {
-      "id": 6,
+      "id": "6",
       "familyId": 1,
       "rankId": 1,
       "name": "Slurpillon",
@@ -288,7 +288,7 @@
       "xp": 0
     },
     {
-      "id": 7,
+      "id": "7",
       "familyId": 1,
       "rankId": 1,
       "name": "Gluanbulle",
@@ -312,7 +312,7 @@
       "xp": 0
     },
     {
-      "id": 8,
+      "id": "8",
       "familyId": 1,
       "rankId": 1,
       "name": "Médigluant",
@@ -336,7 +336,7 @@
       "xp": 0
     },
     {
-      "id": 9,
+      "id": "9",
       "familyId": 1,
       "rankId": 1,
       "name": "Champigluant",
@@ -360,7 +360,7 @@
       "xp": 0
     },
     {
-      "id": 10,
+      "id": "10",
       "familyId": 1,
       "rankId": 1,
       "name": "Hypnobulbe",
@@ -384,7 +384,7 @@
       "xp": 0
     },
     {
-      "id": 11,
+      "id": "11",
       "familyId": 1,
       "rankId": 2,
       "name": "Gluant à crinière",
@@ -408,7 +408,7 @@
       "xp": 0
     },
     {
-      "id": 12,
+      "id": "12",
       "familyId": 1,
       "rankId": 2,
       "name": "Dangeleux",
@@ -432,7 +432,7 @@
       "xp": 0
     },
     {
-      "id": 13,
+      "id": "13",
       "familyId": 1,
       "rankId": 2,
       "name": "Escargluant",
@@ -456,7 +456,7 @@
       "xp": 0
     },
     {
-      "id": 14,
+      "id": "14",
       "familyId": 1,
       "rankId": 2,
       "name": "Aggluantin",
@@ -480,7 +480,7 @@
       "xp": 0
     },
     {
-      "id": 15,
+      "id": "15",
       "familyId": 1,
       "rankId": 2,
       "name": "Monte-gluant",
@@ -504,7 +504,7 @@
       "xp": 0
     },
     {
-      "id": 16,
+      "id": "16",
       "familyId": 1,
       "rankId": 2,
       "name": "Gluante",
@@ -528,7 +528,7 @@
       "xp": 0
     },
     {
-      "id": 17,
+      "id": "17",
       "familyId": 1,
       "rankId": 2,
       "name": "Gluant bulbe",
@@ -552,7 +552,7 @@
       "xp": 0
     },
     {
-      "id": 18,
+      "id": "18",
       "familyId": 1,
       "rankId": 2,
       "name": "Gluancornu",
@@ -576,7 +576,7 @@
       "xp": 0
     },
     {
-      "id": 19,
+      "id": "19",
       "familyId": 1,
       "rankId": 2,
       "name": "Gluant moucheté",
@@ -600,7 +600,7 @@
       "xp": 0
     },
     {
-      "id": 20,
+      "id": "20",
       "familyId": 1,
       "rankId": 2,
       "name": "Gluanbloc",
@@ -624,7 +624,7 @@
       "xp": 0
     },
     {
-      "id": 21,
+      "id": "21",
       "familyId": 1,
       "rankId": 3,
       "name": "Malibulbe",
@@ -648,7 +648,7 @@
       "xp": 0
     },
     {
-      "id": 22,
+      "id": "22",
       "familyId": 1,
       "rankId": 3,
       "name": "Gluangélique",
@@ -672,7 +672,7 @@
       "xp": 0
     },
     {
-      "id": 23,
+      "id": "23",
       "familyId": 1,
       "rankId": 3,
       "name": "Slurperstar",
@@ -696,7 +696,7 @@
       "xp": 0
     },
     {
-      "id": 24,
+      "id": "24",
       "familyId": 1,
       "rankId": 3,
       "name": "Slurpierre",
@@ -720,7 +720,7 @@
       "xp": 0
     },
     {
-      "id": 25,
+      "id": "25",
       "familyId": 1,
       "rankId": 3,
       "name": "Gluant piquant",
@@ -744,7 +744,7 @@
       "xp": 0
     },
     {
-      "id": 26,
+      "id": "26",
       "familyId": 1,
       "rankId": 3,
       "name": "Gluant de poix",
@@ -768,7 +768,7 @@
       "xp": 0
     },
     {
-      "id": 27,
+      "id": "27",
       "familyId": 1,
       "rankId": 3,
       "name": "Vampigluant",
@@ -792,7 +792,7 @@
       "xp": 0
     },
     {
-      "id": 28,
+      "id": "28",
       "familyId": 1,
       "rankId": 3,
       "name": "Gluant moisi",
@@ -816,7 +816,7 @@
       "xp": 0
     },
     {
-      "id": 29,
+      "id": "29",
       "familyId": 1,
       "rankId": 3,
       "name": "Gluant de métal",
@@ -840,7 +840,7 @@
       "xp": 0
     },
     {
-      "id": 30,
+      "id": "30",
       "familyId": 1,
       "rankId": 3,
       "name": "Gigluant",
@@ -864,7 +864,7 @@
       "xp": 0
     },
     {
-      "id": 31,
+      "id": "31",
       "familyId": 1,
       "rankId": 4,
       "name": "Roi gluant",
@@ -888,7 +888,7 @@
       "xp": 0
     },
     {
-      "id": 32,
+      "id": "32",
       "familyId": 1,
       "rankId": 4,
       "name": "Gluant de crin",
@@ -912,7 +912,7 @@
       "xp": 0
     },
     {
-      "id": 33,
+      "id": "33",
       "familyId": 1,
       "rankId": 4,
       "name": "Gluandragon",
@@ -936,7 +936,7 @@
       "xp": 0
     },
     {
-      "id": 34,
+      "id": "34",
       "familyId": 1,
       "rankId": 4,
       "name": "Gluantharcite",
@@ -960,7 +960,7 @@
       "xp": 0
     },
     {
-      "id": 35,
+      "id": "35",
       "familyId": 1,
       "rankId": 4,
       "name": "Roi vampigluant",
@@ -984,7 +984,7 @@
       "xp": 0
     },
     {
-      "id": 36,
+      "id": "36",
       "familyId": 1,
       "rankId": 4,
       "name": "Chocobélisque",
@@ -1008,7 +1008,7 @@
       "xp": 0
     },
     {
-      "id": 37,
+      "id": "37",
       "familyId": 1,
       "rankId": 4,
       "name": "Stalagluant",
@@ -1032,7 +1032,7 @@
       "xp": 0
     },
     {
-      "id": 38,
+      "id": "38",
       "familyId": 1,
       "rankId": 4,
       "name": "Roi gluanbulle",
@@ -1056,7 +1056,7 @@
       "xp": 0
     },
     {
-      "id": 39,
+      "id": "39",
       "familyId": 1,
       "rankId": 4,
       "name": "Guérigluant",
@@ -1080,7 +1080,7 @@
       "xp": 0
     },
     {
-      "id": 40,
+      "id": "40",
       "familyId": 1,
       "rankId": 4,
       "name": "Gigluante",
@@ -1104,7 +1104,7 @@
       "xp": 0
     },
     {
-      "id": 41,
+      "id": "41",
       "familyId": 1,
       "rankId": 5,
       "name": "Gluenroulé",
@@ -1128,7 +1128,7 @@
       "xp": 0
     },
     {
-      "id": 42,
+      "id": "42",
       "familyId": 1,
       "rankId": 5,
       "name": "Slurpitre",
@@ -1152,7 +1152,7 @@
       "xp": 0
     },
     {
-      "id": 43,
+      "id": "43",
       "familyId": 1,
       "rankId": 5,
       "name": "Gluant de l'ombre",
@@ -1176,7 +1176,7 @@
       "xp": 0
     },
     {
-      "id": 44,
+      "id": "44",
       "familyId": 1,
       "rankId": 5,
       "name": "Slurpillon jaune",
@@ -1200,7 +1200,7 @@
       "xp": 0
     },
     {
-      "id": 45,
+      "id": "45",
       "familyId": 1,
       "rankId": 5,
       "name": "Gluantilly",
@@ -1224,7 +1224,7 @@
       "xp": 0
     },
     {
-      "id": 46,
+      "id": "46",
       "familyId": 1,
       "rankId": 5,
       "name": "Cybergluant",
@@ -1248,7 +1248,7 @@
       "xp": 0
     },
     {
-      "id": 47,
+      "id": "47",
       "familyId": 1,
       "rankId": 5,
       "name": "Gluant de mercure",
@@ -1272,7 +1272,7 @@
       "xp": 0
     },
     {
-      "id": 48,
+      "id": "48",
       "familyId": 1,
       "rankId": 5,
       "name": "Gluante mouchetée",
@@ -1296,7 +1296,7 @@
       "xp": 0
     },
     {
-      "id": 49,
+      "id": "49",
       "familyId": 1,
       "rankId": 5,
       "name": "Monte-gluant de métal",
@@ -1320,7 +1320,7 @@
       "xp": 0
     },
     {
-      "id": 50,
+      "id": "50",
       "familyId": 1,
       "rankId": 6,
       "name": "Roi Slurpitre",
@@ -1344,7 +1344,7 @@
       "xp": 0
     },
     {
-      "id": 51,
+      "id": "51",
       "familyId": 1,
       "rankId": 6,
       "name": "Reine gluante",
@@ -1368,7 +1368,7 @@
       "xp": 0
     },
     {
-      "id": 52,
+      "id": "52",
       "familyId": 1,
       "rankId": 6,
       "name": "Gluant de diamant",
@@ -1392,7 +1392,7 @@
       "xp": 0
     },
     {
-      "id": 53,
+      "id": "53",
       "familyId": 1,
       "rankId": 6,
       "name": "Monte-gluancien",
@@ -1416,7 +1416,7 @@
       "xp": 0
     },
     {
-      "id": 54,
+      "id": "54",
       "familyId": 1,
       "rankId": 6,
       "name": "Roi guérigluant",
@@ -1440,7 +1440,7 @@
       "xp": 0
     },
     {
-      "id": 55,
+      "id": "55",
       "familyId": 1,
       "rankId": 6,
       "name": "Roi gluant de poix",
@@ -1464,7 +1464,7 @@
       "xp": 0
     },
     {
-      "id": 56,
+      "id": "56",
       "familyId": 1,
       "rankId": 6,
       "name": "Gluocube",
@@ -1488,7 +1488,7 @@
       "xp": 0
     },
     {
-      "id": 57,
+      "id": "57",
       "familyId": 1,
       "rankId": 6,
       "name": "Glumulonimbus",
@@ -1512,7 +1512,7 @@
       "xp": 0
     },
     {
-      "id": 58,
+      "id": "58",
       "familyId": 1,
       "rankId": 6,
       "name": "Roi gluant de métal",
@@ -1536,7 +1536,7 @@
       "xp": 0
     },
     {
-      "id": 59,
+      "id": "59",
       "familyId": 1,
       "rankId": 7,
       "name": "Gluandor",
@@ -1560,7 +1560,7 @@
       "xp": 0
     },
     {
-      "id": 60,
+      "id": "60",
       "familyId": 1,
       "rankId": 7,
       "name": "Monte-gluancêtre",
@@ -1584,7 +1584,7 @@
       "xp": 0
     },
     {
-      "id": 61,
+      "id": "61",
       "familyId": 1,
       "rankId": 7,
       "name": "Sultant gluant",
@@ -1608,7 +1608,7 @@
       "xp": 0
     },
     {
-      "id": 62,
+      "id": "62",
       "familyId": 1,
       "rankId": 7,
       "name": "Gluant supérieur",
@@ -1632,7 +1632,7 @@
       "xp": 0
     },
     {
-      "id": 63,
+      "id": "63",
       "familyId": 1,
       "rankId": 8,
       "name": "Gluancien",
@@ -1656,7 +1656,7 @@
       "xp": 0
     },
     {
-      "id": 64,
+      "id": "64",
       "familyId": 2,
       "rankId": 1,
       "name": "Dracorne",
@@ -1680,7 +1680,7 @@
       "xp": 0
     },
     {
-      "id": 65,
+      "id": "65",
       "familyId": 2,
       "rankId": 1,
       "name": "Dragronce",
@@ -1704,7 +1704,7 @@
       "xp": 0
     },
     {
-      "id": 66,
+      "id": "66",
       "familyId": 2,
       "rankId": 1,
       "name": "Komodor",
@@ -1728,7 +1728,7 @@
       "xp": 0
     },
     {
-      "id": 67,
+      "id": "67",
       "familyId": 2,
       "rankId": 1,
       "name": "Souffleu",
@@ -1752,7 +1752,7 @@
       "xp": 0
     },
     {
-      "id": 68,
+      "id": "68",
       "familyId": 2,
       "rankId": 1,
       "name": "Méthanosaure",
@@ -1776,7 +1776,7 @@
       "xp": 0
     },
     {
-      "id": 69,
+      "id": "69",
       "familyId": 2,
       "rankId": 1,
       "name": "Dracorolle",
@@ -1800,7 +1800,7 @@
       "xp": 0
     },
     {
-      "id": 70,
+      "id": "70",
       "familyId": 2,
       "rankId": 1,
       "name": "Damoisel",
@@ -1824,7 +1824,7 @@
       "xp": 0
     },
     {
-      "id": 71,
+      "id": "71",
       "familyId": 2,
       "rankId": 1,
       "name": "Ptéranodon",
@@ -1848,7 +1848,7 @@
       "xp": 0
     },
     {
-      "id": 72,
+      "id": "72",
       "familyId": 2,
       "rankId": 1,
       "name": "Batratueur",
@@ -1872,7 +1872,7 @@
       "xp": 0
     },
     {
-      "id": 73,
+      "id": "73",
       "familyId": 2,
       "rankId": 2,
       "name": "Tortumastok",
@@ -1896,7 +1896,7 @@
       "xp": 0
     },
     {
-      "id": 74,
+      "id": "74",
       "familyId": 2,
       "rankId": 2,
       "name": "Veninconda",
@@ -1920,7 +1920,7 @@
       "xp": 0
     },
     {
-      "id": 75,
+      "id": "75",
       "familyId": 2,
       "rankId": 2,
       "name": "Jazzligator",
@@ -1944,7 +1944,7 @@
       "xp": 0
     },
     {
-      "id": 76,
+      "id": "76",
       "familyId": 2,
       "rankId": 2,
       "name": "Mustang de mer",
@@ -1968,7 +1968,7 @@
       "xp": 0
     },
     {
-      "id": 77,
+      "id": "77",
       "familyId": 2,
       "rankId": 2,
       "name": "Serpenlair",
@@ -1992,7 +1992,7 @@
       "xp": 0
     },
     {
-      "id": 78,
+      "id": "78",
       "familyId": 2,
       "rankId": 2,
       "name": "Zenzard",
@@ -2016,7 +2016,7 @@
       "xp": 0
     },
     {
-      "id": 79,
+      "id": "79",
       "familyId": 2,
       "rankId": 2,
       "name": "Ptéracorne",
@@ -2040,7 +2040,7 @@
       "xp": 0
     },
     {
-      "id": 80,
+      "id": "80",
       "familyId": 2,
       "rankId": 2,
       "name": "Saint-berneur",
@@ -2064,7 +2064,7 @@
       "xp": 0
     },
     {
-      "id": 81,
+      "id": "81",
       "familyId": 2,
       "rankId": 2,
       "name": "Dracabot",
@@ -2088,7 +2088,7 @@
       "xp": 0
     },
     {
-      "id": 82,
+      "id": "82",
       "familyId": 2,
       "rankId": 3,
       "name": "Tortugon",
@@ -2112,7 +2112,7 @@
       "xp": 0
     },
     {
-      "id": 83,
+      "id": "83",
       "familyId": 2,
       "rankId": 3,
       "name": "Dracularge",
@@ -2136,7 +2136,7 @@
       "xp": 0
     },
     {
-      "id": 84,
+      "id": "84",
       "familyId": 2,
       "rankId": 3,
       "name": "Surinosaure",
@@ -2160,7 +2160,7 @@
       "xp": 0
     },
     {
-      "id": 85,
+      "id": "85",
       "familyId": 2,
       "rankId": 3,
       "name": "Tensiocératops",
@@ -2184,7 +2184,7 @@
       "xp": 0
     },
     {
-      "id": 86,
+      "id": "86",
       "familyId": 2,
       "rankId": 3,
       "name": "Marmitosaure",
@@ -2208,7 +2208,7 @@
       "xp": 0
     },
     {
-      "id": 87,
+      "id": "87",
       "familyId": 2,
       "rankId": 3,
       "name": "Dragon vert",
@@ -2232,7 +2232,7 @@
       "xp": 0
     },
     {
-      "id": 88,
+      "id": "88",
       "familyId": 2,
       "rankId": 3,
       "name": "Butanosaure",
@@ -2256,7 +2256,7 @@
       "xp": 0
     },
     {
-      "id": 89,
+      "id": "89",
       "familyId": 2,
       "rankId": 3,
       "name": "Sylvosaure",
@@ -2280,7 +2280,7 @@
       "xp": 0
     },
     {
-      "id": 90,
+      "id": "90",
       "familyId": 2,
       "rankId": 3,
       "name": "Caporal mandragor",
@@ -2304,7 +2304,7 @@
       "xp": 0
     },
     {
-      "id": 91,
+      "id": "91",
       "familyId": 2,
       "rankId": 4,
       "name": "Eskintosaure",
@@ -2328,7 +2328,7 @@
       "xp": 0
     },
     {
-      "id": 92,
+      "id": "92",
       "familyId": 2,
       "rankId": 4,
       "name": "Grand lézard argon",
@@ -2352,7 +2352,7 @@
       "xp": 0
     },
     {
-      "id": 93,
+      "id": "93",
       "familyId": 2,
       "rankId": 4,
       "name": "Serpolaire",
@@ -2376,7 +2376,7 @@
       "xp": 0
     },
     {
-      "id": 94,
+      "id": "94",
       "familyId": 2,
       "rankId": 4,
       "name": "Frigonosaure",
@@ -2400,7 +2400,7 @@
       "xp": 0
     },
     {
-      "id": 95,
+      "id": "95",
       "familyId": 2,
       "rankId": 4,
       "name": "Destrier de l'estran",
@@ -2424,7 +2424,7 @@
       "xp": 0
     },
     {
-      "id": 96,
+      "id": "96",
       "familyId": 2,
       "rankId": 4,
       "name": "Dragonier",
@@ -2448,7 +2448,7 @@
       "xp": 0
     },
     {
-      "id": 97,
+      "id": "97",
       "familyId": 2,
       "rankId": 4,
       "name": "Abyssaure",
@@ -2472,7 +2472,7 @@
       "xp": 0
     },
     {
-      "id": 98,
+      "id": "98",
       "familyId": 2,
       "rankId": 4,
       "name": "Dragon de métal",
@@ -2496,7 +2496,7 @@
       "xp": 0
     },
     {
-      "id": 99,
+      "id": "99",
       "familyId": 2,
       "rankId": 4,
       "name": "Wyverne",
@@ -2520,7 +2520,7 @@
       "xp": 0
     },
     {
-      "id": 100,
+      "id": "100",
       "familyId": 2,
       "rankId": 5,
       "name": "Dracorniaud",
@@ -2544,7 +2544,7 @@
       "xp": 0
     },
     {
-      "id": 101,
+      "id": "101",
       "familyId": 2,
       "rankId": 5,
       "name": "Dracarapace",
@@ -2568,7 +2568,7 @@
       "xp": 0
     },
     {
-      "id": 102,
+      "id": "102",
       "familyId": 2,
       "rankId": 5,
       "name": "Lézard suzerain",
@@ -2592,7 +2592,7 @@
       "xp": 0
     },
     {
-      "id": 103,
+      "id": "103",
       "familyId": 2,
       "rankId": 5,
       "name": "Toutouïvre",
@@ -2616,7 +2616,7 @@
       "xp": 0
     },
     {
-      "id": 104,
+      "id": "104",
       "familyId": 2,
       "rankId": 5,
       "name": "Dracorvidé",
@@ -2640,7 +2640,7 @@
       "xp": 0
     },
     {
-      "id": 105,
+      "id": "105",
       "familyId": 2,
       "rankId": 5,
       "name": "Tyrannocératops",
@@ -2664,7 +2664,7 @@
       "xp": 0
     },
     {
-      "id": 106,
+      "id": "106",
       "familyId": 2,
       "rankId": 5,
       "name": "Gazosaure",
@@ -2688,7 +2688,7 @@
       "xp": 0
     },
     {
-      "id": 107,
+      "id": "107",
       "familyId": 2,
       "rankId": 5,
       "name": "Cobonga",
@@ -2712,7 +2712,7 @@
       "xp": 0
     },
     {
-      "id": 108,
+      "id": "108",
       "familyId": 2,
       "rankId": 5,
       "name": "Aligatueur",
@@ -2736,7 +2736,7 @@
       "xp": 0
     },
     {
-      "id": 109,
+      "id": "109",
       "familyId": 2,
       "rankId": 6,
       "name": "Draculard",
@@ -2760,7 +2760,7 @@
       "xp": 0
     },
     {
-      "id": 110,
+      "id": "110",
       "familyId": 2,
       "rankId": 6,
       "name": "Super dragon",
@@ -2784,7 +2784,7 @@
       "xp": 0
     },
     {
-      "id": 111,
+      "id": "111",
       "familyId": 2,
       "rankId": 6,
       "name": "Général mandragor",
@@ -2808,7 +2808,7 @@
       "xp": 0
     },
     {
-      "id": 112,
+      "id": "112",
       "familyId": 2,
       "rankId": 6,
       "name": "Dragonier de l'enfer",
@@ -2832,7 +2832,7 @@
       "xp": 0
     },
     {
-      "id": 113,
+      "id": "113",
       "familyId": 2,
       "rankId": 6,
       "name": "Hachosaure",
@@ -2856,7 +2856,7 @@
       "xp": 0
     },
     {
-      "id": 114,
+      "id": "114",
       "familyId": 2,
       "rankId": 6,
       "name": "Avariss",
@@ -2880,7 +2880,7 @@
       "xp": 0
     },
     {
-      "id": 115,
+      "id": "115",
       "familyId": 2,
       "rankId": 6,
       "name": "Dragon noir",
@@ -2904,7 +2904,7 @@
       "xp": 0
     },
     {
-      "id": 116,
+      "id": "116",
       "familyId": 2,
       "rankId": 6,
       "name": "Hydragon",
@@ -2928,7 +2928,7 @@
       "xp": 0
     },
     {
-      "id": 117,
+      "id": "117",
       "familyId": 2,
       "rankId": 6,
       "name": "Tortueféroce",
@@ -2952,7 +2952,7 @@
       "xp": 0
     },
     {
-      "id": 118,
+      "id": "118",
       "familyId": 2,
       "rankId": 7,
       "name": "Rashaverak",
@@ -2976,7 +2976,7 @@
       "xp": 0
     },
     {
-      "id": 119,
+      "id": "119",
       "familyId": 2,
       "rankId": 7,
       "name": "Reptile royal",
@@ -3000,7 +3000,7 @@
       "xp": 0
     },
     {
-      "id": 120,
+      "id": "120",
       "familyId": 2,
       "rankId": 7,
       "name": "Reine hydre",
@@ -3024,7 +3024,7 @@
       "xp": 0
     },
     {
-      "id": 121,
+      "id": "121",
       "familyId": 2,
       "rankId": 7,
       "name": "Dracorneille",
@@ -3048,7 +3048,7 @@
       "xp": 0
     },
     {
-      "id": 122,
+      "id": "122",
       "familyId": 2,
       "rankId": 7,
       "name": "Serpenfer",
@@ -3072,7 +3072,7 @@
       "xp": 0
     },
     {
-      "id": 123,
+      "id": "123",
       "familyId": 2,
       "rankId": 7,
       "name": "Apode argenté",
@@ -3096,7 +3096,7 @@
       "xp": 0
     },
     {
-      "id": 124,
+      "id": "124",
       "familyId": 2,
       "rankId": 7,
       "name": "Dragorange",
@@ -3120,7 +3120,7 @@
       "xp": 0
     },
     {
-      "id": 125,
+      "id": "125",
       "familyId": 2,
       "rankId": 7,
       "name": "Serpent des sentences",
@@ -3144,7 +3144,7 @@
       "xp": 0
     },
     {
-      "id": 126,
+      "id": "126",
       "familyId": 2,
       "rankId": 7,
       "name": "Mécadragon",
@@ -3168,7 +3168,7 @@
       "xp": 0
     },
     {
-      "id": 127,
+      "id": "127",
       "familyId": 2,
       "rankId": 7,
       "name": "Lordraco",
@@ -3192,7 +3192,7 @@
       "xp": 0
     },
     {
-      "id": 128,
+      "id": "128",
       "familyId": 2,
       "rankId": 8,
       "name": "Grizius",
@@ -3216,7 +3216,7 @@
       "xp": 0
     },
     {
-      "id": 129,
+      "id": "129",
       "familyId": 2,
       "rankId": 8,
       "name": "Dragon du temps",
@@ -3240,7 +3240,7 @@
       "xp": 0
     },
     {
-      "id": 130,
+      "id": "130",
       "familyId": 2,
       "rankId": 8,
       "name": "Dragon des abysses",
@@ -3264,7 +3264,7 @@
       "xp": 0
     },
     {
-      "id": 131,
+      "id": "131",
       "familyId": 2,
       "rankId": 8,
       "name": "Barbarus",
@@ -3288,7 +3288,7 @@
       "xp": 0
     },
     {
-      "id": 132,
+      "id": "132",
       "familyId": 2,
       "rankId": 8,
       "name": "Lordragon",
@@ -3312,7 +3312,7 @@
       "xp": 0
     },
     {
-      "id": 133,
+      "id": "133",
       "familyId": 2,
       "rankId": 9,
       "name": "Xenlon",
@@ -3336,7 +3336,7 @@
       "xp": 0
     },
     {
-      "id": 134,
+      "id": "134",
       "familyId": 2,
       "rankId": 9,
       "name": "Seigneur des dragoviens",
@@ -3360,7 +3360,7 @@
       "xp": 0
     },
     {
-      "id": 135,
+      "id": "135",
       "familyId": 3,
       "rankId": 1,
       "name": "Corbarbac",
@@ -3384,7 +3384,7 @@
       "xp": 0
     },
     {
-      "id": 136,
+      "id": "136",
       "familyId": 3,
       "rankId": 1,
       "name": "Poids-coq",
@@ -3408,7 +3408,7 @@
       "xp": 0
     },
     {
-      "id": 137,
+      "id": "137",
       "familyId": 3,
       "rankId": 1,
       "name": "Vilpoireau",
@@ -3432,7 +3432,7 @@
       "xp": 0
     },
     {
-      "id": 138,
+      "id": "138",
       "familyId": 3,
       "rankId": 1,
       "name": "Furibombyx",
@@ -3456,7 +3456,7 @@
       "xp": 0
     },
     {
-      "id": 139,
+      "id": "139",
       "familyId": 3,
       "rankId": 1,
       "name": "Piperaduo",
@@ -3480,7 +3480,7 @@
       "xp": 0
     },
     {
-      "id": 140,
+      "id": "140",
       "familyId": 3,
       "rankId": 1,
       "name": "Concombrageur",
@@ -3504,7 +3504,7 @@
       "xp": 0
     },
     {
-      "id": 141,
+      "id": "141",
       "familyId": 3,
       "rankId": 1,
       "name": "Dingopode",
@@ -3528,7 +3528,7 @@
       "xp": 0
     },
     {
-      "id": 142,
+      "id": "142",
       "familyId": 3,
       "rankId": 1,
       "name": "Colèrgine",
@@ -3552,7 +3552,7 @@
       "xp": 0
     },
     {
-      "id": 143,
+      "id": "143",
       "familyId": 3,
       "rankId": 1,
       "name": "Aratétou",
@@ -3576,7 +3576,7 @@
       "xp": 0
     },
     {
-      "id": 144,
+      "id": "144",
       "familyId": 3,
       "rankId": 1,
       "name": "Khalamarmot",
@@ -3600,7 +3600,7 @@
       "xp": 0
     },
     {
-      "id": 145,
+      "id": "145",
       "familyId": 3,
       "rankId": 1,
       "name": "Combatracien",
@@ -3624,7 +3624,7 @@
       "xp": 0
     },
     {
-      "id": 146,
+      "id": "146",
       "familyId": 3,
       "rankId": 2,
       "name": "Taurapace",
@@ -3648,7 +3648,7 @@
       "xp": 0
     },
     {
-      "id": 147,
+      "id": "147",
       "familyId": 3,
       "rankId": 2,
       "name": "Octopoupon",
@@ -3672,7 +3672,7 @@
       "xp": 0
     },
     {
-      "id": 148,
+      "id": "148",
       "familyId": 3,
       "rankId": 2,
       "name": "Cyclown",
@@ -3696,7 +3696,7 @@
       "xp": 0
     },
     {
-      "id": 149,
+      "id": "149",
       "familyId": 3,
       "rankId": 2,
       "name": "Faucondor",
@@ -3720,7 +3720,7 @@
       "xp": 0
     },
     {
-      "id": 150,
+      "id": "150",
       "familyId": 3,
       "rankId": 2,
       "name": "Déspirado",
@@ -3744,7 +3744,7 @@
       "xp": 0
     },
     {
-      "id": 151,
+      "id": "151",
       "familyId": 3,
       "rankId": 2,
       "name": "Cactueur",
@@ -3768,7 +3768,7 @@
       "xp": 0
     },
     {
-      "id": 152,
+      "id": "152",
       "familyId": 3,
       "rankId": 2,
       "name": "Galopingouin",
@@ -3792,7 +3792,7 @@
       "xp": 0
     },
     {
-      "id": 153,
+      "id": "153",
       "familyId": 3,
       "rankId": 2,
       "name": "Chênapan",
@@ -3816,7 +3816,7 @@
       "xp": 0
     },
     {
-      "id": 154,
+      "id": "154",
       "familyId": 3,
       "rankId": 2,
       "name": "Scarapince",
@@ -3840,7 +3840,7 @@
       "xp": 0
     },
     {
-      "id": 155,
+      "id": "155",
       "familyId": 3,
       "rankId": 2,
       "name": "Sacaver",
@@ -3864,7 +3864,7 @@
       "xp": 0
     },
     {
-      "id": 156,
+      "id": "156",
       "familyId": 3,
       "rankId": 2,
       "name": "Foufolia",
@@ -3888,7 +3888,7 @@
       "xp": 0
     },
     {
-      "id": 157,
+      "id": "157",
       "familyId": 3,
       "rankId": 3,
       "name": "Globi",
@@ -3912,7 +3912,7 @@
       "xp": 0
     },
     {
-      "id": 158,
+      "id": "158",
       "familyId": 3,
       "rankId": 3,
       "name": "Chimère",
@@ -3936,7 +3936,7 @@
       "xp": 0
     },
     {
-      "id": 159,
+      "id": "159",
       "familyId": 3,
       "rankId": 3,
       "name": "Dardtagnan",
@@ -3960,7 +3960,7 @@
       "xp": 0
     },
     {
-      "id": 160,
+      "id": "160",
       "familyId": 3,
       "rankId": 3,
       "name": "Crabarbare",
@@ -3984,7 +3984,7 @@
       "xp": 0
     },
     {
-      "id": 161,
+      "id": "161",
       "familyId": 3,
       "rankId": 3,
       "name": "Poulpe à calotte",
@@ -4008,7 +4008,7 @@
       "xp": 0
     },
     {
-      "id": 162,
+      "id": "162",
       "familyId": 3,
       "rankId": 3,
       "name": "Accélhéron",
@@ -4032,7 +4032,7 @@
       "xp": 0
     },
     {
-      "id": 163,
+      "id": "163",
       "familyId": 3,
       "rankId": 3,
       "name": "Altérapace",
@@ -4056,7 +4056,7 @@
       "xp": 0
     },
     {
-      "id": 164,
+      "id": "164",
       "familyId": 3,
       "rankId": 3,
       "name": "Barracuda",
@@ -4080,7 +4080,7 @@
       "xp": 0
     },
     {
-      "id": 165,
+      "id": "165",
       "familyId": 3,
       "rankId": 3,
       "name": "Combaricot",
@@ -4104,7 +4104,7 @@
       "xp": 0
     },
     {
-      "id": 166,
+      "id": "166",
       "familyId": 3,
       "rankId": 3,
       "name": "Tailletron",
@@ -4128,7 +4128,7 @@
       "xp": 0
     },
     {
-      "id": 167,
+      "id": "167",
       "familyId": 3,
       "rankId": 3,
       "name": "Supergine",
@@ -4152,7 +4152,7 @@
       "xp": 0
     },
     {
-      "id": 168,
+      "id": "168",
       "familyId": 3,
       "rankId": 4,
       "name": "Bandit manchot",
@@ -4176,7 +4176,7 @@
       "xp": 0
     },
     {
-      "id": 169,
+      "id": "169",
       "familyId": 3,
       "rankId": 4,
       "name": "Glacyclone",
@@ -4200,7 +4200,7 @@
       "xp": 0
     },
     {
-      "id": 170,
+      "id": "170",
       "familyId": 3,
       "rankId": 4,
       "name": "Charpirana",
@@ -4224,7 +4224,7 @@
       "xp": 0
     },
     {
-      "id": 171,
+      "id": "171",
       "familyId": 3,
       "rankId": 4,
       "name": "Crapouillot",
@@ -4248,7 +4248,7 @@
       "xp": 0
     },
     {
-      "id": 172,
+      "id": "172",
       "familyId": 3,
       "rankId": 4,
       "name": "Gaizard",
@@ -4272,7 +4272,7 @@
       "xp": 0
     },
     {
-      "id": 173,
+      "id": "173",
       "familyId": 3,
       "rankId": 4,
       "name": "Monstropoiro",
@@ -4296,7 +4296,7 @@
       "xp": 0
     },
     {
-      "id": 174,
+      "id": "174",
       "familyId": 3,
       "rankId": 4,
       "name": "Serratoès",
@@ -4320,7 +4320,7 @@
       "xp": 0
     },
     {
-      "id": 175,
+      "id": "175",
       "familyId": 3,
       "rankId": 4,
       "name": "Gambastonneur",
@@ -4344,7 +4344,7 @@
       "xp": 0
     },
     {
-      "id": 176,
+      "id": "176",
       "familyId": 3,
       "rankId": 4,
       "name": "Misamorse",
@@ -4368,7 +4368,7 @@
       "xp": 0
     },
     {
-      "id": 177,
+      "id": "177",
       "familyId": 3,
       "rankId": 4,
       "name": "Morchidée",
@@ -4392,7 +4392,7 @@
       "xp": 0
     },
     {
-      "id": 178,
+      "id": "178",
       "familyId": 3,
       "rankId": 4,
       "name": "Condor Infernal",
@@ -4416,7 +4416,7 @@
       "xp": 0
     },
     {
-      "id": 179,
+      "id": "179",
       "familyId": 3,
       "rankId": 5,
       "name": "Busard bizarre",
@@ -4440,7 +4440,7 @@
       "xp": 0
     },
     {
-      "id": 180,
+      "id": "180",
       "familyId": 3,
       "rankId": 5,
       "name": "Charbombyx",
@@ -4464,7 +4464,7 @@
       "xp": 0
     },
     {
-      "id": 181,
+      "id": "181",
       "familyId": 3,
       "rankId": 5,
       "name": "Étoupet",
@@ -4488,7 +4488,7 @@
       "xp": 0
     },
     {
-      "id": 182,
+      "id": "182",
       "familyId": 3,
       "rankId": 5,
       "name": "Scorpion blindé",
@@ -4512,7 +4512,7 @@
       "xp": 0
     },
     {
-      "id": 183,
+      "id": "183",
       "familyId": 3,
       "rankId": 5,
       "name": "Crabject",
@@ -4536,7 +4536,7 @@
       "xp": 0
     },
     {
-      "id": 184,
+      "id": "184",
       "familyId": 3,
       "rankId": 5,
       "name": "Calamaroi",
@@ -4560,7 +4560,7 @@
       "xp": 0
     },
     {
-      "id": 185,
+      "id": "185",
       "familyId": 3,
       "rankId": 5,
       "name": "Massacrapaud",
@@ -4584,7 +4584,7 @@
       "xp": 0
     },
     {
-      "id": 186,
+      "id": "186",
       "familyId": 3,
       "rankId": 5,
       "name": "Cactak",
@@ -4608,7 +4608,7 @@
       "xp": 0
     },
     {
-      "id": 187,
+      "id": "187",
       "familyId": 3,
       "rankId": 5,
       "name": "Secourgette",
@@ -4632,7 +4632,7 @@
       "xp": 0
     },
     {
-      "id": 188,
+      "id": "188",
       "familyId": 3,
       "rankId": 5,
       "name": "Ergo-go-go",
@@ -4656,7 +4656,7 @@
       "xp": 0
     },
     {
-      "id": 189,
+      "id": "189",
       "familyId": 3,
       "rankId": 6,
       "name": "Rapacepasse",
@@ -4680,7 +4680,7 @@
       "xp": 0
     },
     {
-      "id": 190,
+      "id": "190",
       "familyId": 3,
       "rankId": 6,
       "name": "Gombaroudeur",
@@ -4704,7 +4704,7 @@
       "xp": 0
     },
     {
-      "id": 191,
+      "id": "191",
       "familyId": 3,
       "rankId": 6,
       "name": "Chimère cosmique",
@@ -4728,7 +4728,7 @@
       "xp": 0
     },
     {
-      "id": 192,
+      "id": "192",
       "familyId": 3,
       "rankId": 6,
       "name": "Globa",
@@ -4752,7 +4752,7 @@
       "xp": 0
     },
     {
-      "id": 193,
+      "id": "193",
       "familyId": 3,
       "rankId": 6,
       "name": "Aiglefeu",
@@ -4776,7 +4776,7 @@
       "xp": 0
     },
     {
-      "id": 194,
+      "id": "194",
       "familyId": 3,
       "rankId": 6,
       "name": "Ptaurodactyle",
@@ -4800,7 +4800,7 @@
       "xp": 0
     },
     {
-      "id": 195,
+      "id": "195",
       "familyId": 3,
       "rankId": 6,
       "name": "Vénergine",
@@ -4824,7 +4824,7 @@
       "xp": 0
     },
     {
-      "id": 196,
+      "id": "196",
       "familyId": 3,
       "rankId": 6,
       "name": "Sorciétacé",
@@ -4848,7 +4848,7 @@
       "xp": 0
     },
     {
-      "id": 197,
+      "id": "197",
       "familyId": 3,
       "rankId": 6,
       "name": "Rapaglace",
@@ -4872,7 +4872,7 @@
       "xp": 0
     },
     {
-      "id": 198,
+      "id": "198",
       "familyId": 3,
       "rankId": 6,
       "name": "Serrial-killer",
@@ -4896,7 +4896,7 @@
       "xp": 0
     },
     {
-      "id": 199,
+      "id": "199",
       "familyId": 3,
       "rankId": 7,
       "name": "Tentapieuvre",
@@ -4920,7 +4920,7 @@
       "xp": 0
     },
     {
-      "id": 200,
+      "id": "200",
       "familyId": 3,
       "rankId": 7,
       "name": "Phénix",
@@ -4944,7 +4944,7 @@
       "xp": 0
     },
     {
-      "id": 201,
+      "id": "201",
       "familyId": 3,
       "rankId": 7,
       "name": "Scorpion d'assaut",
@@ -4968,7 +4968,7 @@
       "xp": 0
     },
     {
-      "id": 202,
+      "id": "202",
       "familyId": 3,
       "rankId": 7,
       "name": "Dangerose",
@@ -4992,7 +4992,7 @@
       "xp": 0
     },
     {
-      "id": 203,
+      "id": "203",
       "familyId": 3,
       "rankId": 8,
       "name": "Dark-en-ciel",
@@ -5016,7 +5016,7 @@
       "xp": 0
     },
     {
-      "id": 204,
+      "id": "204",
       "familyId": 3,
       "rankId": 8,
       "name": "Dangeronce",
@@ -5040,7 +5040,7 @@
       "xp": 0
     },
     {
-      "id": 205,
+      "id": "205",
       "familyId": 4,
       "rankId": 1,
       "name": "Gloutofourmilier",
@@ -5064,7 +5064,7 @@
       "xp": 0
     },
     {
-      "id": 206,
+      "id": "206",
       "familyId": 4,
       "rankId": 1,
       "name": "Pataupe",
@@ -5088,7 +5088,7 @@
       "xp": 0
     },
     {
-      "id": 207,
+      "id": "207",
       "familyId": 4,
       "rankId": 1,
       "name": "Lapicorne",
@@ -5112,7 +5112,7 @@
       "xp": 0
     },
     {
-      "id": 208,
+      "id": "208",
       "familyId": 4,
       "rankId": 1,
       "name": "Marteleur",
@@ -5136,7 +5136,7 @@
       "xp": 0
     },
     {
-      "id": 209,
+      "id": "209",
       "familyId": 4,
       "rankId": 1,
       "name": "Gratatouille",
@@ -5160,7 +5160,7 @@
       "xp": 0
     },
     {
-      "id": 210,
+      "id": "210",
       "familyId": 4,
       "rankId": 1,
       "name": "Bélicorne",
@@ -5184,7 +5184,7 @@
       "xp": 0
     },
     {
-      "id": 211,
+      "id": "211",
       "familyId": 4,
       "rankId": 1,
       "name": "Languochat",
@@ -5208,7 +5208,7 @@
       "xp": 0
     },
     {
-      "id": 212,
+      "id": "212",
       "familyId": 4,
       "rankId": 1,
       "name": "Chaporc magique",
@@ -5232,7 +5232,7 @@
       "xp": 0
     },
     {
-      "id": 213,
+      "id": "213",
       "familyId": 4,
       "rankId": 1,
       "name": "Kotonfatal",
@@ -5256,7 +5256,7 @@
       "xp": 0
     },
     {
-      "id": 214,
+      "id": "214",
       "familyId": 4,
       "rankId": 1,
       "name": "Smilodon de lait",
@@ -5280,7 +5280,7 @@
       "xp": 0
     },
     {
-      "id": 215,
+      "id": "215",
       "familyId": 4,
       "rankId": 1,
       "name": "Chauve-sourat",
@@ -5304,7 +5304,7 @@
       "xp": 0
     },
     {
-      "id": 216,
+      "id": "216",
       "familyId": 4,
       "rankId": 1,
       "name": "Ornithox",
@@ -5328,7 +5328,7 @@
       "xp": 0
     },
     {
-      "id": 217,
+      "id": "217",
       "familyId": 4,
       "rankId": 2,
       "name": "Yéti yétu",
@@ -5352,7 +5352,7 @@
       "xp": 0
     },
     {
-      "id": 218,
+      "id": "218",
       "familyId": 4,
       "rankId": 2,
       "name": "Orque",
@@ -5376,7 +5376,7 @@
       "xp": 0
     },
     {
-      "id": 219,
+      "id": "219",
       "familyId": 4,
       "rankId": 2,
       "name": "Chat vampire",
@@ -5400,7 +5400,7 @@
       "xp": 0
     },
     {
-      "id": 220,
+      "id": "220",
       "familyId": 4,
       "rankId": 2,
       "name": "Kangouffre",
@@ -5424,7 +5424,7 @@
       "xp": 0
     },
     {
-      "id": 221,
+      "id": "221",
       "familyId": 4,
       "rankId": 2,
       "name": "Tigriff",
@@ -5448,7 +5448,7 @@
       "xp": 0
     },
     {
-      "id": 222,
+      "id": "222",
       "familyId": 4,
       "rankId": 2,
       "name": "Pikassiette",
@@ -5472,7 +5472,7 @@
       "xp": 0
     },
     {
-      "id": 223,
+      "id": "223",
       "familyId": 4,
       "rankId": 2,
       "name": "Sultant vespéral",
@@ -5496,7 +5496,7 @@
       "xp": 0
     },
     {
-      "id": 224,
+      "id": "224",
       "familyId": 4,
       "rankId": 2,
       "name": "Gerfaut",
@@ -5520,7 +5520,7 @@
       "xp": 0
     },
     {
-      "id": 225,
+      "id": "225",
       "familyId": 4,
       "rankId": 2,
       "name": "Blaireau bongo",
@@ -5544,7 +5544,7 @@
       "xp": 0
     },
     {
-      "id": 226,
+      "id": "226",
       "familyId": 4,
       "rankId": 2,
       "name": "Taiepir",
@@ -5568,7 +5568,7 @@
       "xp": 0
     },
     {
-      "id": 227,
+      "id": "227",
       "familyId": 4,
       "rankId": 3,
       "name": "Lièvrecorne",
@@ -5592,7 +5592,7 @@
       "xp": 0
     },
     {
-      "id": 228,
+      "id": "228",
       "familyId": 4,
       "rankId": 3,
       "name": "Ratattaque",
@@ -5616,7 +5616,7 @@
       "xp": 0
     },
     {
-      "id": 229,
+      "id": "229",
       "familyId": 4,
       "rankId": 3,
       "name": "Carnigore",
@@ -5640,7 +5640,7 @@
       "xp": 0
     },
     {
-      "id": 230,
+      "id": "230",
       "familyId": 4,
       "rankId": 3,
       "name": "Plantigrrrade",
@@ -5664,7 +5664,7 @@
       "xp": 0
     },
     {
-      "id": 231,
+      "id": "231",
       "familyId": 4,
       "rankId": 3,
       "name": "Smilodon de lait noir",
@@ -5688,7 +5688,7 @@
       "xp": 0
     },
     {
-      "id": 232,
+      "id": "232",
       "familyId": 4,
       "rankId": 3,
       "name": "Ornitro",
@@ -5712,7 +5712,7 @@
       "xp": 0
     },
     {
-      "id": 233,
+      "id": "233",
       "familyId": 4,
       "rankId": 3,
       "name": "Groin mage",
@@ -5736,7 +5736,7 @@
       "xp": 0
     },
     {
-      "id": 234,
+      "id": "234",
       "familyId": 4,
       "rankId": 3,
       "name": "Miaougicien",
@@ -5760,7 +5760,7 @@
       "xp": 0
     },
     {
-      "id": 235,
+      "id": "235",
       "familyId": 4,
       "rankId": 3,
       "name": "Nakunœil",
@@ -5784,7 +5784,7 @@
       "xp": 0
     },
     {
-      "id": 236,
+      "id": "236",
       "familyId": 4,
       "rankId": 3,
       "name": "Martebrun",
@@ -5808,7 +5808,7 @@
       "xp": 0
     },
     {
-      "id": 237,
+      "id": "237",
       "familyId": 4,
       "rankId": 3,
       "name": "Chagriffeur",
@@ -5832,7 +5832,7 @@
       "xp": 0
     },
     {
-      "id": 238,
+      "id": "238",
       "familyId": 4,
       "rankId": 3,
       "name": "Putrikoton",
@@ -5856,7 +5856,7 @@
       "xp": 0
     },
     {
-      "id": 239,
+      "id": "239",
       "familyId": 4,
       "rankId": 4,
       "name": "Pikostaud",
@@ -5880,7 +5880,7 @@
       "xp": 0
     },
     {
-      "id": 240,
+      "id": "240",
       "familyId": 4,
       "rankId": 4,
       "name": "Ailéopard",
@@ -5904,7 +5904,7 @@
       "xp": 0
     },
     {
-      "id": 241,
+      "id": "241",
       "familyId": 4,
       "rankId": 4,
       "name": "Gargouille",
@@ -5928,7 +5928,7 @@
       "xp": 0
     },
     {
-      "id": 242,
+      "id": "242",
       "familyId": 4,
       "rankId": 4,
       "name": "Smilodon",
@@ -5952,7 +5952,7 @@
       "xp": 0
     },
     {
-      "id": 243,
+      "id": "243",
       "familyId": 4,
       "rankId": 4,
       "name": "Scélérafe",
@@ -5976,7 +5976,7 @@
       "xp": 0
     },
     {
-      "id": 244,
+      "id": "244",
       "familyId": 4,
       "rankId": 4,
       "name": "Sanguinolier",
@@ -6000,7 +6000,7 @@
       "xp": 0
     },
     {
-      "id": 245,
+      "id": "245",
       "familyId": 4,
       "rankId": 4,
       "name": "Yéti des sables",
@@ -6024,7 +6024,7 @@
       "xp": 0
     },
     {
-      "id": 246,
+      "id": "246",
       "familyId": 4,
       "rankId": 4,
       "name": "Troubalourd",
@@ -6048,7 +6048,7 @@
       "xp": 0
     },
     {
-      "id": 247,
+      "id": "247",
       "familyId": 4,
       "rankId": 4,
       "name": "Tigrrr",
@@ -6072,7 +6072,7 @@
       "xp": 0
     },
     {
-      "id": 248,
+      "id": "248",
       "familyId": 4,
       "rankId": 4,
       "name": "Cornefolle",
@@ -6096,7 +6096,7 @@
       "xp": 0
     },
     {
-      "id": 249,
+      "id": "249",
       "familyId": 4,
       "rankId": 4,
       "name": "Empreur nocturne",
@@ -6120,7 +6120,7 @@
       "xp": 0
     },
     {
-      "id": 250,
+      "id": "250",
       "familyId": 4,
       "rankId": 4,
       "name": "Rhinocérache",
@@ -6144,7 +6144,7 @@
       "xp": 0
     },
     {
-      "id": 251,
+      "id": "251",
       "familyId": 4,
       "rankId": 5,
       "name": "Trublion",
@@ -6168,7 +6168,7 @@
       "xp": 0
     },
     {
-      "id": 252,
+      "id": "252",
       "familyId": 4,
       "rankId": 5,
       "name": "Frappochère",
@@ -6192,7 +6192,7 @@
       "xp": 0
     },
     {
-      "id": 253,
+      "id": "253",
       "familyId": 4,
       "rankId": 5,
       "name": "Roi orque",
@@ -6216,7 +6216,7 @@
       "xp": 0
     },
     {
-      "id": 254,
+      "id": "254",
       "familyId": 4,
       "rankId": 5,
       "name": "Taupe-toc",
@@ -6240,7 +6240,7 @@
       "xp": 0
     },
     {
-      "id": 255,
+      "id": "255",
       "familyId": 4,
       "rankId": 5,
       "name": "Meno macho",
@@ -6264,7 +6264,7 @@
       "xp": 0
     },
     {
-      "id": 256,
+      "id": "256",
       "familyId": 4,
       "rankId": 5,
       "name": "Grornithox",
@@ -6288,7 +6288,7 @@
       "xp": 0
     },
     {
-      "id": 257,
+      "id": "257",
       "familyId": 4,
       "rankId": 5,
       "name": "Lièvrecorne noir",
@@ -6312,7 +6312,7 @@
       "xp": 0
     },
     {
-      "id": 258,
+      "id": "258",
       "familyId": 4,
       "rankId": 5,
       "name": "Gnoumésis",
@@ -6336,7 +6336,7 @@
       "xp": 0
     },
     {
-      "id": 259,
+      "id": "259",
       "familyId": 4,
       "rankId": 5,
       "name": "Crinocéphale",
@@ -6360,7 +6360,7 @@
       "xp": 0
     },
     {
-      "id": 260,
+      "id": "260",
       "familyId": 4,
       "rankId": 5,
       "name": "Endœil",
@@ -6384,7 +6384,7 @@
       "xp": 0
     },
     {
-      "id": 261,
+      "id": "261",
       "familyId": 4,
       "rankId": 6,
       "name": "Draguar",
@@ -6408,7 +6408,7 @@
       "xp": 0
     },
     {
-      "id": 262,
+      "id": "262",
       "familyId": 4,
       "rankId": 6,
       "name": "Smilodon noir",
@@ -6432,7 +6432,7 @@
       "xp": 0
     },
     {
-      "id": 263,
+      "id": "263",
       "familyId": 4,
       "rankId": 6,
       "name": "Chacromancien",
@@ -6456,7 +6456,7 @@
       "xp": 0
     },
     {
-      "id": 264,
+      "id": "264",
       "familyId": 4,
       "rankId": 6,
       "name": "Ursa méga",
@@ -6480,7 +6480,7 @@
       "xp": 0
     },
     {
-      "id": 265,
+      "id": "265",
       "familyId": 4,
       "rankId": 6,
       "name": "Tigroar",
@@ -6504,7 +6504,7 @@
       "xp": 0
     },
     {
-      "id": 266,
+      "id": "266",
       "familyId": 4,
       "rankId": 6,
       "name": "Mister Taupe",
@@ -6528,7 +6528,7 @@
       "xp": 0
     },
     {
-      "id": 267,
+      "id": "267",
       "familyId": 4,
       "rankId": 6,
       "name": "Encorneur",
@@ -6552,7 +6552,7 @@
       "xp": 0
     },
     {
-      "id": 268,
+      "id": "268",
       "familyId": 4,
       "rankId": 6,
       "name": "Abominhomme des neiges",
@@ -6576,7 +6576,7 @@
       "xp": 0
     },
     {
-      "id": 269,
+      "id": "269",
       "familyId": 4,
       "rankId": 6,
       "name": "Sangliogre",
@@ -6600,7 +6600,7 @@
       "xp": 0
     },
     {
-      "id": 270,
+      "id": "270",
       "familyId": 4,
       "rankId": 6,
       "name": "Tempétalon",
@@ -6624,7 +6624,7 @@
       "xp": 0
     },
     {
-      "id": 271,
+      "id": "271",
       "familyId": 4,
       "rankId": 7,
       "name": "Charambol",
@@ -6648,7 +6648,7 @@
       "xp": 0
     },
     {
-      "id": 272,
+      "id": "272",
       "familyId": 4,
       "rankId": 7,
       "name": "Lord Lionel",
@@ -6672,7 +6672,7 @@
       "xp": 0
     },
     {
-      "id": 273,
+      "id": "273",
       "familyId": 4,
       "rankId": 7,
       "name": "Équinocte",
@@ -6696,7 +6696,7 @@
       "xp": 0
     },
     {
-      "id": 274,
+      "id": "274",
       "familyId": 4,
       "rankId": 7,
       "name": "Raton bâton",
@@ -6720,7 +6720,7 @@
       "xp": 0
     },
     {
-      "id": 275,
+      "id": "275",
       "familyId": 4,
       "rankId": 7,
       "name": "Gnoucifer",
@@ -6744,7 +6744,7 @@
       "xp": 0
     },
     {
-      "id": 276,
+      "id": "276",
       "familyId": 4,
       "rankId": 7,
       "name": "Macho piccu",
@@ -6768,7 +6768,7 @@
       "xp": 0
     },
     {
-      "id": 277,
+      "id": "277",
       "familyId": 4,
       "rankId": 7,
       "name": "Monsieur Léopold possédé",
@@ -6792,7 +6792,7 @@
       "xp": 0
     },
     {
-      "id": 278,
+      "id": "278",
       "familyId": 4,
       "rankId": 8,
       "name": "Grornithox rose",
@@ -6816,7 +6816,7 @@
       "xp": 0
     },
     {
-      "id": 279,
+      "id": "279",
       "familyId": 5,
       "rankId": 1,
       "name": "Mécanœuf",
@@ -6840,7 +6840,7 @@
       "xp": 0
     },
     {
-      "id": 280,
+      "id": "280",
       "familyId": 5,
       "rankId": 1,
       "name": "Flammulus",
@@ -6864,7 +6864,7 @@
       "xp": 0
     },
     {
-      "id": 281,
+      "id": "281",
       "familyId": 5,
       "rankId": 1,
       "name": "Scoubidouille",
@@ -6888,7 +6888,7 @@
       "xp": 0
     },
     {
-      "id": 282,
+      "id": "282",
       "familyId": 5,
       "rankId": 1,
       "name": "Spitnik",
@@ -6912,7 +6912,7 @@
       "xp": 0
     },
     {
-      "id": 283,
+      "id": "283",
       "familyId": 5,
       "rankId": 1,
       "name": "Bambougre",
@@ -6936,7 +6936,7 @@
       "xp": 0
     },
     {
-      "id": 284,
+      "id": "284",
       "familyId": 5,
       "rankId": 1,
       "name": "Sacasable",
@@ -6960,7 +6960,7 @@
       "xp": 0
     },
     {
-      "id": 285,
+      "id": "285",
       "familyId": 5,
       "rankId": 1,
       "name": "Pantin de boue",
@@ -6984,7 +6984,7 @@
       "xp": 0
     },
     {
-      "id": 286,
+      "id": "286",
       "familyId": 5,
       "rankId": 1,
       "name": "Affromage frais",
@@ -7008,7 +7008,7 @@
       "xp": 0
     },
     {
-      "id": 287,
+      "id": "287",
       "familyId": 5,
       "rankId": 1,
       "name": "Rouage-gorge",
@@ -7032,7 +7032,7 @@
       "xp": 0
     },
     {
-      "id": 288,
+      "id": "288",
       "familyId": 5,
       "rankId": 1,
       "name": "Lampiste",
@@ -7056,7 +7056,7 @@
       "xp": 0
     },
     {
-      "id": 289,
+      "id": "289",
       "familyId": 5,
       "rankId": 1,
       "name": "Maransac",
@@ -7080,7 +7080,7 @@
       "xp": 0
     },
     {
-      "id": 290,
+      "id": "290",
       "familyId": 5,
       "rankId": 2,
       "name": "Chienfernal",
@@ -7104,7 +7104,7 @@
       "xp": 0
     },
     {
-      "id": 291,
+      "id": "291",
       "familyId": 5,
       "rankId": 2,
       "name": "Soucoupes affolantes",
@@ -7128,7 +7128,7 @@
       "xp": 0
     },
     {
-      "id": 292,
+      "id": "292",
       "familyId": 5,
       "rankId": 2,
       "name": "Golem de chocolat",
@@ -7152,7 +7152,7 @@
       "xp": 0
     },
     {
-      "id": 293,
+      "id": "293",
       "familyId": 5,
       "rankId": 2,
       "name": "Défigurine",
@@ -7176,7 +7176,7 @@
       "xp": 0
     },
     {
-      "id": 294,
+      "id": "294",
       "familyId": 5,
       "rankId": 2,
       "name": "Dingo bongo",
@@ -7200,7 +7200,7 @@
       "xp": 0
     },
     {
-      "id": 295,
+      "id": "295",
       "familyId": 5,
       "rankId": 2,
       "name": "Mécapiaf",
@@ -7224,7 +7224,7 @@
       "xp": 0
     },
     {
-      "id": 296,
+      "id": "296",
       "familyId": 5,
       "rankId": 2,
       "name": "Fangeux",
@@ -7248,7 +7248,7 @@
       "xp": 0
     },
     {
-      "id": 297,
+      "id": "297",
       "familyId": 5,
       "rankId": 2,
       "name": "Cimetueur",
@@ -7272,7 +7272,7 @@
       "xp": 0
     },
     {
-      "id": 298,
+      "id": "298",
       "familyId": 5,
       "rankId": 2,
       "name": "Canniboîte",
@@ -7296,7 +7296,7 @@
       "xp": 0
     },
     {
-      "id": 299,
+      "id": "299",
       "familyId": 5,
       "rankId": 2,
       "name": "Talismaboule",
@@ -7320,7 +7320,7 @@
       "xp": 0
     },
     {
-      "id": 300,
+      "id": "300",
       "familyId": 5,
       "rankId": 2,
       "name": "Mécachasseur",
@@ -7344,7 +7344,7 @@
       "xp": 0
     },
     {
-      "id": 301,
+      "id": "301",
       "familyId": 5,
       "rankId": 3,
       "name": "Puits-sang",
@@ -7368,7 +7368,7 @@
       "xp": 0
     },
     {
-      "id": 302,
+      "id": "302",
       "familyId": 5,
       "rankId": 3,
       "name": "Pilier de bal",
@@ -7392,7 +7392,7 @@
       "xp": 0
     },
     {
-      "id": 303,
+      "id": "303",
       "familyId": 5,
       "rankId": 3,
       "name": "Sacatrésor",
@@ -7416,7 +7416,7 @@
       "xp": 0
     },
     {
-      "id": 304,
+      "id": "304",
       "familyId": 5,
       "rankId": 3,
       "name": "Coucou mécanique",
@@ -7440,7 +7440,7 @@
       "xp": 0
     },
     {
-      "id": 305,
+      "id": "305",
       "familyId": 5,
       "rankId": 3,
       "name": "Hécatombrelle",
@@ -7464,7 +7464,7 @@
       "xp": 0
     },
     {
-      "id": 306,
+      "id": "306",
       "familyId": 5,
       "rankId": 3,
       "name": "Flammage",
@@ -7488,7 +7488,7 @@
       "xp": 0
     },
     {
-      "id": 307,
+      "id": "307",
       "familyId": 5,
       "rankId": 3,
       "name": "Affromage fondu",
@@ -7512,7 +7512,7 @@
       "xp": 0
     },
     {
-      "id": 308,
+      "id": "308",
       "familyId": 5,
       "rankId": 3,
       "name": "Blindogre",
@@ -7536,7 +7536,7 @@
       "xp": 0
     },
     {
-      "id": 309,
+      "id": "309",
       "familyId": 5,
       "rankId": 3,
       "name": "Hauberserker",
@@ -7560,7 +7560,7 @@
       "xp": 0
     },
     {
-      "id": 310,
+      "id": "310",
       "familyId": 5,
       "rankId": 3,
       "name": "Rochexplosif",
@@ -7584,7 +7584,7 @@
       "xp": 0
     },
     {
-      "id": 311,
+      "id": "311",
       "familyId": 5,
       "rankId": 3,
       "name": "Cramulus",
@@ -7608,7 +7608,7 @@
       "xp": 0
     },
     {
-      "id": 312,
+      "id": "312",
       "familyId": 5,
       "rankId": 3,
       "name": "Brumulus",
@@ -7632,7 +7632,7 @@
       "xp": 0
     },
     {
-      "id": 313,
+      "id": "313",
       "familyId": 5,
       "rankId": 4,
       "name": "Machine à tuer",
@@ -7656,7 +7656,7 @@
       "xp": 0
     },
     {
-      "id": 314,
+      "id": "314",
       "familyId": 5,
       "rankId": 4,
       "name": "Abracadabraque",
@@ -7680,7 +7680,7 @@
       "xp": 0
     },
     {
-      "id": 315,
+      "id": "315",
       "familyId": 5,
       "rankId": 4,
       "name": "Corosse",
@@ -7704,7 +7704,7 @@
       "xp": 0
     },
     {
-      "id": 316,
+      "id": "316",
       "familyId": 5,
       "rankId": 4,
       "name": "Paralysabre",
@@ -7728,7 +7728,7 @@
       "xp": 0
     },
     {
-      "id": 317,
+      "id": "317",
       "familyId": 5,
       "rankId": 4,
       "name": "Golem de pierre",
@@ -7752,7 +7752,7 @@
       "xp": 0
     },
     {
-      "id": 318,
+      "id": "318",
       "familyId": 5,
       "rankId": 4,
       "name": "Cryfolia",
@@ -7776,7 +7776,7 @@
       "xp": 0
     },
     {
-      "id": 319,
+      "id": "319",
       "familyId": 5,
       "rankId": 4,
       "name": "Sacamiel",
@@ -7800,7 +7800,7 @@
       "xp": 0
     },
     {
-      "id": 320,
+      "id": "320",
       "familyId": 5,
       "rankId": 4,
       "name": "Glaglator",
@@ -7824,7 +7824,7 @@
       "xp": 0
     },
     {
-      "id": 321,
+      "id": "321",
       "familyId": 5,
       "rankId": 4,
       "name": "Sacaveine",
@@ -7848,7 +7848,7 @@
       "xp": 0
     },
     {
-      "id": 322,
+      "id": "322",
       "familyId": 5,
       "rankId": 4,
       "name": "Brûlegel",
@@ -7872,7 +7872,7 @@
       "xp": 0
     },
     {
-      "id": 323,
+      "id": "323",
       "familyId": 5,
       "rankId": 4,
       "name": "Brûleflamme",
@@ -7896,7 +7896,7 @@
       "xp": 0
     },
     {
-      "id": 324,
+      "id": "324",
       "familyId": 5,
       "rankId": 4,
       "name": "Magmasse",
@@ -7920,7 +7920,7 @@
       "xp": 0
     },
     {
-      "id": 325,
+      "id": "325",
       "familyId": 5,
       "rankId": 5,
       "name": "Statue vivante",
@@ -7944,7 +7944,7 @@
       "xp": 0
     },
     {
-      "id": 326,
+      "id": "326",
       "familyId": 5,
       "rankId": 5,
       "name": "Reliqtus",
@@ -7968,7 +7968,7 @@
       "xp": 0
     },
     {
-      "id": 327,
+      "id": "327",
       "familyId": 5,
       "rankId": 5,
       "name": "Sacarose",
@@ -7992,7 +7992,7 @@
       "xp": 0
     },
     {
-      "id": 328,
+      "id": "328",
       "familyId": 5,
       "rankId": 5,
       "name": "Soucoupes volantes",
@@ -8016,7 +8016,7 @@
       "xp": 0
     },
     {
-      "id": 329,
+      "id": "329",
       "familyId": 5,
       "rankId": 5,
       "name": "Mornelune",
@@ -8040,7 +8040,7 @@
       "xp": 0
     },
     {
-      "id": 330,
+      "id": "330",
       "familyId": 5,
       "rankId": 5,
       "name": "Glazon",
@@ -8064,7 +8064,7 @@
       "xp": 0
     },
     {
-      "id": 331,
+      "id": "331",
       "familyId": 5,
       "rankId": 5,
       "name": "Tizon",
@@ -8088,7 +8088,7 @@
       "xp": 0
     },
     {
-      "id": 332,
+      "id": "332",
       "familyId": 5,
       "rankId": 5,
       "name": "Big bongo",
@@ -8112,7 +8112,7 @@
       "xp": 0
     },
     {
-      "id": 333,
+      "id": "333",
       "familyId": 5,
       "rankId": 5,
       "name": "Imitapeur",
@@ -8136,7 +8136,7 @@
       "xp": 0
     },
     {
-      "id": 334,
+      "id": "334",
       "familyId": 5,
       "rankId": 5,
       "name": "Vulcanobombe",
@@ -8160,7 +8160,7 @@
       "xp": 0
     },
     {
-      "id": 335,
+      "id": "335",
       "familyId": 5,
       "rankId": 5,
       "name": "Obstructueur",
@@ -8184,7 +8184,7 @@
       "xp": 0
     },
     {
-      "id": 336,
+      "id": "336",
       "familyId": 5,
       "rankId": 6,
       "name": "Bambouligan",
@@ -8208,7 +8208,7 @@
       "xp": 0
     },
     {
-      "id": 337,
+      "id": "337",
       "familyId": 5,
       "rankId": 6,
       "name": "Brûle-pourprin",
@@ -8232,7 +8232,7 @@
       "xp": 0
     },
     {
-      "id": 338,
+      "id": "338",
       "familyId": 5,
       "rankId": 6,
       "name": "Mécanœuf dur",
@@ -8256,7 +8256,7 @@
       "xp": 0
     },
     {
-      "id": 339,
+      "id": "339",
       "familyId": 5,
       "rankId": 6,
       "name": "Phix",
@@ -8280,7 +8280,7 @@
       "xp": 0
     },
     {
-      "id": 340,
+      "id": "340",
       "familyId": 5,
       "rankId": 6,
       "name": "Golem",
@@ -8304,7 +8304,7 @@
       "xp": 0
     },
     {
-      "id": 341,
+      "id": "341",
       "familyId": 5,
       "rankId": 6,
       "name": "Alarmure",
@@ -8328,7 +8328,7 @@
       "xp": 0
     },
     {
-      "id": 342,
+      "id": "342",
       "familyId": 5,
       "rankId": 6,
       "name": "Viscaire",
@@ -8352,7 +8352,7 @@
       "xp": 0
     },
     {
-      "id": 343,
+      "id": "343",
       "familyId": 5,
       "rankId": 6,
       "name": "Yépire",
@@ -8376,7 +8376,7 @@
       "xp": 0
     },
     {
-      "id": 344,
+      "id": "344",
       "familyId": 5,
       "rankId": 6,
       "name": "Puissanfond",
@@ -8400,7 +8400,7 @@
       "xp": 0
     },
     {
-      "id": 345,
+      "id": "345",
       "familyId": 5,
       "rankId": 6,
       "name": "A3G15",
@@ -8424,7 +8424,7 @@
       "xp": 0
     },
     {
-      "id": 346,
+      "id": "346",
       "familyId": 5,
       "rankId": 6,
       "name": "Chienfernal enragé",
@@ -8448,7 +8448,7 @@
       "xp": 0
     },
     {
-      "id": 347,
+      "id": "347",
       "familyId": 5,
       "rankId": 7,
       "name": "Mékanotoké",
@@ -8472,7 +8472,7 @@
       "xp": 0
     },
     {
-      "id": 348,
+      "id": "348",
       "familyId": 5,
       "rankId": 7,
       "name": "Tauminator",
@@ -8496,7 +8496,7 @@
       "xp": 0
     },
     {
-      "id": 349,
+      "id": "349",
       "familyId": 5,
       "rankId": 7,
       "name": "Mastodoré",
@@ -8520,7 +8520,7 @@
       "xp": 0
     },
     {
-      "id": 350,
+      "id": "350",
       "familyId": 5,
       "rankId": 7,
       "name": "Boîte de pandore",
@@ -8544,7 +8544,7 @@
       "xp": 0
     },
     {
-      "id": 351,
+      "id": "351",
       "familyId": 5,
       "rankId": 8,
       "name": "Mékanocinglé",
@@ -8568,7 +8568,7 @@
       "xp": 0
     },
     {
-      "id": 352,
+      "id": "352",
       "familyId": 6,
       "rankId": 1,
       "name": "Clindœil",
@@ -8592,7 +8592,7 @@
       "xp": 0
     },
     {
-      "id": 353,
+      "id": "353",
       "familyId": 6,
       "rankId": 1,
       "name": "Gremlin",
@@ -8616,7 +8616,7 @@
       "xp": 0
     },
     {
-      "id": 354,
+      "id": "354",
       "familyId": 6,
       "rankId": 1,
       "name": "Bouclieux",
@@ -8640,7 +8640,7 @@
       "xp": 0
     },
     {
-      "id": 355,
+      "id": "355",
       "familyId": 6,
       "rankId": 1,
       "name": "Vampivol",
@@ -8664,7 +8664,7 @@
       "xp": 0
     },
     {
-      "id": 356,
+      "id": "356",
       "familyId": 6,
       "rankId": 1,
       "name": "Sorcimol",
@@ -8688,7 +8688,7 @@
       "xp": 0
     },
     {
-      "id": 357,
+      "id": "357",
       "familyId": 6,
       "rankId": 1,
       "name": "Chérubus",
@@ -8712,7 +8712,7 @@
       "xp": 0
     },
     {
-      "id": 358,
+      "id": "358",
       "familyId": 6,
       "rankId": 1,
       "name": "Fée brile",
@@ -8736,7 +8736,7 @@
       "xp": 0
     },
     {
-      "id": 359,
+      "id": "359",
       "familyId": 6,
       "rankId": 1,
       "name": "Luna-tique",
@@ -8760,7 +8760,7 @@
       "xp": 0
     },
     {
-      "id": 360,
+      "id": "360",
       "familyId": 6,
       "rankId": 1,
       "name": "Sanguini vache",
@@ -8784,7 +8784,7 @@
       "xp": 0
     },
     {
-      "id": 361,
+      "id": "361",
       "familyId": 6,
       "rankId": 1,
       "name": "Bisebave",
@@ -8808,7 +8808,7 @@
       "xp": 0
     },
     {
-      "id": 362,
+      "id": "362",
       "familyId": 6,
       "rankId": 1,
       "name": "Archer vert",
@@ -8832,7 +8832,7 @@
       "xp": 0
     },
     {
-      "id": 363,
+      "id": "363",
       "familyId": 6,
       "rankId": 2,
       "name": "Démonius",
@@ -8856,7 +8856,7 @@
       "xp": 0
     },
     {
-      "id": 364,
+      "id": "364",
       "familyId": 6,
       "rankId": 2,
       "name": "Nébulogénie",
@@ -8880,7 +8880,7 @@
       "xp": 0
     },
     {
-      "id": 365,
+      "id": "365",
       "familyId": 6,
       "rankId": 2,
       "name": "Suce-sang",
@@ -8904,7 +8904,7 @@
       "xp": 0
     },
     {
-      "id": 366,
+      "id": "366",
       "familyId": 6,
       "rankId": 2,
       "name": "Bourreau",
@@ -8928,7 +8928,7 @@
       "xp": 0
     },
     {
-      "id": 367,
+      "id": "367",
       "familyId": 6,
       "rankId": 2,
       "name": "Marcagicien",
@@ -8952,7 +8952,7 @@
       "xp": 0
     },
     {
-      "id": 368,
+      "id": "368",
       "familyId": 6,
       "rankId": 2,
       "name": "Biglœil",
@@ -8976,7 +8976,7 @@
       "xp": 0
     },
     {
-      "id": 369,
+      "id": "369",
       "familyId": 6,
       "rankId": 2,
       "name": "Démon du dessert",
@@ -9000,7 +9000,7 @@
       "xp": 0
     },
     {
-      "id": 370,
+      "id": "370",
       "familyId": 6,
       "rankId": 2,
       "name": "Diable dansant",
@@ -9024,7 +9024,7 @@
       "xp": 0
     },
     {
-      "id": 371,
+      "id": "371",
       "familyId": 6,
       "rankId": 2,
       "name": "Diablotin",
@@ -9048,7 +9048,7 @@
       "xp": 0
     },
     {
-      "id": 372,
+      "id": "372",
       "familyId": 6,
       "rankId": 2,
       "name": "Sirénien",
@@ -9072,7 +9072,7 @@
       "xp": 0
     },
     {
-      "id": 373,
+      "id": "373",
       "familyId": 6,
       "rankId": 2,
       "name": "Cannoniais",
@@ -9096,7 +9096,7 @@
       "xp": 0
     },
     {
-      "id": 374,
+      "id": "374",
       "familyId": 6,
       "rankId": 3,
       "name": "Bouledogre",
@@ -9120,7 +9120,7 @@
       "xp": 0
     },
     {
-      "id": 375,
+      "id": "375",
       "familyId": 6,
       "rankId": 3,
       "name": "Magimol",
@@ -9144,7 +9144,7 @@
       "xp": 0
     },
     {
-      "id": 376,
+      "id": "376",
       "familyId": 6,
       "rankId": 3,
       "name": "Cyclope",
@@ -9168,7 +9168,7 @@
       "xp": 0
     },
     {
-      "id": 377,
+      "id": "377",
       "familyId": 6,
       "rankId": 3,
       "name": "Déhanchard",
@@ -9192,7 +9192,7 @@
       "xp": 0
     },
     {
-      "id": 378,
+      "id": "378",
       "familyId": 6,
       "rankId": 3,
       "name": "Mastoque",
@@ -9216,7 +9216,7 @@
       "xp": 0
     },
     {
-      "id": 379,
+      "id": "379",
       "familyId": 6,
       "rankId": 3,
       "name": "Matœil",
@@ -9240,7 +9240,7 @@
       "xp": 0
     },
     {
-      "id": 380,
+      "id": "380",
       "familyId": 6,
       "rankId": 3,
       "name": "Dardeur",
@@ -9264,7 +9264,7 @@
       "xp": 0
     },
     {
-      "id": 381,
+      "id": "381",
       "familyId": 6,
       "rankId": 3,
       "name": "Fée lée",
@@ -9288,7 +9288,7 @@
       "xp": 0
     },
     {
-      "id": 382,
+      "id": "382",
       "familyId": 6,
       "rankId": 3,
       "name": "Byleth",
@@ -9312,7 +9312,7 @@
       "xp": 0
     },
     {
-      "id": 383,
+      "id": "383",
       "familyId": 6,
       "rankId": 3,
       "name": "Vampivorace",
@@ -9336,7 +9336,7 @@
       "xp": 0
     },
     {
-      "id": 384,
+      "id": "384",
       "familyId": 6,
       "rankId": 4,
       "name": "Griffon",
@@ -9360,7 +9360,7 @@
       "xp": 0
     },
     {
-      "id": 385,
+      "id": "385",
       "familyId": 6,
       "rankId": 4,
       "name": "Hypothermiox",
@@ -9384,7 +9384,7 @@
       "xp": 0
     },
     {
-      "id": 386,
+      "id": "386",
       "familyId": 6,
       "rankId": 4,
       "name": "Silvapithèque",
@@ -9408,7 +9408,7 @@
       "xp": 0
     },
     {
-      "id": 387,
+      "id": "387",
       "familyId": 6,
       "rankId": 4,
       "name": "Sbire de Psaro",
@@ -9432,7 +9432,7 @@
       "xp": 0
     },
     {
-      "id": 388,
+      "id": "388",
       "familyId": 6,
       "rankId": 4,
       "name": "Lèchebave",
@@ -9456,7 +9456,7 @@
       "xp": 0
     },
     {
-      "id": 389,
+      "id": "389",
       "familyId": 6,
       "rankId": 4,
       "name": "Glargouille",
@@ -9480,7 +9480,7 @@
       "xp": 0
     },
     {
-      "id": 390,
+      "id": "390",
       "familyId": 6,
       "rankId": 4,
       "name": "Chef troll",
@@ -9504,7 +9504,7 @@
       "xp": 0
     },
     {
-      "id": 391,
+      "id": "391",
       "familyId": 6,
       "rankId": 4,
       "name": "Mini démon",
@@ -9528,7 +9528,7 @@
       "xp": 0
     },
     {
-      "id": 392,
+      "id": "392",
       "familyId": 6,
       "rankId": 4,
       "name": "Chevalier errant",
@@ -9552,7 +9552,7 @@
       "xp": 0
     },
     {
-      "id": 393,
+      "id": "393",
       "familyId": 6,
       "rankId": 4,
       "name": "Cumulogénie",
@@ -9576,7 +9576,7 @@
       "xp": 0
     },
     {
-      "id": 394,
+      "id": "394",
       "familyId": 6,
       "rankId": 5,
       "name": "Belzébik",
@@ -9600,7 +9600,7 @@
       "xp": 0
     },
     {
-      "id": 395,
+      "id": "395",
       "familyId": 6,
       "rankId": 5,
       "name": "Grand faucheur",
@@ -9624,7 +9624,7 @@
       "xp": 0
     },
     {
-      "id": 396,
+      "id": "396",
       "familyId": 6,
       "rankId": 5,
       "name": "Troublosaure",
@@ -9648,7 +9648,7 @@
       "xp": 0
     },
     {
-      "id": 397,
+      "id": "397",
       "familyId": 6,
       "rankId": 5,
       "name": "Titemps",
@@ -9672,7 +9672,7 @@
       "xp": 0
     },
     {
-      "id": 398,
+      "id": "398",
       "familyId": 6,
       "rankId": 5,
       "name": "Vudœil",
@@ -9696,7 +9696,7 @@
       "xp": 0
     },
     {
-      "id": 399,
+      "id": "399",
       "familyId": 6,
       "rankId": 5,
       "name": "Fléogre",
@@ -9720,7 +9720,7 @@
       "xp": 0
     },
     {
-      "id": 400,
+      "id": "400",
       "familyId": 6,
       "rankId": 5,
       "name": "Vampivolle",
@@ -9744,7 +9744,7 @@
       "xp": 0
     },
     {
-      "id": 401,
+      "id": "401",
       "familyId": 6,
       "rankId": 5,
       "name": "Togre",
@@ -9768,7 +9768,7 @@
       "xp": 0
     },
     {
-      "id": 402,
+      "id": "402",
       "familyId": 6,
       "rankId": 5,
       "name": "Sire Rosegarde",
@@ -9792,7 +9792,7 @@
       "xp": 0
     },
     {
-      "id": 403,
+      "id": "403",
       "familyId": 6,
       "rankId": 5,
       "name": "Casse-caboche",
@@ -9816,7 +9816,7 @@
       "xp": 0
     },
     {
-      "id": 404,
+      "id": "404",
       "familyId": 6,
       "rankId": 5,
       "name": "Frappe-capuche",
@@ -9840,7 +9840,7 @@
       "xp": 0
     },
     {
-      "id": 405,
+      "id": "405",
       "familyId": 6,
       "rankId": 6,
       "name": "Archidémon",
@@ -9864,7 +9864,7 @@
       "xp": 0
     },
     {
-      "id": 406,
+      "id": "406",
       "familyId": 6,
       "rankId": 6,
       "name": "Manipulatueur",
@@ -9888,7 +9888,7 @@
       "xp": 0
     },
     {
-      "id": 407,
+      "id": "407",
       "familyId": 6,
       "rankId": 6,
       "name": "Cyclomage",
@@ -9912,7 +9912,7 @@
       "xp": 0
     },
     {
-      "id": 408,
+      "id": "408",
       "familyId": 6,
       "rankId": 6,
       "name": "Bastonnier",
@@ -9936,7 +9936,7 @@
       "xp": 0
     },
     {
-      "id": 409,
+      "id": "409",
       "familyId": 6,
       "rankId": 6,
       "name": "Géant",
@@ -9960,7 +9960,7 @@
       "xp": 0
     },
     {
-      "id": 410,
+      "id": "410",
       "familyId": 6,
       "rankId": 6,
       "name": "Grobouffon",
@@ -9984,7 +9984,7 @@
       "xp": 0
     },
     {
-      "id": 411,
+      "id": "411",
       "familyId": 6,
       "rankId": 6,
       "name": "Chiron",
@@ -10008,7 +10008,7 @@
       "xp": 0
     },
     {
-      "id": 412,
+      "id": "412",
       "familyId": 6,
       "rankId": 6,
       "name": "Gigatroll",
@@ -10032,7 +10032,7 @@
       "xp": 0
     },
     {
-      "id": 413,
+      "id": "413",
       "familyId": 6,
       "rankId": 6,
       "name": "Grrrgouille",
@@ -10056,7 +10056,7 @@
       "xp": 0
     },
     {
-      "id": 414,
+      "id": "414",
       "familyId": 6,
       "rankId": 6,
       "name": "Hyperanémox",
@@ -10080,7 +10080,7 @@
       "xp": 0
     },
     {
-      "id": 415,
+      "id": "415",
       "familyId": 6,
       "rankId": 7,
       "name": "Atlas",
@@ -10104,7 +10104,7 @@
       "xp": 0
     },
     {
-      "id": 416,
+      "id": "416",
       "familyId": 6,
       "rankId": 7,
       "name": "Pruslas",
@@ -10128,7 +10128,7 @@
       "xp": 0
     },
     {
-      "id": 417,
+      "id": "417",
       "familyId": 6,
       "rankId": 7,
       "name": "Général Mac Léo",
@@ -10152,7 +10152,7 @@
       "xp": 0
     },
     {
-      "id": 418,
+      "id": "418",
       "familyId": 6,
       "rankId": 7,
       "name": "Général Mac Hulotte",
@@ -10176,7 +10176,7 @@
       "xp": 0
     },
     {
-      "id": 419,
+      "id": "419",
       "familyId": 6,
       "rankId": 7,
       "name": "Général Mac Assin",
@@ -10200,7 +10200,7 @@
       "xp": 0
     },
     {
-      "id": 420,
+      "id": "420",
       "familyId": 6,
       "rankId": 7,
       "name": "Chevalier atterrant",
@@ -10224,7 +10224,7 @@
       "xp": 0
     },
     {
-      "id": 421,
+      "id": "421",
       "familyId": 6,
       "rankId": 7,
       "name": "Vicaire délétère",
@@ -10248,7 +10248,7 @@
       "xp": 0
     },
     {
-      "id": 422,
+      "id": "422",
       "familyId": 6,
       "rankId": 7,
       "name": "Pazuzu",
@@ -10272,7 +10272,7 @@
       "xp": 0
     },
     {
-      "id": 423,
+      "id": "423",
       "familyId": 6,
       "rankId": 7,
       "name": "Dickenz",
@@ -10296,7 +10296,7 @@
       "xp": 0
     },
     {
-      "id": 424,
+      "id": "424",
       "familyId": 6,
       "rankId": 7,
       "name": "Bélial",
@@ -10320,7 +10320,7 @@
       "xp": 0
     },
     {
-      "id": 425,
+      "id": "425",
       "familyId": 6,
       "rankId": 7,
       "name": "Barbatos",
@@ -10344,7 +10344,7 @@
       "xp": 0
     },
     {
-      "id": 426,
+      "id": "426",
       "familyId": 6,
       "rankId": 8,
       "name": "Aamon",
@@ -10368,7 +10368,7 @@
       "xp": 0
     },
     {
-      "id": 427,
+      "id": "427",
       "familyId": 6,
       "rankId": 8,
       "name": "Scion de l'Ombre",
@@ -10392,7 +10392,7 @@
       "xp": 0
     },
     {
-      "id": 428,
+      "id": "428",
       "familyId": 7,
       "rankId": 1,
       "name": "Zombeagle",
@@ -10416,7 +10416,7 @@
       "xp": 0
     },
     {
-      "id": 429,
+      "id": "429",
       "familyId": 7,
       "rankId": 1,
       "name": "Champigoule",
@@ -10440,7 +10440,7 @@
       "xp": 0
     },
     {
-      "id": 430,
+      "id": "430",
       "familyId": 7,
       "rankId": 1,
       "name": "Tristecire",
@@ -10464,7 +10464,7 @@
       "xp": 0
     },
     {
-      "id": 431,
+      "id": "431",
       "familyId": 7,
       "rankId": 1,
       "name": "Squelette",
@@ -10488,7 +10488,7 @@
       "xp": 0
     },
     {
-      "id": 432,
+      "id": "432",
       "familyId": 7,
       "rankId": 1,
       "name": "Souche louche",
@@ -10512,7 +10512,7 @@
       "xp": 0
     },
     {
-      "id": 433,
+      "id": "433",
       "familyId": 7,
       "rankId": 1,
       "name": "Fantôme",
@@ -10536,7 +10536,7 @@
       "xp": 0
     },
     {
-      "id": 434,
+      "id": "434",
       "familyId": 7,
       "rankId": 1,
       "name": "Bottœil",
@@ -10560,7 +10560,7 @@
       "xp": 0
     },
     {
-      "id": 435,
+      "id": "435",
       "familyId": 7,
       "rankId": 1,
       "name": "Mallusque",
@@ -10584,7 +10584,7 @@
       "xp": 0
     },
     {
-      "id": 436,
+      "id": "436",
       "familyId": 7,
       "rankId": 1,
       "name": "Bat-beurre",
@@ -10608,7 +10608,7 @@
       "xp": 0
     },
     {
-      "id": 437,
+      "id": "437",
       "familyId": 7,
       "rankId": 1,
       "name": "Feu follet",
@@ -10632,7 +10632,7 @@
       "xp": 0
     },
     {
-      "id": 438,
+      "id": "438",
       "familyId": 7,
       "rankId": 2,
       "name": "Mauvaise étoile",
@@ -10656,7 +10656,7 @@
       "xp": 0
     },
     {
-      "id": 439,
+      "id": "439",
       "familyId": 7,
       "rankId": 2,
       "name": "Mort-vivant",
@@ -10680,7 +10680,7 @@
       "xp": 0
     },
     {
-      "id": 440,
+      "id": "440",
       "familyId": 7,
       "rankId": 2,
       "name": "Armure errante",
@@ -10704,7 +10704,7 @@
       "xp": 0
     },
     {
-      "id": 441,
+      "id": "441",
       "familyId": 7,
       "rankId": 2,
       "name": "Ombre",
@@ -10728,7 +10728,7 @@
       "xp": 0
     },
     {
-      "id": 442,
+      "id": "442",
       "familyId": 7,
       "rankId": 2,
       "name": "Cavale-crâne",
@@ -10752,7 +10752,7 @@
       "xp": 0
     },
     {
-      "id": 443,
+      "id": "443",
       "familyId": 7,
       "rankId": 2,
       "name": "Embûcheur",
@@ -10776,7 +10776,7 @@
       "xp": 0
     },
     {
-      "id": 444,
+      "id": "444",
       "familyId": 7,
       "rankId": 2,
       "name": "Main de boue",
@@ -10800,7 +10800,7 @@
       "xp": 0
     },
     {
-      "id": 445,
+      "id": "445",
       "familyId": 7,
       "rankId": 2,
       "name": "Momignon",
@@ -10824,7 +10824,7 @@
       "xp": 0
     },
     {
-      "id": 446,
+      "id": "446",
       "familyId": 7,
       "rankId": 2,
       "name": "Ligoterreur",
@@ -10848,7 +10848,7 @@
       "xp": 0
     },
     {
-      "id": 447,
+      "id": "447",
       "familyId": 7,
       "rankId": 2,
       "name": "Royalgue",
@@ -10872,7 +10872,7 @@
       "xp": 0
     },
     {
-      "id": 448,
+      "id": "448",
       "familyId": 7,
       "rankId": 3,
       "name": "Bleu follet",
@@ -10896,7 +10896,7 @@
       "xp": 0
     },
     {
-      "id": 449,
+      "id": "449",
       "familyId": 7,
       "rankId": 3,
       "name": "Zombinator",
@@ -10920,7 +10920,7 @@
       "xp": 0
     },
     {
-      "id": 450,
+      "id": "450",
       "familyId": 7,
       "rankId": 3,
       "name": "Soldat squelette",
@@ -10944,7 +10944,7 @@
       "xp": 0
     },
     {
-      "id": 451,
+      "id": "451",
       "familyId": 7,
       "rankId": 3,
       "name": "Tronc-bine",
@@ -10968,7 +10968,7 @@
       "xp": 0
     },
     {
-      "id": 452,
+      "id": "452",
       "familyId": 7,
       "rankId": 3,
       "name": "Caboss",
@@ -10992,7 +10992,7 @@
       "xp": 0
     },
     {
-      "id": 453,
+      "id": "453",
       "familyId": 7,
       "rankId": 3,
       "name": "Mortchestre",
@@ -11016,7 +11016,7 @@
       "xp": 0
     },
     {
-      "id": 454,
+      "id": "454",
       "familyId": 7,
       "rankId": 3,
       "name": "Salivard",
@@ -11040,7 +11040,7 @@
       "xp": 0
     },
     {
-      "id": 455,
+      "id": "455",
       "familyId": 7,
       "rankId": 3,
       "name": "Escrimeur fantôme",
@@ -11064,7 +11064,7 @@
       "xp": 0
     },
     {
-      "id": 456,
+      "id": "456",
       "familyId": 7,
       "rankId": 3,
       "name": "Champitox",
@@ -11088,7 +11088,7 @@
       "xp": 0
     },
     {
-      "id": 457,
+      "id": "457",
       "familyId": 7,
       "rankId": 3,
       "name": "Feutocopieur",
@@ -11112,7 +11112,7 @@
       "xp": 0
     },
     {
-      "id": 458,
+      "id": "458",
       "familyId": 7,
       "rankId": 3,
       "name": "Poupiège",
@@ -11136,7 +11136,7 @@
       "xp": 0
     },
     {
-      "id": 459,
+      "id": "459",
       "familyId": 7,
       "rankId": 4,
       "name": "Grouillâme",
@@ -11160,7 +11160,7 @@
       "xp": 0
     },
     {
-      "id": 460,
+      "id": "460",
       "familyId": 7,
       "rankId": 4,
       "name": "Squelépéiste",
@@ -11184,7 +11184,7 @@
       "xp": 0
     },
     {
-      "id": 461,
+      "id": "461",
       "familyId": 7,
       "rankId": 4,
       "name": "Ténori",
@@ -11208,7 +11208,7 @@
       "xp": 0
     },
     {
-      "id": 462,
+      "id": "462",
       "familyId": 7,
       "rankId": 4,
       "name": "Bottœil nocturne",
@@ -11232,7 +11232,7 @@
       "xp": 0
     },
     {
-      "id": 463,
+      "id": "463",
       "familyId": 7,
       "rankId": 4,
       "name": "Âme en peine",
@@ -11256,7 +11256,7 @@
       "xp": 0
     },
     {
-      "id": 464,
+      "id": "464",
       "familyId": 7,
       "rankId": 4,
       "name": "Main sanglante",
@@ -11280,7 +11280,7 @@
       "xp": 0
     },
     {
-      "id": 465,
+      "id": "465",
       "familyId": 7,
       "rankId": 4,
       "name": "Outretombe",
@@ -11304,7 +11304,7 @@
       "xp": 0
     },
     {
-      "id": 466,
+      "id": "466",
       "familyId": 7,
       "rankId": 4,
       "name": "Cavalier fantôme",
@@ -11328,7 +11328,7 @@
       "xp": 0
     },
     {
-      "id": 467,
+      "id": "467",
       "familyId": 7,
       "rankId": 4,
       "name": "Tue-tête",
@@ -11352,7 +11352,7 @@
       "xp": 0
     },
     {
-      "id": 468,
+      "id": "468",
       "familyId": 7,
       "rankId": 4,
       "name": "Boumbone",
@@ -11376,7 +11376,7 @@
       "xp": 0
     },
     {
-      "id": 469,
+      "id": "469",
       "familyId": 7,
       "rankId": 4,
       "name": "Esprit tapeur",
@@ -11400,7 +11400,7 @@
       "xp": 0
     },
     {
-      "id": 470,
+      "id": "470",
       "familyId": 7,
       "rankId": 5,
       "name": "Arbomination",
@@ -11424,7 +11424,7 @@
       "xp": 0
     },
     {
-      "id": 471,
+      "id": "471",
       "familyId": 7,
       "rankId": 5,
       "name": "Ligotonnerre",
@@ -11448,7 +11448,7 @@
       "xp": 0
     },
     {
-      "id": 472,
+      "id": "472",
       "familyId": 7,
       "rankId": 5,
       "name": "Berserkerlette",
@@ -11472,7 +11472,7 @@
       "xp": 0
     },
     {
-      "id": 473,
+      "id": "473",
       "familyId": 7,
       "rankId": 5,
       "name": "Flageolaid",
@@ -11496,7 +11496,7 @@
       "xp": 0
     },
     {
-      "id": 474,
+      "id": "474",
       "familyId": 7,
       "rankId": 5,
       "name": "Épéiste fantôme",
@@ -11520,7 +11520,7 @@
       "xp": 0
     },
     {
-      "id": 475,
+      "id": "475",
       "familyId": 7,
       "rankId": 5,
       "name": "Décapitête",
@@ -11544,7 +11544,7 @@
       "xp": 0
     },
     {
-      "id": 476,
+      "id": "476",
       "familyId": 7,
       "rankId": 5,
       "name": "Squelméduse",
@@ -11568,7 +11568,7 @@
       "xp": 0
     },
     {
-      "id": 477,
+      "id": "477",
       "familyId": 7,
       "rankId": 5,
       "name": "Feurfadet",
@@ -11592,7 +11592,7 @@
       "xp": 0
     },
     {
-      "id": 478,
+      "id": "478",
       "familyId": 7,
       "rankId": 5,
       "name": "Seigneur malheur",
@@ -11616,7 +11616,7 @@
       "xp": 0
     },
     {
-      "id": 479,
+      "id": "479",
       "familyId": 7,
       "rankId": 5,
       "name": "Désosseur",
@@ -11640,7 +11640,7 @@
       "xp": 0
     },
     {
-      "id": 480,
+      "id": "480",
       "familyId": 7,
       "rankId": 5,
       "name": "Vert follet",
@@ -11664,7 +11664,7 @@
       "xp": 0
     },
     {
-      "id": 481,
+      "id": "481",
       "familyId": 7,
       "rankId": 6,
       "name": "Baron d'os",
@@ -11688,7 +11688,7 @@
       "xp": 0
     },
     {
-      "id": 482,
+      "id": "482",
       "familyId": 7,
       "rankId": 6,
       "name": "Dragos",
@@ -11712,7 +11712,7 @@
       "xp": 0
     },
     {
-      "id": 483,
+      "id": "483",
       "familyId": 7,
       "rankId": 6,
       "name": "Sméagoule",
@@ -11736,7 +11736,7 @@
       "xp": 0
     },
     {
-      "id": 484,
+      "id": "484",
       "familyId": 7,
       "rankId": 6,
       "name": "Squelétripe",
@@ -11760,7 +11760,7 @@
       "xp": 0
     },
     {
-      "id": 485,
+      "id": "485",
       "familyId": 7,
       "rankId": 6,
       "name": "Décapiteur",
@@ -11784,7 +11784,7 @@
       "xp": 0
     },
     {
-      "id": 486,
+      "id": "486",
       "familyId": 7,
       "rankId": 6,
       "name": "Décomposaure",
@@ -11808,7 +11808,7 @@
       "xp": 0
     },
     {
-      "id": 487,
+      "id": "487",
       "familyId": 7,
       "rankId": 6,
       "name": "Rejeton de l'enfer",
@@ -11832,7 +11832,7 @@
       "xp": 0
     },
     {
-      "id": 488,
+      "id": "488",
       "familyId": 7,
       "rankId": 6,
       "name": "Verctoplasme",
@@ -11856,7 +11856,7 @@
       "xp": 0
     },
     {
-      "id": 489,
+      "id": "489",
       "familyId": 7,
       "rankId": 6,
       "name": "Shivattak",
@@ -11880,7 +11880,7 @@
       "xp": 0
     },
     {
-      "id": 490,
+      "id": "490",
       "familyId": 7,
       "rankId": 6,
       "name": "Chiaravaggia",
@@ -11904,7 +11904,7 @@
       "xp": 0
     },
     {
-      "id": 491,
+      "id": "491",
       "familyId": 7,
       "rankId": 6,
       "name": "Roi maudit",
@@ -11928,7 +11928,7 @@
       "xp": 0
     },
     {
-      "id": 492,
+      "id": "492",
       "familyId": 7,
       "rankId": 7,
       "name": "Seigneur terreur",
@@ -11952,7 +11952,7 @@
       "xp": 0
     },
     {
-      "id": 493,
+      "id": "493",
       "familyId": 7,
       "rankId": 7,
       "name": "Gladiateur infernal",
@@ -11976,7 +11976,7 @@
       "xp": 0
     },
     {
-      "id": 494,
+      "id": "494",
       "familyId": 7,
       "rankId": 7,
       "name": "Orcus-pocus",
@@ -12000,7 +12000,7 @@
       "xp": 0
     },
     {
-      "id": 495,
+      "id": "495",
       "familyId": 7,
       "rankId": 7,
       "name": "Revenant",
@@ -12024,7 +12024,7 @@
       "xp": 0
     },
     {
-      "id": 496,
+      "id": "496",
       "familyId": 7,
       "rankId": 8,
       "name": "Os de Baramos",
@@ -12048,7 +12048,7 @@
       "xp": 0
     },
     {
-      "id": 497,
+      "id": "497",
       "familyId": 8,
       "rankId": 5,
       "name": "Chaperon vert",
@@ -12072,7 +12072,7 @@
       "xp": 0
     },
     {
-      "id": 498,
+      "id": "498",
       "familyId": 8,
       "rankId": 7,
       "name": "Baramos",
@@ -12096,7 +12096,7 @@
       "xp": 0
     },
     {
-      "id": 499,
+      "id": "499",
       "familyId": 8,
       "rankId": 7,
       "name": "Krystalinda",
@@ -12120,7 +12120,7 @@
       "xp": 0
     },
     {
-      "id": 500,
+      "id": "500",
       "familyId": 8,
       "rankId": 8,
       "name": "Rhaphtorne",
@@ -12144,7 +12144,7 @@
       "xp": 0
     },
     {
-      "id": 501,
+      "id": "501",
       "familyId": 8,
       "rankId": 8,
       "name": "Orgodémir",
@@ -12168,7 +12168,7 @@
       "xp": 0
     },
     {
-      "id": 502,
+      "id": "502",
       "familyId": 8,
       "rankId": 8,
       "name": "Erebos le Fou",
@@ -12192,7 +12192,7 @@
       "xp": 0
     },
     {
-      "id": 503,
+      "id": "503",
       "familyId": 8,
       "rankId": 8,
       "name": "Malroth",
@@ -12216,7 +12216,7 @@
       "xp": 0
     },
     {
-      "id": 504,
+      "id": "504",
       "familyId": 8,
       "rankId": 8,
       "name": "Kalasmos",
@@ -12240,7 +12240,7 @@
       "xp": 0
     },
     {
-      "id": 505,
+      "id": "505",
       "familyId": 8,
       "rankId": 8,
       "name": "Razban",
@@ -12264,7 +12264,7 @@
       "xp": 0
     },
     {
-      "id": 506,
+      "id": "506",
       "familyId": 8,
       "rankId": 8,
       "name": "Mortégor le seigneur des Ombres",
@@ -12288,7 +12288,7 @@
       "xp": 0
     },
     {
-      "id": 507,
+      "id": "507",
       "familyId": 8,
       "rankId": 8,
       "name": "Corvus",
@@ -12312,7 +12312,7 @@
       "xp": 0
     },
     {
-      "id": 508,
+      "id": "508",
       "familyId": 8,
       "rankId": 8,
       "name": "Mortamor",
@@ -12336,7 +12336,7 @@
       "xp": 0
     },
     {
-      "id": 509,
+      "id": "509",
       "familyId": 8,
       "rankId": 8,
       "name": "Psaro l'Exterminateur",
@@ -12360,7 +12360,7 @@
       "xp": 0
     },
     {
-      "id": 510,
+      "id": "510",
       "familyId": 8,
       "rankId": 8,
       "name": "Dhoulmagus",
@@ -12384,7 +12384,7 @@
       "xp": 0
     },
     {
-      "id": 511,
+      "id": "511",
       "familyId": 8,
       "rankId": 8,
       "name": "Kaos",
@@ -12408,7 +12408,7 @@
       "xp": 0
     },
     {
-      "id": 512,
+      "id": "512",
       "familyId": 8,
       "rankId": 8,
       "name": "Pilou",
@@ -12432,7 +12432,7 @@
       "xp": 0
     },
     {
-      "id": 513,
+      "id": "513",
       "familyId": 8,
       "rankId": 8,
       "name": "Jasper déchaîné",
@@ -12456,7 +12456,7 @@
       "xp": 0
     },
     {
-      "id": 514,
+      "id": "514",
       "familyId": 8,
       "rankId": 8,
       "name": "Nimzo",
@@ -12480,7 +12480,7 @@
       "xp": 0
     },
     {
-      "id": 515,
+      "id": "515",
       "familyId": 8,
       "rankId": 8,
       "name": "Meurtor",
@@ -12504,7 +12504,7 @@
       "xp": 0
     },
     {
-      "id": 516,
+      "id": "516",
       "familyId": 8,
       "rankId": 8,
       "name": "Infernal Nelgel",
@@ -12528,7 +12528,7 @@
       "xp": 0
     },
     {
-      "id": 517,
+      "id": "517",
       "familyId": 8,
       "rankId": 8,
       "name": "Doudouleur",
@@ -12552,7 +12552,7 @@
       "xp": 0
     },
     {
-      "id": 518,
+      "id": "518",
       "familyId": 8,
       "rankId": 8,
       "name": "Poupouille",
@@ -12576,7 +12576,7 @@
       "xp": 0
     },
     {
-      "id": 519,
+      "id": "519",
       "familyId": 8,
       "rankId": 9,
       "name": "Estark",
@@ -12600,7 +12600,7 @@
       "xp": 0
     },
     {
-      "id": 520,
+      "id": "520",
       "familyId": 8,
       "rankId": 9,
       "name": "Tout-puissant",
@@ -12624,7 +12624,7 @@
       "xp": 0
     },
     {
-      "id": 521,
+      "id": "521",
       "familyId": 8,
       "rankId": 9,
       "name": "Zoma",
@@ -12648,7 +12648,7 @@
       "xp": 0
     },
     {
-      "id": 522,
+      "id": "522",
       "familyId": 8,
       "rankId": 9,
       "name": "Nokturnus",
@@ -12672,7 +12672,7 @@
       "xp": 0
     },
     {
-      "id": 523,
+      "id": "523",
       "familyId": 8,
       "rankId": 9,
       "name": "Ramia",
@@ -12696,7 +12696,7 @@
       "xp": 0
     },
     {
-      "id": 524,
+      "id": "524",
       "familyId": 1,
       "rankId": 1,
       "name": "Triple burger",
@@ -12720,7 +12720,7 @@
       "xp": 0
     },
     {
-      "id": 525,
+      "id": "525",
       "familyId": 6,
       "rankId": 3,
       "name": "Démon McFlurry",
@@ -12744,7 +12744,7 @@
       "xp": 0
     },
     {
-      "id": 526,
+      "id": "526",
       "familyId": 5,
       "rankId": 4,
       "name": "Big Mac mimic",
