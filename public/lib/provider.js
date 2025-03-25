@@ -53,3 +53,24 @@ export async function getNumberOfMonsters() {
     NUMBER_OF_MONSTERS = monsters.length;
     return NUMBER_OF_MONSTERS;
 }
+
+export async function getParty() {
+    const response = await fetch(`${ENDPOINT}/party`);
+    return response.json();
+}
+
+export async function addMonsterToParty(monsterId) {
+    const response = await fetch(`${ENDPOINT}/party`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ monsterId }),
+    });
+    
+    if (!response.ok) {
+        throw new Error('ERR');
+    }
+    
+    return response.json();
+}

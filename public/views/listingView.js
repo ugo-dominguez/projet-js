@@ -1,5 +1,5 @@
-import { MONSTERS_PER_PAGE, MONSTERS_THUMB_PATH } from '../lib/config.js';
-import { getMonsters } from '../lib/provider.js';
+import { MONSTERS_PER_PAGE, MONSTERS_THUMB_PATH, MAX_IN_PARTY } from '../lib/config.js';
+import { getMonsters, getParty, addMonsterToParty } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
 import { detailsView } from './detailsView.js';
 import { GenericView } from './genericView.js';
@@ -15,6 +15,7 @@ class ListingView extends GenericView {
         this.monsters = [];
 
         window.currentPage = this.currentPage;
+        window.addToParty = this.addToParty.bind(this);
     }
 
     get renderedMonsters() {
@@ -25,6 +26,23 @@ class ListingView extends GenericView {
         }
 
         return this.monsters.slice((selectedPage - 1) * MONSTERS_PER_PAGE, selectedPage * MONSTERS_PER_PAGE);
+    }
+
+    async addToParty(monsterId) {
+        const party = await getParty();
+        
+        if (party.includes(monsterId)) {
+            alert("Ce monstre est déjà dans l'équipe !");
+            return;
+        }
+
+        if (party.length >= MAX_IN_PARTY) {
+            alert('Votre équipe est complete !.');
+            return;
+        }
+
+        await addMonsterToParty(monsterId);
+        alert(`Le monstre a été ajouté à votre équipe !`);
     }
 
     async handleRouting(hash, params) {
@@ -77,11 +95,16 @@ class ListingView extends GenericView {
         const monsterListElement = document.getElementById('monster-list');
         monsterListElement.innerHTML = displayedMonsters.map(p => `
             <div id=${p.monster_id} class="monster-card" onclick="setHashParam('detail', ${p.monster_id})">
-                <div class='image-container'>
-                    <div></div>
-                    <img src="${MONSTERS_THUMB_PATH + p.identifier}-thumb.png" alt="${p.name}">
+                <div class="monster-card-content">
+                    <div class='image-container'>
+                        <div></div>
+                        <img src="${MONSTERS_THUMB_PATH + p.identifier}-thumb.png" alt="${p.name}">
+                    </div>
+                    <h2>${p.name}</h2>
                 </div>
-                <h2>${p.name}</h2>
+                <div class='add-button' onclick="addToParty(${p.monster_id})">
+                    <span class="material-symbols-rounded">add</span>
+                </div>
             </div>`
         ).join('');
     }

@@ -107,6 +107,7 @@ main {
     border: 2px solid #aca899;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     padding: 12px;
@@ -123,6 +124,12 @@ main {
 
 .monster-card:hover img {
     transform: scale(1.1);
+}
+
+.monster-card-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .monster-card .image-container {
@@ -143,6 +150,16 @@ main {
 
 .monster-card h2 {
     color: #665418;
+}
+
+.monster-card span {
+    background: linear-gradient(180deg, #fdfdf9, #fef3d8);
+    border: 2px solid #aca899;
+    border-radius: 10px;
+    color: #665418;
+    padding: 20px;
+    margin: 4px;
+    font-size: 2.5em;
 }
 
 #details>div {
