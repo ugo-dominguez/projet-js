@@ -1,4 +1,4 @@
-import { ENDPOINT } from './config.js';
+import { ENDPOINT, MAX_IN_PARTY } from './config.js';
 
 
 export async function getMonsters() {
@@ -7,7 +7,7 @@ export async function getMonsters() {
 }
 
 export async function getMonster(id) {
-    const response = await fetch(`${ENDPOINT}/monsters?monster_id=${id}`);
+    const response = await fetch(`${ENDPOINT}/monsters?id=${id}`);
     const data = await response.json();
     return data[0];
 }
@@ -18,7 +18,7 @@ export async function getFamilies() {
 }
 
 export async function getFamily(id) {
-    const response = await fetch(`${ENDPOINT}/families?family_id=${id}`);
+    const response = await fetch(`${ENDPOINT}/families?id=${id}`);
     const data = await response.json();
     return data[0];
 }
@@ -29,18 +29,18 @@ export async function getRanks() {
 }
 
 export async function getRank(id) {
-    const response = await fetch(`${ENDPOINT}/ranks?rank_id=${id}`);
+    const response = await fetch(`${ENDPOINT}/ranks?id=${id}`);
     const data = await response.json();
     return data[0];
 }
 
 export async function getMonstersbyFamily(familyId) {
-    const response = await fetch(`${ENDPOINT}/monsters?family_id=${familyId}`);
+    const response = await fetch(`${ENDPOINT}/monsters?id=${familyId}`);
     return response.json();
 }
 
 export async function getMonstersbyRank(rankId) {
-    const response = await fetch(`${ENDPOINT}/monsters?rank_id=${rankId}`);
+    const response = await fetch(`${ENDPOINT}/monsters?id=${rankId}`);
     return response.json();
 }
 
@@ -60,17 +60,24 @@ export async function getParty() {
 }
 
 export async function addMonsterToParty(monsterId) {
+    const currentParty = await getParty() || [];
+    
+    if (currentParty.some(monster => monster.id === monsterId)) {
+        return alert("Ce monstre est déjà présent dans l'équipe !");
+    }
+    
+    if (currentParty.length >= MAX_IN_PARTY) {
+        return alert("L'équipe est complète !");
+    }
+    
     const response = await fetch(`${ENDPOINT}/party`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ monsterId }),
+        body: JSON.stringify({ id: monsterId }),
     });
-    
-    if (!response.ok) {
-        throw new Error('ERR');
-    }
-    
+
+    alert("Le monstre a été ajouté à l'équipe !");
     return response.json();
 }
