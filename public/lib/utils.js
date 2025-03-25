@@ -1,16 +1,33 @@
 export function getHashAndParams() {
-    let [hashPart, paramString] = window.location.hash.split('?');
-    let hash = hashPart.replace('#', '');
-    let params = new URLSearchParams(paramString || '');
-    return { hash, params };
+    // Get the full hash, remove the initial '#'
+    let fullHash = window.location.hash.replace(/^#/, '');
+    
+    // Split the hash into path and params
+    const [path, paramString] = fullHash.split('?');
+    
+    // Create clean parameters
+    const params = new URLSearchParams(paramString || '');
+    
+    return { 
+        hash: path, 
+        params 
+    };
 }
 
 export function setHashParam(key, value) {
     let { hash, params } = getHashAndParams();
-    params.set(key, value);
-
-    let newHash = hash + (params.toString() ? `?${params.toString()}` : '');
-
+    
+    // Remove existing parameters with the same key
+    params.delete(key);
+    
+    // Add new parameter
+    params.append(key, value);
+    
+    // Construct clean hash
+    const newHash = params.toString() 
+        ? `#${hash}?${params.toString()}` 
+        : `#${hash}`;
+    
     window.location.hash = newHash;
 }
 
@@ -21,14 +38,22 @@ export function getHashParam(key) {
 
 export function removeHashParam(key) {
     let { hash, params } = getHashAndParams();
+    
+    // Remove the specific parameter
     params.delete(key);
-
-    let newHash = hash + (params.toString() ? `?${params.toString()}` : '');
-
+    
+    // Construct clean hash
+    const newHash = params.toString() 
+        ? `#${hash}?${params.toString()}` 
+        : `#${hash}`;
+    
     window.location.hash = newHash;
 }
 
-window.getHashAndParams = getHashAndParams;
-window.setHashParam = setHashParam;
-window.getHashParam = getHashParam;
-window.removeHashParam = removeHashParam;
+// Safely assign to window to maintain existing functionality
+if (typeof window !== 'undefined') {
+    window.getHashAndParams = getHashAndParams;
+    window.setHashParam = setHashParam;
+    window.getHashParam = getHashParam;
+    window.removeHashParam = removeHashParam;
+}
