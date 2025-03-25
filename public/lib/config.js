@@ -5,3 +5,4 @@ export const MONSTERS_MODELS_PATH = './assets/images/monsters_models/';
 export const FAMILIES_ICONS_PATH = './assets/images/families_icons/';
 export const STATS_ICONS_PATH = './assets/images/stats_icons';
 export const STATS = ['hp', 'mp', 'att', 'def', 'agi', 'wis'];
+export const MAX_IN_PARTY = 4;

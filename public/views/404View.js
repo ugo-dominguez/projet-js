@@ -18,7 +18,7 @@ class NotFoundView extends GenericView {
             <div class="title" id="not-found">
                 <h1>404</h1>
                 <p>La page demandée n'existe pas.</p>
-                <a onclick="location.hash='listing';">Retour à l'accueil</a>
+                <a class="error-404" onclick="location.hash='listing';">Retour à l'accueil</a>
             </div>
         `;
     }

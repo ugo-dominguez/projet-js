@@ -51,10 +51,19 @@ main {
     display: flex;
 }
 
+#app {
+    text-align: center;
+    width: 100%;
+}
+
 .title {
     text-align: center;
     font-size: 2.5rem;
     color: #665418;
+}
+
+.error-404 {
+    cursor: pointer;
 }
 
 .page-numbers {
@@ -97,32 +106,39 @@ main {
     background: linear-gradient(180deg, #fdfdf9, #fef3d8);
     border: 2px solid #aca899;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     padding: 12px;
     margin: 20px;
     max-height: 200px;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: all 0.2s;
     animation: cardEntrance 0.6s ease-out forwards;
 }
 
-.monster-card:hover {
+.monster-card:hover:not(:has(.add-button:hover)) {
     outline: 4px solid #4CF8F1;
 }
 
-.monster-card:hover img {
+.monster-card:hover:not(:has(.add-button:hover)) img {
     transform: scale(1.1);
+}
+
+.monster-card-content {
+    display: flex;
+    gap: 25px;
 }
 
 .monster-card .image-container {
     overflow: hidden;
     border-radius: 10px;
-    margin-right: 10px;
 }
 
 .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -134,6 +150,28 @@ main {
 
 .monster-card h2 {
     color: #665418;
+}
+
+.monster-card .add-button {
+    background: linear-gradient(180deg, #fdfdf9, #fef3d8);
+    border: 2px solid #aca899;
+    border-radius: 10px;
+    color: #665418;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+.add-button span {
+    font-size: 2.5em;
+}
+
+.add-button:hover {
+    outline: 4px solid #4CF8F1;
+    color: #4CF8F1;
 }
 
 #details>div {

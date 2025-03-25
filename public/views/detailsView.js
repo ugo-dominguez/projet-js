@@ -15,28 +15,24 @@ class DetailsView extends GenericView {
 
     async render(id) {
         const monster = await getMonster(id);
-        const family = await getFamily(monster.family_id);
-        const rank = await getRank(monster.rank_id);
+        const family = await getFamily(monster.familyId);
+        const rank = await getRank(monster.rankId);
         this.setTotalStats(monster, family);
 
         document.getElementById("details").innerHTML = `
             <div>
                 <span onclick="removeHashParam('detail');" class='close-button material-symbols-rounded'>close</span>
-                <img class="monster-img" src="${MONSTERS_MODELS_PATH + monster.monster_id}.jpg">
+                <img class="monster-img" src="${MONSTERS_MODELS_PATH + monster.id}.jpg">
                 
                 <section>
-                    <div class="interaction-section">
-                        
-                    </div>
-
                     <div class="infos">
-                        <h1>No. ${monster.monster_id} ${monster.name}</h1>
-                        <p>${monster.japanese_name}</p>
+                        <h1>No. ${monster.id} ${monster.name}</h1>
+                        <p>${monster.japaneseName}</p>
                     </div>
                     
                     <div class="infos">
                         <p>
-                            <span class="clickable-family" onclick="location.hash='family?familyId=${monster.family_id}'; window.scrollTo({top: 0, behavior: 'smooth'});">
+                            <span class="clickable-family" onclick="location.hash='family?id=${monster.familyId}'; window.scrollTo({top: 0, behavior: 'smooth'});">
                                 <img src="${FAMILIES_ICONS_PATH + family.identifier}.png">
                                 ${family.name}
                             </span>
