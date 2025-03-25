@@ -170,7 +170,7 @@ class GameView extends GenericView {
         this.currentView = view;
         this.render();
     }
-
+    
     async render() {
         const menu = await this.renderMenu();
         let view = '';
