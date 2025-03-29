@@ -34,6 +34,17 @@ export async function getRank(id) {
     return data[0];
 }
 
+export async function getItems() {
+    const response = await fetch(`${ENDPOINT}/items`);
+    return response.json();
+}
+
+export async function getItem(id) {
+    const response = await fetch(`${ENDPOINT}/items?id=${id}`);
+    const data = await response.json();
+    return data[0];
+}
+
 export async function getMonstersbyFamily(familyId) {
     const response = await fetch(`${ENDPOINT}/monsters?id=${familyId}`);
     return response.json();
@@ -79,5 +90,16 @@ export async function addMonsterToParty(monsterId) {
     });
 
     alert("Le monstre a été ajouté à l'équipe !");
+    return response.json();
+}
+
+export async function removeMonsterFromParty(monsterId) {
+    const response = await fetch(`${ENDPOINT}/party/${monsterId}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+
     return response.json();
 }
