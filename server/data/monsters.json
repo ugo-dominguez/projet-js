@@ -1,13 +1,10 @@
 {
   "party": [
     {
-      "id": 2
+      "id": 8
     },
     {
-      "id": 3
-    },
-    {
-      "id": 4
+      "id": 7
     },
     {
       "id": 1
@@ -12779,6 +12776,2161 @@
       },
       "level": 1,
       "xp": 0
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "name": "Strength Ring",
+      "identifier": "strength-ring",
+      "buyPrice": 1000,
+      "sellPrice": 100,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "2",
+      "name": "Strength Ring+",
+      "identifier": "strength-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "3",
+      "name": "Quick Ring",
+      "identifier": "quick-ring",
+      "buyPrice": 1000,
+      "sellPrice": 100,
+      "bonuses": {
+        "agi": 10
+      }
+    },
+    {
+      "id": "4",
+      "name": "Quick Ring+",
+      "identifier": "quick-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "agi": 20
+      }
+    },
+    {
+      "id": "5",
+      "name": "Ring of Wisdom",
+      "identifier": "ring-of-wisdom",
+      "buyPrice": 1000,
+      "sellPrice": 100,
+      "bonuses": {
+        "wis": 10
+      }
+    },
+    {
+      "id": "6",
+      "name": "Ring of Wisdom+",
+      "identifier": "ring-of-wisdom-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "wis": 20
+      }
+    },
+    {
+      "id": "7",
+      "name": "Amulet of Immunity",
+      "identifier": "amulet-of-immunity",
+      "buyPrice": 2000,
+      "sellPrice": 200,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "8",
+      "name": "Ring of Protection",
+      "identifier": "ring-of-protection",
+      "buyPrice": 1000,
+      "sellPrice": 100,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "9",
+      "name": "Seer's Ring+",
+      "identifier": "seers-ring+",
+      "buyPrice": 12000,
+      "sellPrice": 1200,
+      "bonuses": {
+        "mp": 30,
+        "agi": 40
+      }
+    },
+    {
+      "id": "10",
+      "name": "Witch's Brooch",
+      "identifier": "witchs-brooch",
+      "buyPrice": 2000,
+      "sellPrice": 200,
+      "bonuses": {
+        "mp": 10
+      }
+    },
+    {
+      "id": "11",
+      "name": "Amulet of Clarity",
+      "identifier": "amulet-of-clarity",
+      "buyPrice": 2000,
+      "sellPrice": 200,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "12",
+      "name": "Alarming Amulet",
+      "identifier": "alarming-amulet",
+      "buyPrice": 2000,
+      "sellPrice": 200,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "13",
+      "name": "Endurance Amulet",
+      "identifier": "endurance-amulet",
+      "buyPrice": 2000,
+      "sellPrice": 200,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "14",
+      "name": "Asbestos Amulet",
+      "identifier": "asbestos-amulet",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "15",
+      "name": "Waterproof Amulet",
+      "identifier": "waterproof-amulet",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "16",
+      "name": "Blast-Proof Amulet+",
+      "identifier": "blast-proof-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "17",
+      "name": "Blast-Proof Earrings",
+      "identifier": "blast-proof-earrings",
+      "buyPrice": 6000,
+      "sellPrice": 600,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "18",
+      "name": "Rubber Amulet",
+      "identifier": "rubber-amulet",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "19",
+      "name": "Mirror Amulet",
+      "identifier": "mirror-amulet",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "20",
+      "name": "Anti-Freeze Amulet",
+      "identifier": "anti-freeze-amulet",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "21",
+      "name": "Glow-in-the-Dark Amulet",
+      "identifier": "glow-in-the-dark-amulet",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "22",
+      "name": "Scuba Earrings",
+      "identifier": "scuba-earrings",
+      "buyPrice": 1000,
+      "sellPrice": 100,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "23",
+      "name": "Waterproof Armband",
+      "identifier": "waterproof-armband",
+      "buyPrice": 6000,
+      "sellPrice": 600,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "24",
+      "name": "Blast-Proof Belt",
+      "identifier": "blast-proof-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "25",
+      "name": "Anti-Freeze Belt",
+      "identifier": "anti-freeze-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "26",
+      "name": "Glow-in-the-Dark Belt",
+      "identifier": "glow-in-the-dark-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "27",
+      "name": "Glow-in-the-Dark Belt+",
+      "identifier": "glow-in-the-dark-belt-plus",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "28",
+      "name": "Stardust Earrings",
+      "identifier": "stardust-earrings",
+      "buyPrice": 4500,
+      "sellPrice": 450,
+      "bonuses": {
+        "def": 10,
+        "hp": 10,
+        "agi": 10
+      }
+    },
+    {
+      "id": "29",
+      "name": "Silver Tiara",
+      "identifier": "silver-tiara",
+      "buyPrice": 3000,
+      "sellPrice": 300,
+      "bonuses": {
+        "def": 10,
+        "mp": 10,
+        "wis": 10
+      }
+    },
+    {
+      "id": "30",
+      "name": "Warrior's Ring",
+      "identifier": "warriors-ring",
+      "buyPrice": 4000,
+      "sellPrice": 400,
+      "bonuses": {
+        "def": 10,
+        "att": 10
+      }
+    },
+    {
+      "id": "31",
+      "name": "Care Ring",
+      "identifier": "care-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 30
+      }
+    },
+    {
+      "id": "32",
+      "name": "Priest's Ring",
+      "identifier": "priests-ring",
+      "buyPrice": 4000,
+      "sellPrice": 400,
+      "bonuses": {
+        "mp": 10,
+        "wis": 10
+      }
+    },
+    {
+      "id": "33",
+      "name": "Demon's Ring",
+      "identifier": "demons-ring",
+      "buyPrice": 12000,
+      "sellPrice": 1200,
+      "bonuses": {
+        "att": 30,
+        "agi": 30
+      }
+    },
+    {
+      "id": "34",
+      "name": "Mage's Ring",
+      "identifier": "mages-ring",
+      "buyPrice": 4000,
+      "sellPrice": 400,
+      "bonuses": {
+        "mp": 10,
+        "wis": 10
+      }
+    },
+    {
+      "id": "35",
+      "name": "Seer's Ring",
+      "identifier": "seers-ring",
+      "buyPrice": 12000,
+      "sellPrice": 1200,
+      "bonuses": {
+        "mp": 30,
+        "agi": 30
+      }
+    },
+    {
+      "id": "36",
+      "name": "Tough Guy Tattoo",
+      "identifier": "tough-guy-tattoo",
+      "buyPrice": 3000,
+      "sellPrice": 300,
+      "bonuses": {
+        "att": 30
+      }
+    },
+    {
+      "id": "37",
+      "name": "Ruby Of Protection",
+      "identifier": "ruby-of-protection",
+      "buyPrice": 6000,
+      "sellPrice": 600,
+      "bonuses": {
+        "def": 60
+      }
+    },
+    {
+      "id": "38",
+      "name": "Scholar's Specs",
+      "identifier": "scholars-specs",
+      "buyPrice": 3000,
+      "sellPrice": 300,
+      "bonuses": {
+        "wis": 30
+      }
+    },
+    {
+      "id": "39",
+      "name": "Leather Collar",
+      "identifier": "leather-collar",
+      "buyPrice": 4000,
+      "sellPrice": 400,
+      "bonuses": {
+        "def": 10,
+        "att": 10,
+        "hp": 10
+      }
+    },
+    {
+      "id": "40",
+      "name": "Hermit's Girdle",
+      "identifier": "hermits-girdle",
+      "buyPrice": 6000,
+      "sellPrice": 600,
+      "bonuses": {
+        "att": 15,
+        "hp": 15,
+        "agi": 15
+      }
+    },
+    {
+      "id": "41",
+      "name": "Master Thief's Monocle",
+      "identifier": "master-thiefs-monocle",
+      "buyPrice": 3000,
+      "sellPrice": 300,
+      "bonuses": {
+        "mp": 10,
+        "agi": 10,
+        "wis": 10
+      }
+    },
+    {
+      "id": "42",
+      "name": "Pickpocket's Poncho",
+      "identifier": "pickpockets-poncho",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 15,
+        "agi": 15,
+        "wis": 15
+      }
+    },
+    {
+      "id": "43",
+      "name": "Trainee's Badge",
+      "identifier": "trainees-badge",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
+    },
+    {
+      "id": "44",
+      "name": "Trainee's Medal",
+      "identifier": "trainees-medal",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
+    },
+    {
+      "id": "45",
+      "name": "Scavenger's Badge",
+      "identifier": "scavengers-badge",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
+    },
+    {
+      "id": "46",
+      "name": "Scavenger's Medal",
+      "identifier": "scavengers-medal",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
+    },
+    {
+      "id": "47",
+      "name": "Cupcake Cane",
+      "identifier": "cupcake-cane",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
+    },
+    {
+      "id": "48",
+      "name": "Hero's Cloak",
+      "identifier": "heros-cloak",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "att": 10,
+        "hp": 30
+      }
+    },
+    {
+      "id": "49",
+      "name": "Asbestos Belt",
+      "identifier": "asbestos-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "50",
+      "name": "Mirror Belt",
+      "identifier": "mirror-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "51",
+      "name": "Amulet of Vigour",
+      "identifier": "amulet-of-vigour",
+      "buyPrice": 2000,
+      "sellPrice": 200,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "52",
+      "name": "Concrete Amulet",
+      "identifier": "concrete-amulet",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "53",
+      "name": "Concrete Belt",
+      "identifier": "concrete-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "54",
+      "name": "Rubber Belt",
+      "identifier": "rubber-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "55",
+      "name": "Full Moon Amulet",
+      "identifier": "full-moon-amulet",
+      "buyPrice": 2000,
+      "sellPrice": 200,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "56",
+      "name": "Aerofoil Amulet",
+      "identifier": "aerofoil-amulet",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "57",
+      "name": "Aerofoil Belt",
+      "identifier": "aerofoil-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "58",
+      "name": "Waterproof Belt",
+      "identifier": "waterproof-belt",
+      "buyPrice": 1500,
+      "sellPrice": 150,
+      "bonuses": {
+        "att": 10
+      }
+    },
+    {
+      "id": "59",
+      "name": "Hocus Pocus Ring",
+      "identifier": "hocus-pocus-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 5,
+        "att": 5
+      }
+    },
+    {
+      "id": "60",
+      "name": "Hocus Pocus Ring+",
+      "identifier": "hocus-pocus-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "att": 10
+      }
+    },
+    {
+      "id": "61",
+      "name": "Gold Badge",
+      "identifier": "gold-badge",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
+    },
+    {
+      "id": "62",
+      "name": "Gold Medal",
+      "identifier": "gold-medal",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
+    },
+    {
+      "id": "63",
+      "name": "Tough Guy Tattoo+",
+      "identifier": "tough-guy-tattoo-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "64",
+      "name": "Raging Ruby",
+      "identifier": "raging-ruby",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 60
+      }
+    },
+    {
+      "id": "65",
+      "name": "Raging Ruby+",
+      "identifier": "raging-ruby-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 70
+      }
+    },
+    {
+      "id": "66",
+      "name": "Mighty Armlet",
+      "identifier": "mighty-armlet",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 100
+      }
+    },
+    {
+      "id": "67",
+      "name": "Mighty Armlet+",
+      "identifier": "mighty-armlet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 110
+      }
+    },
+    {
+      "id": "68",
+      "name": "Ring of Protection+",
+      "identifier": "ring-of-protection-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "69",
+      "name": "Slime Earrings",
+      "identifier": "slime-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 30
+      }
+    },
+    {
+      "id": "70",
+      "name": "Slime Earrings+",
+      "identifier": "slime-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "71",
+      "name": "Ruby of Protection+",
+      "identifier": "ruby-of-protection-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 70
+      }
+    },
+    {
+      "id": "72",
+      "name": "Earthwyrm's Eye",
+      "identifier": "earthwyrms-eye",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 100
+      }
+    },
+    {
+      "id": "73",
+      "name": "Earthwyrm's Eye+",
+      "identifier": "earthwyrms-eye-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 110
+      }
+    },
+    {
+      "id": "74",
+      "name": "Bunny Tail",
+      "identifier": "bunny-tail",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "agi": 30
+      }
+    },
+    {
+      "id": "75",
+      "name": "Bunny Tail+",
+      "identifier": "bunny-tail-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "agi": 40
+      }
+    },
+    {
+      "id": "76",
+      "name": "Agility Ring",
+      "identifier": "agility-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "agi": 60
+      }
+    },
+    {
+      "id": "77",
+      "name": "Agility Ring+",
+      "identifier": "agility-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "agi": 70
+      }
+    },
+    {
+      "id": "78",
+      "name": "Meteorite Bracer",
+      "identifier": "meteorite-bracer",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "agi": 100
+      }
+    },
+    {
+      "id": "79",
+      "name": "Meteorite Bracer+",
+      "identifier": "meteorite-bracer-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "agi": 110
+      }
+    },
+    {
+      "id": "80",
+      "name": "Scholar's Specs+",
+      "identifier": "scholars-specs-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "wis": 40
+      }
+    },
+    {
+      "id": "81",
+      "name": "Spirit Bracer",
+      "identifier": "spirit-bracer",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "wis": 60
+      }
+    },
+    {
+      "id": "82",
+      "name": "Spirit Bracer+",
+      "identifier": "spirit-bracer-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "wis": 70
+      }
+    },
+    {
+      "id": "83",
+      "name": "Sock-It Locket",
+      "identifier": "sock-it-locket",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "wis": 100
+      }
+    },
+    {
+      "id": "84",
+      "name": "Sock-It Locket+",
+      "identifier": "sock-it-locket-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "wis": 110
+      }
+    },
+    {
+      "id": "85",
+      "name": "Leather Collar+",
+      "identifier": "leather-collar-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 17,
+        "att": 17,
+        "hp": 10
+      }
+    },
+    {
+      "id": "86",
+      "name": "Dogged Collar",
+      "identifier": "dogged-collar",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 15,
+        "att": 15,
+        "hp": 15
+      }
+    },
+    {
+      "id": "87",
+      "name": "Dogged Collar+",
+      "identifier": "dogged-collar-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 22,
+        "att": 22,
+        "hp": 15
+      }
+    },
+    {
+      "id": "88",
+      "name": "Champion's Choker",
+      "identifier": "champions-choker",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "att": 30,
+        "hp": 30
+      }
+    },
+    {
+      "id": "89",
+      "name": "Champion's Choker+",
+      "identifier": "champions-choker-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 47,
+        "att": 37,
+        "hp": 30
+      }
+    },
+    {
+      "id": "90",
+      "name": "Dragon Scale",
+      "identifier": "dragon-scale",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 10,
+        "hp": 10,
+        "agi": 10
+      }
+    },
+    {
+      "id": "91",
+      "name": "Dragon Scale+",
+      "identifier": "dragon-scale-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 17,
+        "hp": 17,
+        "agi": 17
+      }
+    },
+    {
+      "id": "92",
+      "name": "Hermit's Girdle+",
+      "identifier": "hermits-girdle-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 22,
+        "hp": 22,
+        "agi": 22
+      }
+    },
+    {
+      "id": "93",
+      "name": "Argon Ring",
+      "identifier": "argon-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 30,
+        "hp": 30,
+        "agi": 40
+      }
+    },
+    {
+      "id": "94",
+      "name": "Argon Ring+",
+      "identifier": "argon-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 37,
+        "hp": 30,
+        "agi": 47
+      }
+    },
+    {
+      "id": "95",
+      "name": "Master Thief's Monocle+",
+      "identifier": "master-thiefs-monocle-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 10,
+        "agi": 17,
+        "wis": 17
+      }
+    },
+    {
+      "id": "96",
+      "name": "Pickpocket's Poncho+",
+      "identifier": "pickpockets-poncho-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 15,
+        "agi": 22,
+        "wis": 22
+      }
+    },
+    {
+      "id": "97",
+      "name": "Swindler's Stole",
+      "identifier": "swindlers-stole",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 30,
+        "agi": 30,
+        "wis": 40
+      }
+    },
+    {
+      "id": "98",
+      "name": "Swindler's Stole+",
+      "identifier": "swindlers-stole-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 30,
+        "agi": 37,
+        "wis": 47
+      }
+    },
+    {
+      "id": "99",
+      "name": "Stardust Earrings+",
+      "identifier": "stardust-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 17,
+        "hp": 10,
+        "agi": 17
+      }
+    },
+    {
+      "id": "100",
+      "name": "Starry Studs",
+      "identifier": "starry-studs",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 15,
+        "hp": 15,
+        "agi": 15
+      }
+    },
+    {
+      "id": "101",
+      "name": "Starry Studs+",
+      "identifier": "starry-studs-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 22,
+        "hp": 15,
+        "agi": 22
+      }
+    },
+    {
+      "id": "102",
+      "name": "Astral Amulet",
+      "identifier": "astral-amulet",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 30,
+        "hp": 30,
+        "agi": 40
+      }
+    },
+    {
+      "id": "103",
+      "name": "Astral Amulet+",
+      "identifier": "astral-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 37,
+        "hp": 30,
+        "agi": 47
+      }
+    },
+    {
+      "id": "104",
+      "name": "Silver Tiara+",
+      "identifier": "silver-tiara-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 17,
+        "mp": 10,
+        "wis": 17
+      }
+    },
+    {
+      "id": "105",
+      "name": "Golden Tiara",
+      "identifier": "golden-tiara",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 15,
+        "mp": 15,
+        "wis": 15
+      }
+    },
+    {
+      "id": "106",
+      "name": "Golden Tiara+",
+      "identifier": "golden-tiara-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 22,
+        "mp": 15,
+        "wis": 22
+      }
+    },
+    {
+      "id": "107",
+      "name": "Venus' Tiara",
+      "identifier": "venus-tiara",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 30,
+        "mp": 40,
+        "wis": 30
+      }
+    },
+    {
+      "id": "108",
+      "name": "Venus' Tiara+",
+      "identifier": "venus-tiara-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 37,
+        "mp": 40,
+        "wis": 37
+      }
+    },
+    {
+      "id": "109",
+      "name": "Warrior's Ring+",
+      "identifier": "warriors-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "att": 10,
+        "hp": 10
+      }
+    },
+    {
+      "id": "110",
+      "name": "Care Ring+",
+      "identifier": "care-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 30,
+        "hp": 40
+      }
+    },
+    {
+      "id": "111",
+      "name": "Priest's Ring+",
+      "identifier": "priests-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 20,
+        "wis": 10
+      }
+    },
+    {
+      "id": "112",
+      "name": "Goddess Ring",
+      "identifier": "goddess-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 30,
+        "wis": 30
+      }
+    },
+    {
+      "id": "113",
+      "name": "Goddess Ring+",
+      "identifier": "goddess-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 40,
+        "wis": 30
+      }
+    },
+    {
+      "id": "114",
+      "name": "Martial Artist's Ring",
+      "identifier": "martial-artists-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 10,
+        "agi": 10
+      }
+    },
+    {
+      "id": "115",
+      "name": "Martial Artist's Ring+",
+      "identifier": "martial-artists-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20,
+        "agi": 10
+      }
+    },
+    {
+      "id": "116",
+      "name": "Demon's Ring+",
+      "identifier": "demons-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40,
+        "agi": 30
+      }
+    },
+    {
+      "id": "117",
+      "name": "Mage's Ring+",
+      "identifier": "mages-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 10,
+        "wis": 20
+      }
+    },
+    {
+      "id": "118",
+      "name": "Sage's Ring",
+      "identifier": "sages-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 30,
+        "wis": 30
+      }
+    },
+    {
+      "id": "119",
+      "name": "Sage's Ring+",
+      "identifier": "sages-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 30,
+        "wis": 40
+      }
+    },
+    {
+      "id": "120",
+      "name": "Dancer's Ring",
+      "identifier": "dancers-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 10,
+        "agi": 10
+      }
+    },
+    {
+      "id": "121",
+      "name": "Dancer's Ring+",
+      "identifier": "dancers-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 10,
+        "agi": 20
+      }
+    },
+    {
+      "id": "122",
+      "name": "Witch's Brooch+",
+      "identifier": "witchs-brooch-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 20
+      }
+    },
+    {
+      "id": "123",
+      "name": "Ancient Ankh",
+      "identifier": "ancient-ankh",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 30
+      }
+    },
+    {
+      "id": "124",
+      "name": "Ancient Ankh+",
+      "identifier": "ancient-ankh-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "mp": 40
+      }
+    },
+    {
+      "id": "125",
+      "name": "Amulet of Clarity+",
+      "identifier": "amulet-of-clarity-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "wis": 10
+      }
+    },
+    {
+      "id": "126",
+      "name": "Ring of Clarity",
+      "identifier": "ring-of-clarity",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "127",
+      "name": "Ring of Clarity+",
+      "identifier": "ring-of-clarity-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "wis": 10
+      }
+    },
+    {
+      "id": "128",
+      "name": "Full Moon Amulet+",
+      "identifier": "full-moon-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "wis": 10
+      }
+    },
+    {
+      "id": "129",
+      "name": "Full Moon Ring",
+      "identifier": "full-moon-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "130",
+      "name": "Full Moon Ring+",
+      "identifier": "full-moon-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "wis": 10
+      }
+    },
+    {
+      "id": "131",
+      "name": "Alarming Amulet+",
+      "identifier": "alarming-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "wis": 10
+      }
+    },
+    {
+      "id": "132",
+      "name": "Rousing Ring",
+      "identifier": "rousing-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "133",
+      "name": "Rousing Ring+",
+      "identifier": "rousing-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "wis": 10
+      }
+    },
+    {
+      "id": "134",
+      "name": "Amulet of Vigor",
+      "identifier": "amulet-of-vigor",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "135",
+      "name": "Amulet of Vigor+",
+      "identifier": "amulet-of-vigor-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "att": 10
+      }
+    },
+    {
+      "id": "136",
+      "name": "Ring of Vigour",
+      "identifier": "ring-of-vigour",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "137",
+      "name": "Ring of Vigour+",
+      "identifier": "ring-of-vigour-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "att": 10
+      }
+    },
+    {
+      "id": "138",
+      "name": "Amulet of Immunity+",
+      "identifier": "amulet-of-immunity-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "att": 10
+      }
+    },
+    {
+      "id": "139",
+      "name": "Ring of Immunity",
+      "identifier": "ring-of-immunity",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "140",
+      "name": "Ring of Immunity+",
+      "identifier": "ring-of-immunity-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "att": 10
+      }
+    },
+    {
+      "id": "141",
+      "name": "Endurance Amulet+",
+      "identifier": "endurance-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "att": 10
+      }
+    },
+    {
+      "id": "142",
+      "name": "Endure Ring",
+      "identifier": "endure-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "143",
+      "name": "Endure Ring+",
+      "identifier": "endure-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "att": 10
+      }
+    },
+    {
+      "id": "144",
+      "name": "Rational Ring",
+      "identifier": "rational-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "145",
+      "name": "Rational Ring+",
+      "identifier": "rational-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "146",
+      "name": "Tingly Ring",
+      "identifier": "tingly-ring",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "147",
+      "name": "Tingly Ring+",
+      "identifier": "tingly-ring-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "148",
+      "name": "Asbestos Amulet+",
+      "identifier": "asbestos-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "149",
+      "name": "Asbestos Earrings",
+      "identifier": "asbestos-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "150",
+      "name": "Asbestos Earrings+",
+      "identifier": "asbestos-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 50
+      }
+    },
+    {
+      "id": "151",
+      "name": "Waterproof Amulet+",
+      "identifier": "waterproof-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "152",
+      "name": "Waterproof Earrings",
+      "identifier": "waterproof-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "153",
+      "name": "Waterproof Earrings+",
+      "identifier": "waterproof-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 50
+      }
+    },
+    {
+      "id": "154",
+      "name": "Aerofoil Amulet+",
+      "identifier": "aerofoil-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "agi": 10
+      }
+    },
+    {
+      "id": "155",
+      "name": "Aerofoil Earrings",
+      "identifier": "aerofoil-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "156",
+      "name": "Aerofoil Earrings+",
+      "identifier": "aerofoil-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "agi": 10
+      }
+    },
+    {
+      "id": "157",
+      "name": "Concrete Amulet+",
+      "identifier": "concrete-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "agi": 10
+      }
+    },
+    {
+      "id": "158",
+      "name": "Concrete Earrings",
+      "identifier": "concrete-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "159",
+      "name": "Concrete Earrings+",
+      "identifier": "concrete-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "agi": 10
+      }
+    },
+    {
+      "id": "160",
+      "name": "Blast-Proof Amulet",
+      "identifier": "blast-proof-amulet",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "161",
+      "name": "Blast-Proof Earrings+",
+      "identifier": "blast-proof-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "agi": 10
+      }
+    },
+    {
+      "id": "162",
+      "name": "Anti-Freeze Amulet+",
+      "identifier": "anti-freeze-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "hp": 10
+      }
+    },
+    {
+      "id": "163",
+      "name": "Anti-Freeze Earrings",
+      "identifier": "anti-freeze-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "164",
+      "name": "Anti-Freeze Earrings+",
+      "identifier": "anti-freeze-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "hp": 10
+      }
+    },
+    {
+      "id": "165",
+      "name": "Rubber Amulet+",
+      "identifier": "rubber-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "hp": 10
+      }
+    },
+    {
+      "id": "166",
+      "name": "Rubber Earrings",
+      "identifier": "rubber-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "167",
+      "name": "Rubber Earrings+",
+      "identifier": "rubber-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "hp": 10
+      }
+    },
+    {
+      "id": "168",
+      "name": "Mirror Amulet+",
+      "identifier": "mirror-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "mp": 10
+      }
+    },
+    {
+      "id": "169",
+      "name": "Mirror Earrings",
+      "identifier": "mirror-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "170",
+      "name": "Mirror Earrings+",
+      "identifier": "mirror-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "mp": 10
+      }
+    },
+    {
+      "id": "171",
+      "name": "Glow-in-the-Dark Amulet+",
+      "identifier": "glow-in-the-dark-amulet-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10,
+        "mp": 10
+      }
+    },
+    {
+      "id": "172",
+      "name": "Glow-in-the-Dark Earrings",
+      "identifier": "glow-in-the-dark-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40
+      }
+    },
+    {
+      "id": "173",
+      "name": "Glow-in-the-Dark Earrings+",
+      "identifier": "glow-in-the-dark-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 40,
+        "mp": 10
+      }
+    },
+    {
+      "id": "174",
+      "name": "Cinderblock Earrings",
+      "identifier": "cinderblock-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "175",
+      "name": "Cinderblock Earrings+",
+      "identifier": "cinderblock-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "176",
+      "name": "All-Weather Earrings",
+      "identifier": "all-weather-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "177",
+      "name": "All-Weather Earrings+",
+      "identifier": "all-weather-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "178",
+      "name": "Blackout Earrings",
+      "identifier": "blackout-earrings",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 10
+      }
+    },
+    {
+      "id": "179",
+      "name": "Blackout Earrings+",
+      "identifier": "blackout-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "180",
+      "name": "Scuba Earrings+",
+      "identifier": "scuba-earrings-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "def": 20
+      }
+    },
+    {
+      "id": "181",
+      "name": "Asbestos Belt+",
+      "identifier": "asbestos-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "182",
+      "name": "Asbestos Armband",
+      "identifier": "asbestos-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "183",
+      "name": "Asbestos Armband+",
+      "identifier": "asbestos-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "184",
+      "name": "Waterproof Belt+",
+      "identifier": "waterproof-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "185",
+      "name": "Waterproof Armband+",
+      "identifier": "waterproof-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "186",
+      "name": "Aerofoil Belt+",
+      "identifier": "aerofoil-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "187",
+      "name": "Aerofoil Armband",
+      "identifier": "aerofoil-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "188",
+      "name": "Aerofoil Armband+",
+      "identifier": "aerofoil-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "189",
+      "name": "Concrete Belt+",
+      "identifier": "concrete-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "190",
+      "name": "Concrete Armband",
+      "identifier": "concrete-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "191",
+      "name": "Concrete Armband+",
+      "identifier": "concrete-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "192",
+      "name": "Blast-Proof Belt+",
+      "identifier": "blast-proof-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "193",
+      "name": "Blast-Proof Armband",
+      "identifier": "blast-proof-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "194",
+      "name": "Blast-Proof Armband+",
+      "identifier": "blast-proof-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "195",
+      "name": "Anti-Freeze Belt+",
+      "identifier": "anti-freeze-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "196",
+      "name": "Anti-Freeze Armband",
+      "identifier": "anti-freeze-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "197",
+      "name": "Anti-Freeze Armband+",
+      "identifier": "anti-freeze-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "198",
+      "name": "Rubber Belt+",
+      "identifier": "rubber-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "199",
+      "name": "Rubber Armband",
+      "identifier": "rubber-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "200",
+      "name": "Rubber Armband+",
+      "identifier": "rubber-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "201",
+      "name": "Mirror Belt+",
+      "identifier": "mirror-belt-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 20
+      }
+    },
+    {
+      "id": "202",
+      "name": "Mirror Armband",
+      "identifier": "mirror-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "203",
+      "name": "Mirror Armband+",
+      "identifier": "mirror-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "204",
+      "name": "Glow-in-the-Dark Armband",
+      "identifier": "glow-in-the-dark-armband",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 40
+      }
+    },
+    {
+      "id": "205",
+      "name": "Glow-in-the-Dark Armband+",
+      "identifier": "glow-in-the-dark-armband-plus",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {
+        "att": 50
+      }
+    },
+    {
+      "id": "206",
+      "name": "Scout's Badge",
+      "identifier": "scounts-badge",
+      "buyPrice": null,
+      "sellPrice": null,
+      "bonuses": {}
     }
   ]
 }

@@ -1,7 +1,7 @@
 import { MONSTERS_PER_PAGE, MONSTERS_THUMB_PATH, MAX_IN_PARTY } from '../lib/config.js';
 import { getMonsters, addMonsterToParty } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
-import { detailsView } from './detailsView.js';
+import { monsterDetailsView } from './detailsViews.js';
 import { GenericView } from './genericView.js';
 
 
@@ -29,12 +29,12 @@ class ListingView extends GenericView {
     }
 
     async handleRouting(hash, params) {
-        const detail = params.get('detail');
+        const monsterDetail = params.get('monster');
 
-        if (detail) {
-            detailsView.render(detail);
+        if (monsterDetail) {
+            monsterDetailsView.render(monsterDetail);
         } else {
-            detailsView.hide();
+            monsterDetailsView.hide();
         }
 
         if (hash != "" && hash === GenericView.previousHash) {
@@ -77,7 +77,7 @@ class ListingView extends GenericView {
         
         const monsterListElement = document.getElementById('monster-list');
         monsterListElement.innerHTML = displayedMonsters.map(monster => `
-            <div id=${monster.id} class="monster-card" onclick="setHashParam('detail', ${monster.id})">
+            <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
                         <img src="${MONSTERS_THUMB_PATH + monster.identifier}-thumb.png" alt="${monster.name}">
