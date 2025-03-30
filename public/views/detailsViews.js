@@ -92,20 +92,23 @@ class AccessoryDetailsView extends BaseDetailsView {
     async render(id) {
         const accessory = await getItem(id);
 
+        const bonuses = Object.keys(accessory.bonuses)
+            .map(key => `<li><strong>+${accessory.bonuses[key]} ${STATS_MAP[key]}</strong></li>`)
+            .join('');
+
         this.renderContainer(`
-            <img class="monster-img" src="${ACCESSORY_IMG_PATH}">
-            <section>
-                <div class="infos">
+            <hr color="#aca899" />
+            <section class="accessory-details">
+                <div class="name-container">
+                    <img src="${ACCESSORY_IMG_PATH}">
                     <h1>${accessory.name}</h1>
                 </div>
 
                 <hr color="#aca899" />
-
                 <div class="infos">
-                    <h2>Bonuses</h2>
-                    <div class="bonus-container">
-                        
-                    </div>
+                    <ul class="stats">
+                        ${bonuses}
+                    </ul>
                 </div>
             </section>
         `);

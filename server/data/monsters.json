@@ -12783,6 +12783,7 @@
       "id": "1",
       "name": "Strength Ring",
       "identifier": "strength-ring",
+      "description": "Very slightly increases attack. (+10)",
       "buyPrice": 1000,
       "sellPrice": 100,
       "bonuses": {
@@ -12793,6 +12794,7 @@
       "id": "2",
       "name": "Strength Ring+",
       "identifier": "strength-ring-plus",
+      "description": "Slightly increases attack. (+20)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -12803,6 +12805,7 @@
       "id": "3",
       "name": "Quick Ring",
       "identifier": "quick-ring",
+      "description": "Very slightly increases agility. (+10)",
       "buyPrice": 1000,
       "sellPrice": 100,
       "bonuses": {
@@ -12813,6 +12816,7 @@
       "id": "4",
       "name": "Quick Ring+",
       "identifier": "quick-ring-plus",
+      "description": "Slightly increases agility. (+20)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -12823,6 +12827,7 @@
       "id": "5",
       "name": "Ring of Wisdom",
       "identifier": "ring-of-wisdom",
+      "description": "Very slighlty increases wisdom. (+10)",
       "buyPrice": 1000,
       "sellPrice": 100,
       "bonuses": {
@@ -12833,6 +12838,7 @@
       "id": "6",
       "name": "Ring of Wisdom+",
       "identifier": "ring-of-wisdom-plus",
+      "description": "Slightly increases wisdom. (+20)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -12843,6 +12849,7 @@
       "id": "7",
       "name": "Amulet of Immunity",
       "identifier": "amulet-of-immunity",
+      "description": "Slightly increases defence (+10) and improves resistance to poison (Antioxidant trait).",
       "buyPrice": 2000,
       "sellPrice": 200,
       "bonuses": {
@@ -12853,6 +12860,7 @@
       "id": "8",
       "name": "Ring of Protection",
       "identifier": "ring-of-protection",
+      "description": "Very slightly increases defence (+10).",
       "buyPrice": 1000,
       "sellPrice": 100,
       "bonuses": {
@@ -12863,6 +12871,7 @@
       "id": "9",
       "name": "Seer's Ring+",
       "identifier": "seers-ring+",
+      "description": "Increases agility (+40) and max. MP (+30), and raises evasion (Artful Dodger trait).",
       "buyPrice": 12000,
       "sellPrice": 1200,
       "bonuses": {
@@ -12874,6 +12883,7 @@
       "id": "10",
       "name": "Witch's Brooch",
       "identifier": "witchs-brooch",
+      "description": "Slightly increases max. MP (+10) and reduces MP consumption (Castslasher trait).",
       "buyPrice": 2000,
       "sellPrice": 200,
       "bonuses": {
@@ -12884,6 +12894,7 @@
       "id": "11",
       "name": "Amulet of Clarity",
       "identifier": "amulet-of-clarity",
+      "description": "Slightly increases defence (+10) and improves resistance to confusion (Clear Thinker trait).",
       "buyPrice": 2000,
       "sellPrice": 200,
       "bonuses": {
@@ -12894,6 +12905,7 @@
       "id": "12",
       "name": "Alarming Amulet",
       "identifier": "alarming-amulet",
+      "description": "Slightly increase defence (+10) and improves resistance to sleep (Insomniac trait).",
       "buyPrice": 2000,
       "sellPrice": 200,
       "bonuses": {
@@ -12904,6 +12916,7 @@
       "id": "13",
       "name": "Endurance Amulet",
       "identifier": "endurance-amulet",
+      "description": "Slightly increases defence (+10) and improves resistance to instant death (Death Defier trait).",
       "buyPrice": 2000,
       "sellPrice": 200,
       "bonuses": {
@@ -12914,6 +12927,7 @@
       "id": "14",
       "name": "Asbestos Amulet",
       "identifier": "asbestos-amulet",
+      "description": "Slightly increases defence (+10) and improves resistance to fire (Frizz Ward trait).",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -12924,6 +12938,7 @@
       "id": "15",
       "name": "Waterproof Amulet",
       "identifier": "waterproof-amulet",
+      "description": "Slightly increases defence (+10) and improves resistance to water (Splish Ward trait).",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -12934,6 +12949,7 @@
       "id": "16",
       "name": "Blast-Proof Amulet+",
       "identifier": "blast-proof-amulet-plus",
+      "description": "Slightly increases defence (+10) and improves resistance to explosions (Bang Ward trait).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -12944,6 +12960,7 @@
       "id": "17",
       "name": "Blast-Proof Earrings",
       "identifier": "blast-proof-earrings",
+      "description": "Increase defence (+40) and improve resistance to explosions (Bang Ward trait).",
       "buyPrice": 6000,
       "sellPrice": 600,
       "bonuses": {
@@ -12954,6 +12971,7 @@
       "id": "18",
       "name": "Rubber Amulet",
       "identifier": "rubber-amulet",
+      "description": "Slightly increases defence (+10) and improves resistance to electricity (Zap Ward trait).",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -12964,6 +12982,7 @@
       "id": "19",
       "name": "Mirror Amulet",
       "identifier": "mirror-amulet",
+      "description": "Slightly increases defence (+10) and improves resistance to light (Sizz Ward trait).",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -12974,6 +12993,7 @@
       "id": "20",
       "name": "Anti-Freeze Amulet",
       "identifier": "anti-freeze-amulet",
+      "description": "Slightly increases defence (+10) and improves resistance to ice (Crack Ward trait).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -12984,6 +13004,7 @@
       "id": "21",
       "name": "Glow-in-the-Dark Amulet",
       "identifier": "glow-in-the-dark-amulet",
+      "description": "Slightly increases defence (+10) and improves resistance to dark (Zam Ward trait).",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -12994,6 +13015,7 @@
       "id": "22",
       "name": "Scuba Earrings",
       "identifier": "scuba-earrings",
+      "description": "Slightly increase defence (+10) and improve resistance to water (Splish Ward trait) and dark (Zam Ward trait).",
       "buyPrice": 1000,
       "sellPrice": 100,
       "bonuses": {
@@ -13004,6 +13026,7 @@
       "id": "23",
       "name": "Waterproof Armband",
       "identifier": "waterproof-armband",
+      "description": "Increase attack (+40) and adds effects of the Crafty Splasher trait (Crafty Splasher trait).",
       "buyPrice": 6000,
       "sellPrice": 600,
       "bonuses": {
@@ -13014,6 +13037,7 @@
       "id": "24",
       "name": "Blast-Proof Belt",
       "identifier": "blast-proof-belt",
+      "description": "Slightly increases attack (+10) and adds effects of the Crafty Banger trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13024,6 +13048,7 @@
       "id": "25",
       "name": "Anti-Freeze Belt",
       "identifier": "anti-freeze-belt",
+      "description": "Slightly increases attack (+10) and adds effects of the Crafty Cracker trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13034,6 +13059,7 @@
       "id": "26",
       "name": "Glow-in-the-Dark Belt",
       "identifier": "glow-in-the-dark-belt",
+      "description": "Slightly increases attack (+10) and adds effects of the Crafty Zammer trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13044,6 +13070,7 @@
       "id": "27",
       "name": "Glow-in-the-Dark Belt+",
       "identifier": "glow-in-the-dark-belt-plus",
+      "description": "Slightly increases attack (+20) and adds effects of the Crafty Zammer trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13054,6 +13081,7 @@
       "id": "28",
       "name": "Stardust Earrings",
       "identifier": "stardust-earrings",
+      "description": "Very slightly increases defence (+10), agility (+10) and max. HP (+10).",
       "buyPrice": 4500,
       "sellPrice": 450,
       "bonuses": {
@@ -13066,6 +13094,7 @@
       "id": "29",
       "name": "Silver Tiara",
       "identifier": "silver-tiara",
+      "description": "Very slightly increases defence (+10), wisdom (+10) and max. MP (+10).",
       "buyPrice": 3000,
       "sellPrice": 300,
       "bonuses": {
@@ -13078,6 +13107,7 @@
       "id": "30",
       "name": "Warrior's Ring",
       "identifier": "warriors-ring",
+      "description": "Very slightly increases attack (+10) and defence (+10), and automatically restores the wearer's HP (Auto-Restora trait).",
       "buyPrice": 4000,
       "sellPrice": 400,
       "bonuses": {
@@ -13089,6 +13119,7 @@
       "id": "31",
       "name": "Care Ring",
       "identifier": "care-ring",
+      "description": "Increases defence (+30), and automatically restores the wearer's HP (Auto-Restora trait).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13099,6 +13130,7 @@
       "id": "32",
       "name": "Priest's Ring",
       "identifier": "priests-ring",
+      "description": "Very slightly increases wisdom (+10) and max. MP (+10), and automatically restores the wearer's MP (Auto-Cadabra trait).",
       "buyPrice": 4000,
       "sellPrice": 400,
       "bonuses": {
@@ -13110,17 +13142,19 @@
       "id": "33",
       "name": "Demon's Ring",
       "identifier": "demons-ring",
+      "description": "Increases attack (+30) and agility (+30), and raises the likelihood of performing critical hits (Critical Favourite trait).",
       "buyPrice": 12000,
       "sellPrice": 1200,
       "bonuses": {
-        "att": 30,
-        "agi": 30
+        "agi": 30,
+        "att": 30
       }
     },
     {
       "id": "34",
       "name": "Mage's Ring",
       "identifier": "mages-ring",
+      "description": "Very slightly increases wisdom (+10) and max. MP (+10), and raises the likelihood of casting critical spells (Critical Thinker trait).",
       "buyPrice": 4000,
       "sellPrice": 400,
       "bonuses": {
@@ -13132,6 +13166,7 @@
       "id": "35",
       "name": "Seer's Ring",
       "identifier": "seers-ring",
+      "description": "Increases agility (+30) and max. MP (+30), and raises evasion (Artful Dodger trait).",
       "buyPrice": 12000,
       "sellPrice": 1200,
       "bonuses": {
@@ -13143,6 +13178,7 @@
       "id": "36",
       "name": "Tough Guy Tattoo",
       "identifier": "tough-guy-tattoo",
+      "description": "Increases attack (+30).",
       "buyPrice": 3000,
       "sellPrice": 300,
       "bonuses": {
@@ -13153,6 +13189,7 @@
       "id": "37",
       "name": "Ruby Of Protection",
       "identifier": "ruby-of-protection",
+      "description": "Greatly increases defence (+60).",
       "buyPrice": 6000,
       "sellPrice": 600,
       "bonuses": {
@@ -13163,6 +13200,7 @@
       "id": "38",
       "name": "Scholar's Specs",
       "identifier": "scholars-specs",
+      "description": "Increase wisdom (+30).",
       "buyPrice": 3000,
       "sellPrice": 300,
       "bonuses": {
@@ -13173,30 +13211,33 @@
       "id": "39",
       "name": "Leather Collar",
       "identifier": "leather-collar",
+      "description": "Very slightly increases attack (+10), defence (+10) and max. HP (+10).",
       "buyPrice": 4000,
       "sellPrice": 400,
       "bonuses": {
         "def": 10,
-        "att": 10,
-        "hp": 10
+        "hp": 10,
+        "att": 10
       }
     },
     {
       "id": "40",
       "name": "Hermit's Girdle",
       "identifier": "hermits-girdle",
+      "description": "Slightly increases attack (+15), agility (+15) and max. HP (+15).",
       "buyPrice": 6000,
       "sellPrice": 600,
       "bonuses": {
-        "att": 15,
         "hp": 15,
-        "agi": 15
+        "agi": 15,
+        "att": 15
       }
     },
     {
       "id": "41",
       "name": "Master Thief's Monocle",
       "identifier": "master-thiefs-monocle",
+      "description": "Very slightly increases agility (+10), wisdom (+10) and max. MP (+10).",
       "buyPrice": 3000,
       "sellPrice": 300,
       "bonuses": {
@@ -13209,6 +13250,7 @@
       "id": "42",
       "name": "Pickpocket's Poncho",
       "identifier": "pickpockets-poncho",
+      "description": "Slightly increases agility (+15), wisdom (+15) and max. MP (+15).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13221,6 +13263,7 @@
       "id": "43",
       "name": "Trainee's Badge",
       "identifier": "trainees-badge",
+      "description": "Slightly increases the amount of experience earned (Modicum of Experience = +0.3x).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
@@ -13229,6 +13272,7 @@
       "id": "44",
       "name": "Trainee's Medal",
       "identifier": "trainees-medal",
+      "description": "Increases the amount of experience earned (Wealth of Experience = +0.5x).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
@@ -13237,6 +13281,7 @@
       "id": "45",
       "name": "Scavenger's Badge",
       "identifier": "scavengers-badge",
+      "description": "Slightly improves the likehlihood of acquiring items (Scavenger = Unknown) after defeating an enemy.",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
@@ -13245,6 +13290,7 @@
       "id": "46",
       "name": "Scavenger's Medal",
       "identifier": "scavengers-medal",
+      "description": "Improves the likehlihood of acquiring items (Hoarder = Unknown) after defeating an enemy.",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
@@ -13253,6 +13299,7 @@
       "id": "47",
       "name": "Cupcake Cane",
       "identifier": "cupcake-cane",
+      "description": "Slightly increases the amount of gold coins (Gold Panner = +0.1x) and experience points (Iota of Experience = +0.1x) earned by defeating an enemy, as well as improving the likelihood of obtaining an item (Rummager = Unknown).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
@@ -13261,18 +13308,20 @@
       "id": "48",
       "name": "Hero's Cloak",
       "identifier": "heros-cloak",
+      "description": "Increases max. HP (+30) very slightly increases attack (+10) and defence (+10). Also improves resistance to explosions (Bang Ward), ice (Crack Ward) and fire (Frizz Ward).",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
         "def": 10,
-        "att": 10,
-        "hp": 30
+        "hp": 30,
+        "att": 10
       }
     },
     {
       "id": "49",
       "name": "Asbestos Belt",
       "identifier": "asbestos-belt",
+      "description": "Slightly increases attack and adds effects of the Crafty Frizzer trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13283,6 +13332,7 @@
       "id": "50",
       "name": "Mirror Belt",
       "identifier": "mirror-belt",
+      "description": "Slightly increases attack and adds effects of the Crafty Sizzer trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13293,6 +13343,7 @@
       "id": "51",
       "name": "Amulet of Vigour",
       "identifier": "amulet-of-vigour",
+      "description": "Slightly increases defence and improves resistance to stun (Granite Chin trait).",
       "buyPrice": 2000,
       "sellPrice": 200,
       "bonuses": {
@@ -13303,6 +13354,7 @@
       "id": "52",
       "name": "Concrete Amulet",
       "identifier": "concrete-amulet",
+      "description": "Slightly increases defence and improves resistance to earth (Crag Ward trait).",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13313,6 +13365,7 @@
       "id": "53",
       "name": "Concrete Belt",
       "identifier": "concrete-belt",
+      "description": "Slightly increases attack and adds effects of the Crafty Cragger trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13323,6 +13376,7 @@
       "id": "54",
       "name": "Rubber Belt",
       "identifier": "rubber-belt",
+      "description": "Slightly increases attack and adds effects of the Crafty Zapper trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13333,6 +13387,7 @@
       "id": "55",
       "name": "Full Moon Amulet",
       "identifier": "full-moon-amulet",
+      "description": "Slightly increases defence and improves resistance to paralysis (Fidget trait).",
       "buyPrice": 2000,
       "sellPrice": 200,
       "bonuses": {
@@ -13343,6 +13398,7 @@
       "id": "56",
       "name": "Aerofoil Amulet",
       "identifier": "aerofoil-amulet",
+      "description": "Slightly increases defence and improves resistance to wind (Woosh Ward trait).",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13353,6 +13409,7 @@
       "id": "57",
       "name": "Aerofoil Belt",
       "identifier": "aerofoil-belt",
+      "description": "Slightly increases attack and adds effects of the Crafty Woosher trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13363,6 +13420,7 @@
       "id": "58",
       "name": "Waterproof Belt",
       "identifier": "waterproof-belt",
+      "description": "Slightly increases attack and adds effects of the Crafty Splasher trait.",
       "buyPrice": 1500,
       "sellPrice": 150,
       "bonuses": {
@@ -13373,6 +13431,7 @@
       "id": "59",
       "name": "Hocus Pocus Ring",
       "identifier": "hocus-pocus-ring",
+      "description": "(Attack/Defence +5)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13384,6 +13443,7 @@
       "id": "60",
       "name": "Hocus Pocus Ring+",
       "identifier": "hocus-pocus-ring-plus",
+      "description": "(Attack/Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13395,6 +13455,7 @@
       "id": "61",
       "name": "Gold Badge",
       "identifier": "gold-badge",
+      "description": "?",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
@@ -13403,6 +13464,7 @@
       "id": "62",
       "name": "Gold Medal",
       "identifier": "gold-medal",
+      "description": "?",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
@@ -13411,6 +13473,7 @@
       "id": "63",
       "name": "Tough Guy Tattoo+",
       "identifier": "tough-guy-tattoo-plus",
+      "description": "(Attack +30.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13421,6 +13484,7 @@
       "id": "64",
       "name": "Raging Ruby",
       "identifier": "raging-ruby",
+      "description": "(Attack +60.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13431,6 +13495,7 @@
       "id": "65",
       "name": "Raging Ruby+",
       "identifier": "raging-ruby-plus",
+      "description": "(Attack +60.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13441,6 +13506,7 @@
       "id": "66",
       "name": "Mighty Armlet",
       "identifier": "mighty-armlet",
+      "description": "(Attack +100.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13451,6 +13517,7 @@
       "id": "67",
       "name": "Mighty Armlet+",
       "identifier": "mighty-armlet-plus",
+      "description": "(Attack +100.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13461,6 +13528,7 @@
       "id": "68",
       "name": "Ring of Protection+",
       "identifier": "ring-of-protection-plus",
+      "description": "(Defence +10.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13471,6 +13539,7 @@
       "id": "69",
       "name": "Slime Earrings",
       "identifier": "slime-earrings",
+      "description": "(Defence +30.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13481,6 +13550,7 @@
       "id": "70",
       "name": "Slime Earrings+",
       "identifier": "slime-earrings-plus",
+      "description": "(Defence +30.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13491,6 +13561,7 @@
       "id": "71",
       "name": "Ruby of Protection+",
       "identifier": "ruby-of-protection-plus",
+      "description": "(Defence +60.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13501,6 +13572,7 @@
       "id": "72",
       "name": "Earthwyrm's Eye",
       "identifier": "earthwyrms-eye",
+      "description": "(Defence +100.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13511,6 +13583,7 @@
       "id": "73",
       "name": "Earthwyrm's Eye+",
       "identifier": "earthwyrms-eye-plus",
+      "description": "(Defence +100.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13521,6 +13594,7 @@
       "id": "74",
       "name": "Bunny Tail",
       "identifier": "bunny-tail",
+      "description": "(Agility +30.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13531,6 +13605,7 @@
       "id": "75",
       "name": "Bunny Tail+",
       "identifier": "bunny-tail-plus",
+      "description": "(Agility +30.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13541,6 +13616,7 @@
       "id": "76",
       "name": "Agility Ring",
       "identifier": "agility-ring",
+      "description": "(Agility +60.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13551,6 +13627,7 @@
       "id": "77",
       "name": "Agility Ring+",
       "identifier": "agility-ring-plus",
+      "description": "(Agility +60.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13561,6 +13638,7 @@
       "id": "78",
       "name": "Meteorite Bracer",
       "identifier": "meteorite-bracer",
+      "description": "(Agility +100.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13571,6 +13649,7 @@
       "id": "79",
       "name": "Meteorite Bracer+",
       "identifier": "meteorite-bracer-plus",
+      "description": "(Agility +100.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13581,6 +13660,7 @@
       "id": "80",
       "name": "Scholar's Specs+",
       "identifier": "scholars-specs-plus",
+      "description": "(Wisdom +30.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13591,6 +13671,7 @@
       "id": "81",
       "name": "Spirit Bracer",
       "identifier": "spirit-bracer",
+      "description": "(Wisdom +60.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13601,6 +13682,7 @@
       "id": "82",
       "name": "Spirit Bracer+",
       "identifier": "spirit-bracer-plus",
+      "description": "(Wisdom +60.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13611,6 +13693,7 @@
       "id": "83",
       "name": "Sock-It Locket",
       "identifier": "sock-it-locket",
+      "description": "(Wisdom +100.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13621,6 +13704,7 @@
       "id": "84",
       "name": "Sock-It Locket+",
       "identifier": "sock-it-locket-plus",
+      "description": "(Wisdom +100.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13631,126 +13715,137 @@
       "id": "85",
       "name": "Leather Collar+",
       "identifier": "leather-collar-plus",
+      "description": "(HP/Attack/Defence +10.) (Attack/Defence +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
         "def": 17,
-        "att": 17,
-        "hp": 10
+        "hp": 10,
+        "att": 17
       }
     },
     {
       "id": "86",
       "name": "Dogged Collar",
       "identifier": "dogged-collar",
+      "description": "(HP/Attack/Defence +15.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
         "def": 15,
-        "att": 15,
-        "hp": 15
+        "hp": 15,
+        "att": 15
       }
     },
     {
       "id": "87",
       "name": "Dogged Collar+",
       "identifier": "dogged-collar-plus",
+      "description": "(HP/Attack/Defence +15.) (Attack/Defence +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
         "def": 22,
-        "att": 22,
-        "hp": 15
+        "hp": 15,
+        "att": 22
       }
     },
     {
       "id": "88",
       "name": "Champion's Choker",
       "identifier": "champions-choker",
+      "description": "(HP/Attack +30, Defence +40.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
         "def": 40,
-        "att": 30,
-        "hp": 30
+        "hp": 30,
+        "att": 30
       }
     },
     {
       "id": "89",
       "name": "Champion's Choker+",
       "identifier": "champions-choker-plus",
+      "description": "(HP/Attack +30, Defence +40.) (Attack/Defence +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
         "def": 47,
-        "att": 37,
-        "hp": 30
+        "hp": 30,
+        "att": 37
       }
     },
     {
       "id": "90",
       "name": "Dragon Scale",
       "identifier": "dragon-scale",
+      "description": "(HP/Attack/Agility +10.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 10,
         "hp": 10,
-        "agi": 10
+        "agi": 10,
+        "att": 10
       }
     },
     {
       "id": "91",
       "name": "Dragon Scale+",
       "identifier": "dragon-scale-plus",
+      "description": "(HP/Attack/Agility +10.) (Attack/Agility +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 17,
         "hp": 17,
-        "agi": 17
+        "agi": 17,
+        "att": 17
       }
     },
     {
       "id": "92",
       "name": "Hermit's Girdle+",
       "identifier": "hermits-girdle-plus",
+      "description": "(HP/Attack/Agility +15.) (Attack/Agility +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 22,
         "hp": 22,
-        "agi": 22
+        "agi": 22,
+        "att": 22
       }
     },
     {
       "id": "93",
       "name": "Argon Ring",
       "identifier": "argon-ring",
+      "description": "(HP/Attack +30, Agility +40.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 30,
         "hp": 30,
-        "agi": 40
+        "agi": 40,
+        "att": 30
       }
     },
     {
       "id": "94",
       "name": "Argon Ring+",
       "identifier": "argon-ring-plus",
+      "description": "(HP/Attack +30, Agility +40.) (Attack/Agility +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 37,
         "hp": 30,
-        "agi": 47
+        "agi": 47,
+        "att": 37
       }
     },
     {
       "id": "95",
       "name": "Master Thief's Monocle+",
       "identifier": "master-thiefs-monocle-plus",
+      "description": "(MP/Agility/Wisdom +10.) (Agility/Wisdom +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13763,6 +13858,7 @@
       "id": "96",
       "name": "Pickpocket's Poncho+",
       "identifier": "pickpockets-poncho-plus",
+      "description": "(MP/Agility/Wisdom +15.) (Agility/Wisdom +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13775,6 +13871,7 @@
       "id": "97",
       "name": "Swindler's Stole",
       "identifier": "swindlers-stole",
+      "description": "(MP/Agility +30, Wisdom +40.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13787,6 +13884,7 @@
       "id": "98",
       "name": "Swindler's Stole+",
       "identifier": "swindlers-stole-plus",
+      "description": "(MP/Agility +30, Wisdom +40.) (Agility/Wisdom +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13799,6 +13897,7 @@
       "id": "99",
       "name": "Stardust Earrings+",
       "identifier": "stardust-earrings-plus",
+      "description": "(HP/Defence/Agility +10.) (Defence/Agility +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13811,6 +13910,7 @@
       "id": "100",
       "name": "Starry Studs",
       "identifier": "starry-studs",
+      "description": "(HP/Defence/Agility +15.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13823,6 +13923,7 @@
       "id": "101",
       "name": "Starry Studs+",
       "identifier": "starry-studs-plus",
+      "description": "(HP/Defence/Agility +15.) (Defence/Agility +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13835,6 +13936,7 @@
       "id": "102",
       "name": "Astral Amulet",
       "identifier": "astral-amulet",
+      "description": "(HP/Defence +30, Agility +40.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13847,6 +13949,7 @@
       "id": "103",
       "name": "Astral Amulet+",
       "identifier": "astral-amulet-plus",
+      "description": "(HP/Defence +30, Agility +40.) (Defence/Agility +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13859,6 +13962,7 @@
       "id": "104",
       "name": "Silver Tiara+",
       "identifier": "silver-tiara-plus",
+      "description": "(MP/Defence/Wisdom +10) (Defence/Wisdom +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13871,6 +13975,7 @@
       "id": "105",
       "name": "Golden Tiara",
       "identifier": "golden-tiara",
+      "description": "(MP/Defence/Wisdom +15.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13883,6 +13988,7 @@
       "id": "106",
       "name": "Golden Tiara+",
       "identifier": "golden-tiara-plus",
+      "description": "(MP/Defence/Wisdom +15.) (Defence/Wisdom +7, Clear Thinker)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13895,6 +14001,7 @@
       "id": "107",
       "name": "Venus' Tiara",
       "identifier": "venus-tiara",
+      "description": "(MP +40, Defence/Wisdom +30)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13907,6 +14014,7 @@
       "id": "108",
       "name": "Venus' Tiara+",
       "identifier": "venus-tiara-plus",
+      "description": "(MP +40, Defence/Wisdom +30) (Defence/Wisdom +7)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13919,18 +14027,20 @@
       "id": "109",
       "name": "Warrior's Ring+",
       "identifier": "warriors-ring-plus",
+      "description": "(Attack/Defence +10, Auto-Restora.) (HP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
         "def": 10,
-        "att": 10,
-        "hp": 10
+        "hp": 10,
+        "att": 10
       }
     },
     {
       "id": "110",
       "name": "Care Ring+",
       "identifier": "care-ring-plus",
+      "description": "(HP/Defence +30, Auto-Restora.) (HP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13942,6 +14052,7 @@
       "id": "111",
       "name": "Priest's Ring+",
       "identifier": "priests-ring-plus",
+      "description": "(MP/Wisdom +10, Auto-Cadabra.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13953,6 +14064,7 @@
       "id": "112",
       "name": "Goddess Ring",
       "identifier": "goddess-ring",
+      "description": "(MP/Wisdom +30, Auto-Cadabra.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13964,6 +14076,7 @@
       "id": "113",
       "name": "Goddess Ring+",
       "identifier": "goddess-ring-plus",
+      "description": "(MP/Wisdom +30, Auto-Cadabra.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -13975,39 +14088,43 @@
       "id": "114",
       "name": "Martial Artist's Ring",
       "identifier": "martial-artists-ring",
+      "description": "(Attack/Agility +10, Critical Favourite.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 10,
-        "agi": 10
+        "agi": 10,
+        "att": 10
       }
     },
     {
       "id": "115",
       "name": "Martial Artist's Ring+",
       "identifier": "martial-artists-ring-plus",
+      "description": "(Attack/Agility +10, Critical Favourite.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 20,
-        "agi": 10
+        "agi": 10,
+        "att": 20
       }
     },
     {
       "id": "116",
       "name": "Demon's Ring+",
       "identifier": "demons-ring-plus",
+      "description": "(Attack/Agility +30, Critical Favourite.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
-        "att": 40,
-        "agi": 30
+        "agi": 30,
+        "att": 40
       }
     },
     {
       "id": "117",
       "name": "Mage's Ring+",
       "identifier": "mages-ring-plus",
+      "description": "(MP/Wisdom +10, Critical Thinker.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14019,6 +14136,7 @@
       "id": "118",
       "name": "Sage's Ring",
       "identifier": "sages-ring",
+      "description": "(MP/Wisdom +30, Critical Thinker.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14030,6 +14148,7 @@
       "id": "119",
       "name": "Sage's Ring+",
       "identifier": "sages-ring-plus",
+      "description": "(MP/Wisdom +30, Critical Thinker.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14041,6 +14160,7 @@
       "id": "120",
       "name": "Dancer's Ring",
       "identifier": "dancers-ring",
+      "description": "(MP/Agility +10, Artful Dodger.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14052,6 +14172,7 @@
       "id": "121",
       "name": "Dancer's Ring+",
       "identifier": "dancers-ring-plus",
+      "description": "(MP/Agility +10, Artful Dodger.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14063,6 +14184,7 @@
       "id": "122",
       "name": "Witch's Brooch+",
       "identifier": "witchs-brooch-plus",
+      "description": "(MP+10, Castcutter.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14073,6 +14195,7 @@
       "id": "123",
       "name": "Ancient Ankh",
       "identifier": "ancient-ankh",
+      "description": "(MP +30, Castcutter.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14083,6 +14206,7 @@
       "id": "124",
       "name": "Ancient Ankh+",
       "identifier": "ancient-ankh-plus",
+      "description": "(MP +30, Castcutter.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14093,6 +14217,7 @@
       "id": "125",
       "name": "Amulet of Clarity+",
       "identifier": "amulet-of-clarity-plus",
+      "description": "(Defence +10, Clear Thinker.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14104,6 +14229,7 @@
       "id": "126",
       "name": "Ring of Clarity",
       "identifier": "ring-of-clarity",
+      "description": "(Defence +40, Clear Thinker.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14114,6 +14240,7 @@
       "id": "127",
       "name": "Ring of Clarity+",
       "identifier": "ring-of-clarity-plus",
+      "description": "(Defence +40, Clear Thinker.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14125,6 +14252,7 @@
       "id": "128",
       "name": "Full Moon Amulet+",
       "identifier": "full-moon-amulet-plus",
+      "description": "(Defence +10, Fidget.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14136,6 +14264,7 @@
       "id": "129",
       "name": "Full Moon Ring",
       "identifier": "full-moon-ring",
+      "description": "(Defence +40, Fidget.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14146,6 +14275,7 @@
       "id": "130",
       "name": "Full Moon Ring+",
       "identifier": "full-moon-ring-plus",
+      "description": "(Defence +40, Fidget.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14157,6 +14287,7 @@
       "id": "131",
       "name": "Alarming Amulet+",
       "identifier": "alarming-amulet-plus",
+      "description": "(Defence +10, Insomniac.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14168,6 +14299,7 @@
       "id": "132",
       "name": "Rousing Ring",
       "identifier": "rousing-ring",
+      "description": "(Defence +40, Insomniac.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14178,6 +14310,7 @@
       "id": "133",
       "name": "Rousing Ring+",
       "identifier": "rousing-ring-plus",
+      "description": "(Defence +40, Insomniac.) (Wisdom +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14189,6 +14322,7 @@
       "id": "134",
       "name": "Amulet of Vigor",
       "identifier": "amulet-of-vigor",
+      "description": "(Defence +10, Granite Chin.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14199,6 +14333,7 @@
       "id": "135",
       "name": "Amulet of Vigor+",
       "identifier": "amulet-of-vigor-plus",
+      "description": "(Defence +10, Granite Chin.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14210,6 +14345,7 @@
       "id": "136",
       "name": "Ring of Vigour",
       "identifier": "ring-of-vigour",
+      "description": "(Defence +40, Granite Chin.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14220,6 +14356,7 @@
       "id": "137",
       "name": "Ring of Vigour+",
       "identifier": "ring-of-vigour-plus",
+      "description": "(Defence +40, Granite Chin.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14231,6 +14368,7 @@
       "id": "138",
       "name": "Amulet of Immunity+",
       "identifier": "amulet-of-immunity-plus",
+      "description": "(Defence +10, Antitoxidant.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14242,6 +14380,7 @@
       "id": "139",
       "name": "Ring of Immunity",
       "identifier": "ring-of-immunity",
+      "description": "(Defence +40, Antitoxidant.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14252,6 +14391,7 @@
       "id": "140",
       "name": "Ring of Immunity+",
       "identifier": "ring-of-immunity-plus",
+      "description": "(Defence +40, Antitoxidant.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14263,6 +14403,7 @@
       "id": "141",
       "name": "Endurance Amulet+",
       "identifier": "endurance-amulet-plus",
+      "description": "(Defence +10, Death Defier.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14274,6 +14415,7 @@
       "id": "142",
       "name": "Endure Ring",
       "identifier": "endure-ring",
+      "description": "(Defence +40, Death Defier.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14284,6 +14426,7 @@
       "id": "143",
       "name": "Endure Ring+",
       "identifier": "endure-ring-plus",
+      "description": "(Defence +40, Death Defier.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14295,6 +14438,7 @@
       "id": "144",
       "name": "Rational Ring",
       "identifier": "rational-ring",
+      "description": "(Defence +10, Clear thinker, Insomniac, Granite Chin.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14305,6 +14449,7 @@
       "id": "145",
       "name": "Rational Ring+",
       "identifier": "rational-ring-plus",
+      "description": "(Defence +10, Clear thinker, Insomniac, Granite Chin.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14315,6 +14460,7 @@
       "id": "146",
       "name": "Tingly Ring",
       "identifier": "tingly-ring",
+      "description": "(Defence +10, Fidget, Antitoxidant, Death Defier.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14325,6 +14471,7 @@
       "id": "147",
       "name": "Tingly Ring+",
       "identifier": "tingly-ring-plus",
+      "description": "(Defence +10, Fidget, Antitoxidant, Death Defier.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14335,6 +14482,7 @@
       "id": "148",
       "name": "Asbestos Amulet+",
       "identifier": "asbestos-amulet-plus",
+      "description": "(Defence +10, Frizz Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14345,6 +14493,7 @@
       "id": "149",
       "name": "Asbestos Earrings",
       "identifier": "asbestos-earrings",
+      "description": "(Defence +40, Frizz Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14355,6 +14504,7 @@
       "id": "150",
       "name": "Asbestos Earrings+",
       "identifier": "asbestos-earrings-plus",
+      "description": "(Defence +40, Frizz Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14365,6 +14515,7 @@
       "id": "151",
       "name": "Waterproof Amulet+",
       "identifier": "waterproof-amulet-plus",
+      "description": "(Defence +10, Splish Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14375,6 +14526,7 @@
       "id": "152",
       "name": "Waterproof Earrings",
       "identifier": "waterproof-earrings",
+      "description": "(Defence +40, Splish Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14385,6 +14537,7 @@
       "id": "153",
       "name": "Waterproof Earrings+",
       "identifier": "waterproof-earrings-plus",
+      "description": "(Defence +40, Splish Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14395,6 +14548,7 @@
       "id": "154",
       "name": "Aerofoil Amulet+",
       "identifier": "aerofoil-amulet-plus",
+      "description": "(Defence +10, Woosh Ward.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14406,6 +14560,7 @@
       "id": "155",
       "name": "Aerofoil Earrings",
       "identifier": "aerofoil-earrings",
+      "description": "(Defence +40, Woosh Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14416,6 +14571,7 @@
       "id": "156",
       "name": "Aerofoil Earrings+",
       "identifier": "aerofoil-earrings-plus",
+      "description": "(Defence +40, Woosh Ward.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14427,6 +14583,7 @@
       "id": "157",
       "name": "Concrete Amulet+",
       "identifier": "concrete-amulet-plus",
+      "description": "(Defence +10, Crag Ward.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14438,6 +14595,7 @@
       "id": "158",
       "name": "Concrete Earrings",
       "identifier": "concrete-earrings",
+      "description": "(Defence +40, Crag Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14448,6 +14606,7 @@
       "id": "159",
       "name": "Concrete Earrings+",
       "identifier": "concrete-earrings-plus",
+      "description": "(Defence +40, Crag Ward.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14459,6 +14618,7 @@
       "id": "160",
       "name": "Blast-Proof Amulet",
       "identifier": "blast-proof-amulet",
+      "description": "(Defence +10, Bang Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14469,6 +14629,7 @@
       "id": "161",
       "name": "Blast-Proof Earrings+",
       "identifier": "blast-proof-earrings-plus",
+      "description": "(Defence +40, Bang Ward.) (Agility +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14480,6 +14641,7 @@
       "id": "162",
       "name": "Anti-Freeze Amulet+",
       "identifier": "anti-freeze-amulet-plus",
+      "description": "(Defence +10, Crack Ward.) (HP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14491,6 +14653,7 @@
       "id": "163",
       "name": "Anti-Freeze Earrings",
       "identifier": "anti-freeze-earrings",
+      "description": "(Defence +40, Crack Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14501,6 +14664,7 @@
       "id": "164",
       "name": "Anti-Freeze Earrings+",
       "identifier": "anti-freeze-earrings-plus",
+      "description": "(Defence +40, Crack Ward.) (HP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14512,6 +14676,7 @@
       "id": "165",
       "name": "Rubber Amulet+",
       "identifier": "rubber-amulet-plus",
+      "description": "(Defence +10, Zap Ward.) (HP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14523,6 +14688,7 @@
       "id": "166",
       "name": "Rubber Earrings",
       "identifier": "rubber-earrings",
+      "description": "(Defence +40, Zap Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14533,6 +14699,7 @@
       "id": "167",
       "name": "Rubber Earrings+",
       "identifier": "rubber-earrings-plus",
+      "description": "(Defence +40, Zap Ward.) (HP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14544,6 +14711,7 @@
       "id": "168",
       "name": "Mirror Amulet+",
       "identifier": "mirror-amulet-plus",
+      "description": "(Defence +10, Sizz Ward.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14555,6 +14723,7 @@
       "id": "169",
       "name": "Mirror Earrings",
       "identifier": "mirror-earrings",
+      "description": "(Defence +40, Sizz Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14565,6 +14734,7 @@
       "id": "170",
       "name": "Mirror Earrings+",
       "identifier": "mirror-earrings-plus",
+      "description": "(Defence +40, Sizz Ward.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14576,6 +14746,7 @@
       "id": "171",
       "name": "Glow-in-the-Dark Amulet+",
       "identifier": "glow-in-the-dark-amulet-plus",
+      "description": "(Defence +10, Zam Ward.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14587,6 +14758,7 @@
       "id": "172",
       "name": "Glow-in-the-Dark Earrings",
       "identifier": "glow-in-the-dark-earrings",
+      "description": "(Defence +40, Zam Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14597,6 +14769,7 @@
       "id": "173",
       "name": "Glow-in-the-Dark Earrings+",
       "identifier": "glow-in-the-dark-earrings-plus",
+      "description": "(Defence +40, Zam Ward.) (MP +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14608,6 +14781,7 @@
       "id": "174",
       "name": "Cinderblock Earrings",
       "identifier": "cinderblock-earrings",
+      "description": "(Defence +10, Frizz/Crag Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14618,6 +14792,7 @@
       "id": "175",
       "name": "Cinderblock Earrings+",
       "identifier": "cinderblock-earrings-plus",
+      "description": "(Defence +10, Frizz/Crag Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14628,6 +14803,7 @@
       "id": "176",
       "name": "All-Weather Earrings",
       "identifier": "all-weather-earrings",
+      "description": "(Defence +10, Crack/Woosh Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14638,6 +14814,7 @@
       "id": "177",
       "name": "All-Weather Earrings+",
       "identifier": "all-weather-earrings-plus",
+      "description": "(Defence +10, Crack/Woosh Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14648,6 +14825,7 @@
       "id": "178",
       "name": "Blackout Earrings",
       "identifier": "blackout-earrings",
+      "description": "(Defence +10, Zap/Sizz Ward.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14658,6 +14836,7 @@
       "id": "179",
       "name": "Blackout Earrings+",
       "identifier": "blackout-earrings-plus",
+      "description": "(Defence +10, Zap/Sizz Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14668,6 +14847,7 @@
       "id": "180",
       "name": "Scuba Earrings+",
       "identifier": "scuba-earrings-plus",
+      "description": "(Defence +10, Splish/Zam Ward.) (Defence +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14678,6 +14858,7 @@
       "id": "181",
       "name": "Asbestos Belt+",
       "identifier": "asbestos-belt-plus",
+      "description": "(Attack +10, Crafty Frizzer.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14688,6 +14869,7 @@
       "id": "182",
       "name": "Asbestos Armband",
       "identifier": "asbestos-armband",
+      "description": "(Attack +40, Crafty Frizzer.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14698,6 +14880,7 @@
       "id": "183",
       "name": "Asbestos Armband+",
       "identifier": "asbestos-armband-plus",
+      "description": "(Attack +40, Crafty Frizzer.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14708,6 +14891,7 @@
       "id": "184",
       "name": "Waterproof Belt+",
       "identifier": "waterproof-belt-plus",
+      "description": "(Attack +10, Crafty Splasher.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14718,6 +14902,7 @@
       "id": "185",
       "name": "Waterproof Armband+",
       "identifier": "waterproof-armband-plus",
+      "description": "(Attack +40, Crafty Splasher.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14728,6 +14913,7 @@
       "id": "186",
       "name": "Aerofoil Belt+",
       "identifier": "aerofoil-belt-plus",
+      "description": "(Attack +10, Crafty Woosher.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14738,6 +14924,7 @@
       "id": "187",
       "name": "Aerofoil Armband",
       "identifier": "aerofoil-armband",
+      "description": "(Attack +40, Crafty Woosher.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14748,6 +14935,7 @@
       "id": "188",
       "name": "Aerofoil Armband+",
       "identifier": "aerofoil-armband-plus",
+      "description": "(Attack +40, Crafty Woosher.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14758,6 +14946,7 @@
       "id": "189",
       "name": "Concrete Belt+",
       "identifier": "concrete-belt-plus",
+      "description": "(Attack +10, Crafty Cragger.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14768,6 +14957,7 @@
       "id": "190",
       "name": "Concrete Armband",
       "identifier": "concrete-armband",
+      "description": "(Attack +40, Crafty Cracker.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14778,6 +14968,7 @@
       "id": "191",
       "name": "Concrete Armband+",
       "identifier": "concrete-armband-plus",
+      "description": "(Attack +40, Crafty Cracker.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14788,6 +14979,7 @@
       "id": "192",
       "name": "Blast-Proof Belt+",
       "identifier": "blast-proof-belt-plus",
+      "description": "(Attack +10, Crafty Banger.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14798,6 +14990,7 @@
       "id": "193",
       "name": "Blast-Proof Armband",
       "identifier": "blast-proof-armband",
+      "description": "(Attack +40, Crafty Banger.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14808,6 +15001,7 @@
       "id": "194",
       "name": "Blast-Proof Armband+",
       "identifier": "blast-proof-armband-plus",
+      "description": "(Attack +40, Crafty Banger.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14818,6 +15012,7 @@
       "id": "195",
       "name": "Anti-Freeze Belt+",
       "identifier": "anti-freeze-belt-plus",
+      "description": "(Attack +10, Crafty Cracker.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14828,6 +15023,7 @@
       "id": "196",
       "name": "Anti-Freeze Armband",
       "identifier": "anti-freeze-armband",
+      "description": "(Attack +40, Crafty Cracker.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14838,6 +15034,7 @@
       "id": "197",
       "name": "Anti-Freeze Armband+",
       "identifier": "anti-freeze-armband-plus",
+      "description": "(Attack +40, Crafty Cracker.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14848,6 +15045,7 @@
       "id": "198",
       "name": "Rubber Belt+",
       "identifier": "rubber-belt-plus",
+      "description": "(Attack +10, Crafty Zapper.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14858,6 +15056,7 @@
       "id": "199",
       "name": "Rubber Armband",
       "identifier": "rubber-armband",
+      "description": "(Attack +40, Crafty Zapper.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14868,6 +15067,7 @@
       "id": "200",
       "name": "Rubber Armband+",
       "identifier": "rubber-armband-plus",
+      "description": "(Attack +40, Crafty Zapper.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14878,6 +15078,7 @@
       "id": "201",
       "name": "Mirror Belt+",
       "identifier": "mirror-belt-plus",
+      "description": "(Attack +10, Crafty Sizzer.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14888,6 +15089,7 @@
       "id": "202",
       "name": "Mirror Armband",
       "identifier": "mirror-armband",
+      "description": "(Attack +40, Crafty Sizzer.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14898,6 +15100,7 @@
       "id": "203",
       "name": "Mirror Armband+",
       "identifier": "mirror-armband-plus",
+      "description": "(Attack +40, Crafty Sizzer.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14908,6 +15111,7 @@
       "id": "204",
       "name": "Glow-in-the-Dark Armband",
       "identifier": "glow-in-the-dark-armband",
+      "description": "(Attack +40, Crafty Zammer.)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14918,6 +15122,7 @@
       "id": "205",
       "name": "Glow-in-the-Dark Armband+",
       "identifier": "glow-in-the-dark-armband-plus",
+      "description": "(Attack +40, Crafty Zammer.) (Attack +10)",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {
@@ -14928,6 +15133,7 @@
       "id": "206",
       "name": "Scout's Badge",
       "identifier": "scounts-badge",
+      "description": "Improves the likelihood of a show of Force succeeding",
       "buyPrice": null,
       "sellPrice": null,
       "bonuses": {}
