@@ -1,5 +1,5 @@
 import { MONSTERS_MODELS_PATH, FAMILIES_ICONS_PATH, STATS_ICONS_PATH, STATS_MAP, ACCESSORY_IMG_PATH } from '../lib/config.js';
-import { getMonster, getFamily, getRank, getItem } from '../lib/provider.js';
+import { getMonster, getFamily, getRank, getAccessory } from '../lib/provider.js';
 import { removeHashParam, getHashParam } from '../lib/utils.js';
 import { GenericView } from './genericView.js';
 
@@ -90,7 +90,7 @@ class MonsterDetailsView extends BaseDetailsView {
 
 class AccessoryDetailsView extends BaseDetailsView {
     async render(id) {
-        const accessory = await getItem(id);
+        const accessory = await getAccessory(id);
 
         const bonuses = Object.keys(accessory.bonuses)
             .map(key => `<li><strong>+${accessory.bonuses[key]} ${STATS_MAP[key]}</strong></li>`)

@@ -1,5 +1,5 @@
-import { MONSTERS_PER_PAGE, MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH } from '../lib/config.js';
-import { getMonsters, getItems, addMonsterToParty } from '../lib/provider.js';
+import { ITEMS_PER_PAGE, MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH } from '../lib/config.js';
+import { getMonsters, getAccessories, addMonsterToParty } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
 import { monsterDetailsView, accessoryDetailsView } from './detailsViews.js';
 import { GenericView } from './genericView.js';
@@ -14,7 +14,7 @@ class BaseListingView extends GenericView {
 
     get renderedItems() {
         let selectedPage = parseInt(getHashParam('page')) || 1;
-        const itemsPerPage = this.itemsPerPage || MONSTERS_PER_PAGE;
+        const itemsPerPage = this.itemsPerPage || ITEMS_PER_PAGE;
 
         if (selectedPage > Math.ceil(this.items.length / itemsPerPage)) {
             selectedPage = Math.ceil(this.items.length / itemsPerPage);
@@ -24,7 +24,7 @@ class BaseListingView extends GenericView {
     }
 
     async renderPagination() {
-        const totalPages = Math.ceil(this.items.length / (this.itemsPerPage || MONSTERS_PER_PAGE));
+        const totalPages = Math.ceil(this.items.length / (this.itemsPerPage || ITEMS_PER_PAGE));
         const currentPage = parseInt(getHashParam('page')) || 1;
         
         if (totalPages <= 1) {
@@ -68,7 +68,7 @@ class MonsterListingView extends BaseListingView {
     constructor() {
         super();
         this.title = 'Liste des monstres';
-        this.itemsPerPage = MONSTERS_PER_PAGE;
+        this.itemsPerPage = ITEMS_PER_PAGE;
         window.addMonsterToParty = addMonsterToParty.bind(this);
     }
 
@@ -120,7 +120,7 @@ class AccessoryListingView extends BaseListingView {
     constructor() {
         super();
         this.title = 'Liste des accessoires';
-        this.itemsPerPage = MONSTERS_PER_PAGE;
+        this.itemsPerPage = ITEMS_PER_PAGE;
     }
 
     async handleRouting(hash, params) {
@@ -143,7 +143,7 @@ class AccessoryListingView extends BaseListingView {
             }
         }
 
-        this.items = await getItems();
+        this.items = await getAccessories();
         this.render();
         GenericView.previousHash = hash;
         GenericView.previousParams = params;
