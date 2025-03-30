@@ -70,6 +70,11 @@ export async function getParty() {
     return response.json();
 }
 
+export async function getBackpack() {
+    const response = await fetch(`${ENDPOINT}/backpack`);
+    return response.json();
+}
+
 export async function addMonsterToParty(monsterId) {
     const currentParty = await getParty() || [];
     
@@ -102,4 +107,25 @@ export async function removeMonsterFromParty(monsterId) {
     });
 
     return response.json();
+}
+
+export async function addAccessoryToBackpack(accessoryId) {
+    const backpack = await getBackpack();
+    const accessoryIndex = backpack.findIndex(item => item.id === accessoryId);
+
+    if (accessoryIndex !== -1) {
+        backpack[accessoryIndex].quantity += 1;
+    } else {
+        backpack.push({ id: accessoryId, quantity: 1 });
+    }
+
+    const updateResponse = await fetch(`${ENDPOINT}/backpack`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(backpack),
+    });
+
+    return updateResponse.json();
 }
