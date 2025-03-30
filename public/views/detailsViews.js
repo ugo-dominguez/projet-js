@@ -105,6 +105,13 @@ class AccessoryDetailsView extends BaseDetailsView {
                 </div>
 
                 <hr color="#aca899" />
+
+                <div class="infos">
+                    <p>${accessory.description}</p>
+                </div>
+                
+                <hr color="#aca899" />
+
                 <div class="infos">
                     <ul class="stats">
                         ${bonuses}
