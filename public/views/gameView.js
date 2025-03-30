@@ -1,5 +1,5 @@
 import { MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH, STATS_MAP } from '../lib/config.js';
-import { getMonster, getItems, getParty, removeMonsterFromParty } from '../lib/provider.js';
+import { getMonster, getAccessories, getParty, removeMonsterFromParty } from '../lib/provider.js';
 import { setHashParam } from '../lib/utils.js';
 import { GenericView } from './genericView.js';
 import { monsterDetailsView, accessoryDetailsView } from './detailsViews.js';
@@ -87,7 +87,7 @@ class GameView extends GenericView {
 
     async renderAccessories() {
         let itemCards = '';
-        for (const item of await getItems()) {
+        for (const item of await getAccessories()) {
             itemCards += await this.renderAccessoryCard(item);
         }
         

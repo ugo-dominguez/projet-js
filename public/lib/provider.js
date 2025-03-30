@@ -34,13 +34,13 @@ export async function getRank(id) {
     return data[0];
 }
 
-export async function getItems() {
-    const response = await fetch(`${ENDPOINT}/items`);
+export async function getAccessories() {
+    const response = await fetch(`${ENDPOINT}/accessories`);
     return response.json();
 }
 
-export async function getItem(id) {
-    const response = await fetch(`${ENDPOINT}/items?id=${id}`);
+export async function getAccessory(id) {
+    const response = await fetch(`${ENDPOINT}/accessories?id=${id}`);
     const data = await response.json();
     return data[0];
 }
