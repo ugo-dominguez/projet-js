@@ -245,6 +245,21 @@ main {
     cursor: pointer;
 }
 
+.accessory-details {
+    width: 512px;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.name-container h1 {
+    margin-left: 20px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .game {
     display: flex;
     gap: 20px;
