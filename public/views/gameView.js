@@ -154,6 +154,55 @@ class GameView extends GenericView {
         `;
     }
 
+    async renderBoxes() {
+        const getRankNames = async (rankIds) => {
+            const names = [];
+            for (const id of rankIds) {
+                const rank = await getRank(id);
+                names.push(rank.name);
+            }
+            return names.join(', ');
+        };
+    
+        const mimicRanks = await getRankNames(BOXES.mimic);
+        const canniRanks = await getRankNames(BOXES.canni);
+        const pandoraRanks = await getRankNames(BOXES.pandora);
+    
+        return `
+            <div class="game-section">
+                <h2>Boîtes à accessoires</h2>
+                <div class="boxes-container">
+                    <div class="box-card">
+                        <div class="box-image-container">
+                            <img src="${BOXES_IMG_PATH}mimic.png" alt="Mimic Box">
+                        </div>
+                        <h3>Mimic</h3>
+                        <p>Raretés contenues : ${mimicRanks}</p>
+                        <p>1000 gold</p>
+                    </div>
+                    
+                    <div class="box-card">
+                        <div class="box-image-container">
+                            <img src="${BOXES_IMG_PATH}canni.png" alt="Canni Box">
+                        </div>
+                        <h3>Canniboîte</h3>
+                        <p>Raretés contenues : ${canniRanks}</p>
+                        <p>2500 gold</p>
+                    </div>
+                    
+                    <div class="box-card">
+                        <div class="box-image-container">
+                            <img src="${BOXES_IMG_PATH}pandora.png" alt="Pandora Box">
+                        </div>
+                        <h3>Boîte de Pandore</h3>
+                        <p>Raretés contenues : ${pandoraRanks}</p>
+                        <p>5000 gold</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
     async renderMenu() {
         return `
             <div class="party-menu">
