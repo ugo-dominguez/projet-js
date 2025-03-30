@@ -1,16 +1,14 @@
 import { getHashAndParams } from "./lib/utils.js";
 import { notFoundView } from "./views/404View.js";
 import { gameView } from "./views/gameView.js";
-import { listingView } from "./views/listingView.js";
+import { monsterListingView, accessoryListingView } from "./views/listingViews.js";
 
 
 // Routing
 const routes = {
-    "": listingView,
-    "listing": listingView,
-    "families": listingView,
-    "ranks": listingView,
-    "favorites": listingView,
+    "": monsterListingView,
+    "monsters": monsterListingView,
+    "accessories": accessoryListingView,
     "404": notFoundView,
     "game": gameView
 }
