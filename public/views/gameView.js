@@ -174,7 +174,7 @@ class GameView extends GenericView {
                 <div class="boxes-container">
                     <div class="box-card">
                         <div class="box-image-container">
-                            <img src="${BOXES_IMG_PATH}mimic.png" alt="Mimic Box">
+                            <img src="${BOXES_IMG_PATH}/mimic.png" alt="Mimic Box">
                         </div>
                         <h3>Mimic</h3>
                         <p>Raretés contenues : ${mimicRanks}</p>
@@ -183,7 +183,7 @@ class GameView extends GenericView {
                     
                     <div class="box-card">
                         <div class="box-image-container">
-                            <img src="${BOXES_IMG_PATH}canni.png" alt="Canni Box">
+                            <img src="${BOXES_IMG_PATH}/canni.png" alt="Canni Box">
                         </div>
                         <h3>Canniboîte</h3>
                         <p>Raretés contenues : ${canniRanks}</p>
@@ -192,7 +192,7 @@ class GameView extends GenericView {
                     
                     <div class="box-card">
                         <div class="box-image-container">
-                            <img src="${BOXES_IMG_PATH}pandora.png" alt="Pandora Box">
+                            <img src="${BOXES_IMG_PATH}/pandora.png" alt="Pandora Box">
                         </div>
                         <h3>Boîte de Pandore</h3>
                         <p>Raretés contenues : ${pandoraRanks}</p>
