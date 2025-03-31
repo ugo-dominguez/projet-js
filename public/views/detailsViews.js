@@ -38,7 +38,7 @@ class MonsterDetailsView extends BaseDetailsView {
         this.setTotalStats(monster, family);
 
         this.renderContainer(`
-            <img class="monster-img" src="${MONSTERS_MODELS_PATH + monster.id}.jpg">
+            <img class="monster-img" src="${MONSTERS_MODELS_PATH}/${monster.id}.jpg">
             <section>
                 <div class="infos">
                     <h1>No. ${monster.id} ${monster.name}</h1>
@@ -48,7 +48,7 @@ class MonsterDetailsView extends BaseDetailsView {
                 <div class="infos">
                     <p>
                         <span class="family" window.scrollTo({top: 0, behavior: 'smooth'});">
-                            <img src="${FAMILIES_ICONS_PATH + family.identifier}.png">
+                            <img src="${FAMILIES_ICONS_PATH}/${family.identifier}.png">
                             ${family.name}
                         </span>
                     </p>

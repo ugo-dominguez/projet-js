@@ -103,7 +103,7 @@ class MonsterListingView extends BaseListingView {
             <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="${MONSTERS_THUMB_PATH + monster.identifier}-thumb.png" alt="${monster.name}">
+                        <img src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" alt="${monster.name}">
                     </div>
                     <h2>${monster.name}</h2>
                 </div>
@@ -157,9 +157,6 @@ class AccessoryListingView extends BaseListingView {
                         <img src="${ACCESSORY_IMG_PATH}" alt="${item.name}">
                     </div>
                     <h2>${item.name}</h2>
-                </div>
-                <div class='remove-button' onclick="event.stopPropagation();">
-                    <span class="material-symbols-rounded">money_bag</span>
                 </div>
             </div>
         `;
