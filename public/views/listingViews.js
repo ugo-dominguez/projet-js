@@ -44,6 +44,26 @@ class BaseListingView extends GenericView {
         return paginationHTML + '</div>';
     }
 
+    async handleRouting(hash, params) {
+        const pageChanged = params.get('page') !== GenericView.previousParams.get('page');
+        const filtersChanged = 
+            params.get('family') !== GenericView.previousParams.get('family') ||
+            params.get('rank') !== GenericView.previousParams.get('rank');
+
+        if (pageChanged || filtersChanged || hash !== GenericView.previousHash) {
+            await this.loadData();
+            await this.render();
+        }
+
+        GenericView.previousHash = hash;
+        GenericView.previousParams = params;
+    }
+
+    async loadData() {
+        // À implémenter dans les classes enfants
+        throw new Error('loadData() must be implemented by subclass');
+    }
+
     async render() {
         this.details.innerHTML = '';
         let displayedItems = this.renderedItems;
@@ -97,30 +117,20 @@ class MonsterListingView extends BaseListingView {
             monsterDetailsView.hide();
         }
     
-        // Force toujours le rendu quand les filtres changent
-        const familyChanged = params.get('family') !== GenericView.previousParams.get('family');
-        const rankChanged = params.get('rank') !== GenericView.previousParams.get('rank');
+        await super.handleRouting(hash, params); // Appel au parent
+    }
+
+    async loadData() {
+        this.items = await getMonsters();
+        const familyId = getHashParam('family');
+        const rankId = getHashParam('rank');
         
-        if (familyChanged || rankChanged || hash !== GenericView.previousHash) {
-            this.items = await getMonsters();
-            let familyId = params.get('family');
-            let rankId = params.get('rank');
-            
-            if (familyId || rankId) {
-                this.items = this.items.filter(monster => 
-                    (!familyId || monster.familyId == familyId) && 
-                    (!rankId || monster.rankId == rankId)
-                );
-                this.currentFilter = `Filtre actif: ${familyId ? 'Famille ' + familyId : ''} ${rankId ? 'Rang ' + rankId : ''}`.trim();
-            } else {
-                this.currentFilter = null;
-            }
-            
-            await this.render();
+        if (familyId || rankId) {
+            this.items = this.items.filter(monster => 
+                (!familyId || monster.familyId == familyId) && 
+                (!rankId || monster.rankId == rankId)
+            );
         }
-        
-        GenericView.previousHash = hash;
-        GenericView.previousParams = params;
     }
 
     async renderDropDown() {
@@ -189,10 +199,12 @@ class MonsterListingView extends BaseListingView {
         if (familyFilter.value) params.set('family', familyFilter.value);
         if (rankFilter.value) params.set('rank', rankFilter.value);
         
-        // Réinitialise la page à 1 quand on change de filtre
+        // Force le reset de la page à 1 ET déclenche le re-rendu
         params.set('page', '1');
-        
         window.location.hash = `monsters?${params.toString()}`;
+        
+        // Force le re-rendu immédiat (ajoutez cette ligne)
+        await this.handleRouting('monsters', params);
     }
 }
 
@@ -228,6 +240,21 @@ class AccessoryListingView extends BaseListingView {
         this.render();
         GenericView.previousHash = hash;
         GenericView.previousParams = params;
+    }
+
+    async loadData() {
+        this.items = await getAccessories();
+    }
+
+    async handleRouting(hash, params) {
+        const accessoryDetail = params.get('accessory');
+        if (accessoryDetail) {
+            accessoryDetailsView.render(accessoryDetail);
+        } else {
+            accessoryDetailsView.hide();
+        }
+
+        await super.handleRouting(hash, params);
     }
 
     async renderItemCard(item) {
