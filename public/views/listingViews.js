@@ -1,5 +1,5 @@
 import { ITEMS_PER_PAGE, MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH } from '../lib/config.js';
-import { getMonsters, getAccessories, addMonsterToParty } from '../lib/provider.js';
+import { getMonsters, getAccessories, addMonsterToParty, getMonstersbyFamily, getMonstersbyRank, getRanks, getFamilies } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
 import { monsterDetailsView, accessoryDetailsView } from './detailsViews.js';
 import { GenericView } from './genericView.js';
@@ -47,12 +47,23 @@ class BaseListingView extends GenericView {
     async render() {
         this.details.innerHTML = '';
         let displayedItems = this.renderedItems;
-
+    
         this.app.innerHTML = `
             <h1 class="title">${this.title}</h1>
+            ${this instanceof MonsterListingView ? await this.renderDropDown() : ''}
             ${await this.renderPagination()}
             <div class="item-list" id="item-list"></div>
         `;
+        
+        // Configure les event listeners après le rendu
+        if (this instanceof MonsterListingView) {
+            document.getElementById('familyFilter').addEventListener('change', () => {
+                this.updateFilters();
+            });
+            document.getElementById('rankFilter').addEventListener('change', () => {
+                this.updateFilters();
+            });
+        }
         
         const itemListElement = document.getElementById('item-list');
         itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
@@ -69,33 +80,88 @@ class MonsterListingView extends BaseListingView {
         super();
         this.title = 'Liste des monstres';
         this.itemsPerPage = ITEMS_PER_PAGE;
+        this.currentFilter = null;
+        window.filterByFamily = this.filterByFamily.bind(this);
+        window.filterByRank = this.filterByRank.bind(this);
+        this.updateFilters = this.updateFilters.bind(this);
+    
+        window.monsterListingInstance = this; 
         window.addMonsterToParty = addMonsterToParty.bind(this);
     }
 
     async handleRouting(hash, params) {
         const monsterDetail = params.get('monster');
-
         if (monsterDetail) {
             monsterDetailsView.render(monsterDetail);
         } else {
             monsterDetailsView.hide();
         }
-
-        if (hash != "" && hash === GenericView.previousHash) {
-            let page = params.get('page');
-            if (page !== GenericView.previousParams.get('page')) {
-                GenericView.previousParams = params;
-                this.render();
-                return;
+    
+        // Force toujours le rendu quand les filtres changent
+        const familyChanged = params.get('family') !== GenericView.previousParams.get('family');
+        const rankChanged = params.get('rank') !== GenericView.previousParams.get('rank');
+        
+        if (familyChanged || rankChanged || hash !== GenericView.previousHash) {
+            this.items = await getMonsters();
+            let familyId = params.get('family');
+            let rankId = params.get('rank');
+            
+            if (familyId || rankId) {
+                this.items = this.items.filter(monster => 
+                    (!familyId || monster.familyId == familyId) && 
+                    (!rankId || monster.rankId == rankId)
+                );
+                this.currentFilter = `Filtre actif: ${familyId ? 'Famille ' + familyId : ''} ${rankId ? 'Rang ' + rankId : ''}`.trim();
             } else {
-                return;
+                this.currentFilter = null;
             }
+            
+            await this.render();
         }
-
-        this.items = await getMonsters();
-        this.render();
+        
         GenericView.previousHash = hash;
         GenericView.previousParams = params;
+    }
+
+    async renderDropDown() {
+        const families = await getFamilies();
+        const ranks = await getRanks();
+        const currentFamily = getHashParam('family');
+        const currentRank = getHashParam('rank');
+    
+        return `
+            <div class="filters-container">
+                <select id="familyFilter" class="filter-dropdown">
+                    <option value="">Toutes les familles</option>
+                    ${families.map(family => `
+                        <option value="${family.id}" ${currentFamily === family.id.toString() ? 'selected' : ''}>
+                            ${family.name}
+                        </option>
+                    `).join('')}
+                </select>
+                
+                <select id="rankFilter" class="filter-dropdown">
+                    <option value="">Tous les rangs</option>
+                    ${ranks.map(rank => `
+                        <option value="${rank.id}" ${currentRank === rank.id.toString() ? 'selected' : ''}>
+                            ${rank.name}
+                        </option>
+                    `).join('')}
+                </select>
+            </div>
+        `;
+    }
+
+    async filterByFamily(familyId) {
+        this.items = await getMonstersbyFamily(familyId);
+        this.currentFilter = `Famille: ${familyId}`;
+        super.render();
+    }
+
+    async filterByRank(rankId) {
+        this.items = await getMonstersbyRank(rankId);
+        this.currentFilter = `Rang: ${rankId}`;
+        super.render();
     }
 
     async renderItemCard(monster) {
@@ -112,6 +178,21 @@ class MonsterListingView extends BaseListingView {
                 </div>
             </div>
         `;
+    }
+    
+    async updateFilters() {
+        const familyFilter = document.getElementById('familyFilter');
+        const rankFilter = document.getElementById('rankFilter');
+        
+        let params = new URLSearchParams();
+        
+        if (familyFilter.value) params.set('family', familyFilter.value);
+        if (rankFilter.value) params.set('rank', rankFilter.value);
+        
+        // Réinitialise la page à 1 quand on change de filtre
+        params.set('page', '1');
+        
+        window.location.hash = `monsters?${params.toString()}`;
     }
 }
 
