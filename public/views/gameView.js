@@ -164,15 +164,15 @@ class GameView extends GenericView {
             return names.join(', ');
         };
     
-        const mimicRanks = await getRankNames(BOXES.mimic);
-        const canniRanks = await getRankNames(BOXES.canni);
-        const pandoraRanks = await getRankNames(BOXES.pandora);
+        const mimicRanks = await getRankNames(BOXES.mimic.ranks);
+        const canniRanks = await getRankNames(BOXES.canni.ranks);
+        const pandoraRanks = await getRankNames(BOXES.pandora.ranks);
     
         return `
             <div class="game-section">
                 <h2>Boîtes à accessoires</h2>
                 <div class="boxes-container">
-                    <div class="box-card">
+                    <div class="box-card" onclick="addRandomAccessoryToBackpack('mimic')">
                         <div class="box-image-container">
                             <img src="${BOXES_IMG_PATH}/mimic.png" alt="Mimic Box">
                         </div>
@@ -181,7 +181,7 @@ class GameView extends GenericView {
                         <p>1000 gold</p>
                     </div>
                     
-                    <div class="box-card">
+                    <div class="box-card" onclick="addRandomAccessoryToBackpack('canni')">
                         <div class="box-image-container">
                             <img src="${BOXES_IMG_PATH}/canni.png" alt="Canni Box">
                         </div>
@@ -190,7 +190,7 @@ class GameView extends GenericView {
                         <p>2500 gold</p>
                     </div>
                     
-                    <div class="box-card">
+                    <div class="box-card" onclick="addRandomAccessoryToBackpack('pandora')">
                         <div class="box-image-container">
                             <img src="${BOXES_IMG_PATH}/pandora.png" alt="Pandora Box">
                         </div>
