@@ -16,7 +16,6 @@ const routes = {
 function handleRouting() {
     let { hash, params } = getHashAndParams();
     let route = hash.split('/')[0];
-    console.log(route);
 
     if (routes.hasOwnProperty(route)) {
         routes[route].handleRouting(hash, params);

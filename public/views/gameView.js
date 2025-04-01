@@ -36,6 +36,8 @@ class GameView extends GenericView {
 
         await this.loadData();
         this.render();
+        GenericView.previousHash = hash;
+        GenericView.previousParams = params;
     }
 
     async loadData() {
