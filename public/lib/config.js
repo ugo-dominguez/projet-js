@@ -16,7 +16,16 @@ export const STATS_MAP = {
   wis: 'Sagesse'
 };
 export const BOXES = {
-  mimic: [1, 2, 3],
-  canni: [4, 5, 6],
-  pandora: [7, 8, 9]
+  mimic: { 
+    ranks: [1, 2, 3], 
+    probabilities: [0.5, 0.3, 0.2] 
+  },
+  canni: { 
+    ranks: [4, 5, 6], 
+    probabilities: [0.5, 0.3, 0.2]
+  },
+  pandora: { 
+    ranks: [7, 8, 9],
+     probabilities: [0.5, 0.3, 0.2]
+  }
 };

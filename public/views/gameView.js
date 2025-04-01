@@ -1,5 +1,5 @@
 import { MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH, BOXES_IMG_PATH, BOXES } from '../lib/config.js';
-import { getMonster, getRank, getAccessory, getParty, removeMonsterFromParty, getBackpack } from '../lib/provider.js';
+import { getMonster, getRank, getAccessory, getAccessoriesByRank, getParty, removeMonsterFromParty, getBackpack, addAccessoryToBackpack } from '../lib/provider.js';
 import { setHashParam } from '../lib/utils.js';
 import { GenericView } from './genericView.js';
 import { monsterDetailsView, accessoryDetailsView } from './detailsViews.js';
@@ -15,6 +15,10 @@ class GameView extends GenericView {
             await removeMonsterFromParty(monsterId);
             await this.loadData();
             this.render();
+        };
+        window.addRandomAccessoryToBackpack = async (boxName) => {
+            const accessoryId = await this.getRandomAccessoryId(boxName);
+            await addAccessoryToBackpack(accessoryId);
         };
     }
 
@@ -69,14 +73,16 @@ class GameView extends GenericView {
         `;
     }
 
-    async renderAccessoryCard(item) {
+    async renderAccessoryCard(backpackAccess) {
+        const accessory = await getAccessory(backpackAccess.id);
         return `
-            <div id=${item.id} class="monster-card" onclick="setHashParam('accessory', ${item.id})">
+            <div id=${accessory.id} class="monster-card" onclick="setHashParam('accessory', ${accessory.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="${ACCESSORY_IMG_PATH}" alt="${item.name}">
+                        <img src="${ACCESSORY_IMG_PATH}" alt="${accessory.name}">
                     </div>
-                    <h2>${item.name}</h2>
+                    <h2>x${backpackAccess.quantity}</h2>
+                    <h2>${accessory.name}</h2>
                 </div>
                 <div class='remove-button' onclick="event.stopPropagation();">
                     <span class="material-symbols-rounded">money_bag</span>
@@ -86,15 +92,15 @@ class GameView extends GenericView {
     }
 
     async renderAccessories() {
-        let itemCards = '';
-        for (const item of await getBackpack()) {
-            itemCards += await this.renderAccessoryCard(await getAccessory(item.id));
+        let accessoryCards = '';
+        for (const accessory of await getBackpack()) {
+            accessoryCards += await this.renderAccessoryCard(accessory);
         }
         
         return `
             <div class="game-section">
                 <h2>Accessoires</h2>
-                ${itemCards}
+                ${accessoryCards}
             </div>
         `;
     }
@@ -109,15 +115,15 @@ class GameView extends GenericView {
             return names.join(', ');
         };
     
-        const mimicRanks = await getRankNames(BOXES.mimic);
-        const canniRanks = await getRankNames(BOXES.canni);
-        const pandoraRanks = await getRankNames(BOXES.pandora);
+        const mimicRanks = await getRankNames(BOXES.mimic.ranks);
+        const canniRanks = await getRankNames(BOXES.canni.ranks);
+        const pandoraRanks = await getRankNames(BOXES.pandora.ranks);
     
         return `
             <div class="game-section">
                 <h2>Boîtes à accessoires</h2>
                 <div class="boxes-container">
-                    <div class="box-card">
+                    <div class="box-card" onclick="addRandomAccessoryToBackpack('mimic')">
                         <div class="box-image-container">
                             <img src="${BOXES_IMG_PATH}/mimic.png" alt="Mimic Box">
                         </div>
@@ -126,7 +132,7 @@ class GameView extends GenericView {
                         <p>1000 gold</p>
                     </div>
                     
-                    <div class="box-card">
+                    <div class="box-card" onclick="addRandomAccessoryToBackpack('canni')">
                         <div class="box-image-container">
                             <img src="${BOXES_IMG_PATH}/canni.png" alt="Canni Box">
                         </div>
@@ -135,7 +141,7 @@ class GameView extends GenericView {
                         <p>2500 gold</p>
                     </div>
                     
-                    <div class="box-card">
+                    <div class="box-card" onclick="addRandomAccessoryToBackpack('pandora')">
                         <div class="box-image-container">
                             <img src="${BOXES_IMG_PATH}/pandora.png" alt="Pandora Box">
                         </div>
@@ -199,6 +205,25 @@ class GameView extends GenericView {
         document.getElementById('accessories-menu-item').addEventListener('click', () => this.switchView('accessories'));
         document.getElementById('boxes-menu-item').addEventListener('click', () => this.switchView('boxes'));
     }
+
+    async getRandomAccessoryId(boxName) {
+        const box = BOXES[boxName];
+        const rand = Math.random();
+        let cumulative = 0;
+        let selectedRank;
+      
+        for (let i = 0; i < box.ranks.length; i++) {
+          cumulative += box.probabilities[i];
+          if (rand <= cumulative) {
+            selectedRank = box.ranks[i];
+            break;
+          }
+        }
+      
+        const accessories = await getAccessoriesByRank(selectedRank);
+        const randomAccessory = accessories[Math.floor(Math.random() * accessories.length)];
+        return randomAccessory.id;
+      }
 }
 
 export const gameView = new GameView();

@@ -55,6 +55,11 @@ export async function getMonstersbyRank(rankId) {
     return response.json();
 }
 
+export async function getAccessoriesByRank(rankiId) {
+    const response = await fetch(`${ENDPOINT}/accessories?rankId=${rankiId}`);
+    return response.json();
+}
+
 export let NUMBER_OF_MONSTERS = null;
 export async function getNumberOfMonsters() {
     if (NUMBER_OF_MONSTERS) return NUMBER_OF_MONSTERS;
@@ -109,23 +114,24 @@ export async function removeMonsterFromParty(monsterId) {
     return response.json();
 }
 
-export async function addAccessoryToBackpack(accessoryId) {
-    const backpack = await getBackpack();
-    const accessoryIndex = backpack.findIndex(item => item.id === accessoryId);
+export async function addAccessoryToBackpack(accessoryId, quantity = 1) {
+    const accessory = await getAccessory(accessoryId);
+    const backpackResponse = await fetch(`${ENDPOINT}/backpack`);
+    const backpack = await backpackResponse.json();
+    const existingItem = backpack.find(item => item.id === accessoryId);
 
-    if (accessoryIndex !== -1) {
-        backpack[accessoryIndex].quantity += 1;
-    } else {
-        backpack.push({ id: accessoryId, quantity: 1 });
+    if (existingItem) {
+        quantity += existingItem.quantity;
     }
 
-    const updateResponse = await fetch(`${ENDPOINT}/backpack`, {
+    const response = await fetch(`${ENDPOINT}/backpack`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(backpack),
+        body: JSON.stringify({ id: accessoryId, quantity }),
     });
 
-    return updateResponse.json();
+    alert(`Vous obtenez un : ${accessory.name}`);
+    return response.json();
 }
