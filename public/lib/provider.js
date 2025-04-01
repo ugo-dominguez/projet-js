@@ -83,7 +83,7 @@ export async function getBackpack() {
 export async function addMonsterToParty(monsterId) {
     const currentParty = await getParty() || [];
     
-    if (currentParty.some(monster => monster.id === monsterId)) {
+    if (currentParty.some(monster => monster.id === String(monsterId))) {
         return alert("Ce monstre est déjà présent dans l'équipe !");
     }
     
@@ -96,7 +96,7 @@ export async function addMonsterToParty(monsterId) {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ id: monsterId }),
+        body: JSON.stringify({ id: String(monsterId) }),
     });
 
     alert("Le monstre a été ajouté à l'équipe !");
