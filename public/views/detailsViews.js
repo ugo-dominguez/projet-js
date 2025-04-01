@@ -1,5 +1,5 @@
 import { MONSTERS_MODELS_PATH, FAMILIES_ICONS_PATH, STATS_ICONS_PATH, STATS_MAP, ACCESSORY_IMG_PATH } from '../lib/config.js';
-import { getMonster, getFamily, getRank, getAccessory } from '../lib/provider.js';
+import { getMonster, getFamily, getRank, getAccessory, getBackpack } from '../lib/provider.js';
 import { removeHashParam, getHashParam } from '../lib/utils.js';
 import { GenericView } from './genericView.js';
 
@@ -8,13 +8,14 @@ class BaseDetailsView extends GenericView {
     async hide() {
         removeHashParam('monster');
         removeHashParam('accessory');
+        removeHashParam('equip');
         document.getElementById('details').innerHTML = '';
     }
 
     async renderContainer(content) {
         document.getElementById("details").innerHTML = `
             <div>
-                <span onclick="removeHashParam('monster'); removeHashParam('accessory');" class='close-button material-symbols-rounded'>close</span>
+                <span onclick="removeHashParam('monster'); removeHashParam('accessory'); removeHashParam('equip');" class='close-button material-symbols-rounded'>close</span>
                 ${content}
             </div>
         `;
@@ -32,6 +33,9 @@ class MonsterDetailsView extends BaseDetailsView {
     }
 
     async render(id) {
+        removeHashParam('accessory');
+        removeHashParam('equip');
+
         const monster = await getMonster(id);
         const family = await getFamily(monster.familyId);
         const rank = await getRank(monster.rankId);
@@ -90,6 +94,9 @@ class MonsterDetailsView extends BaseDetailsView {
 
 class AccessoryDetailsView extends BaseDetailsView {
     async render(id) {
+        removeHashParam('monster');
+        removeHashParam('equip');
+
         const accessory = await getAccessory(id);
 
         const bonuses = Object.keys(accessory.bonuses)
@@ -113,12 +120,6 @@ class AccessoryDetailsView extends BaseDetailsView {
                 <hr color="#aca899" />
 
                 <div class="infos">
-                    <p>${accessory.description}</p>
-                </div>
-                
-                <hr color="#aca899" />
-
-                <div class="infos">
                     <ul class="stats">
                         ${bonuses}
                     </ul>
@@ -129,5 +130,51 @@ class AccessoryDetailsView extends BaseDetailsView {
 }
 
 
+class AccessoryListView extends BaseDetailsView {
+    async render(monsterId) {
+        removeHashParam('monster');
+        removeHashParam('accessory');
+
+        this.monsterId = monsterId;
+        const accessories = await getBackpack();
+
+        this.renderContainer(`
+            <hr color="#aca899" />
+            <section class="accessory-details">
+                ${await this.renderAccessoriesList(accessories)}
+            </section>
+        `);
+    }
+
+    async renderAccessoriesList(accessories) {
+        const accessoryCards = await Promise.all(accessories.map(accessory => this.renderAccessoryCard(accessory)));
+        return accessoryCards.join('');
+    }
+
+    async renderAccessoryCard(item) {
+        const accessory = await getAccessory(item.id);
+    
+        const bonuses = Object.keys(accessory.bonuses)
+            .map(key => `<li>+${accessory.bonuses[key]} ${STATS_MAP[key]}</li>`)
+            .join('');
+    
+        return `
+            <div id="${accessory.id}" class="monster-card" onclick="addAccessoryTo(${this.monsterId}, ${accessory.id})">
+                <div class="monster-card-content">
+                    <div class="image-container">
+                        <img src="${ACCESSORY_IMG_PATH}" alt="${accessory.name}">
+                    </div>
+                    <h3>x${item.quantity} ${accessory.name}</h3>
+                </div>
+                <ul>
+                    ${bonuses}
+                </ul>
+            </div>
+        `;
+    }
+}
+
+
 export const monsterDetailsView = new MonsterDetailsView();
 export const accessoryDetailsView = new AccessoryDetailsView();
+export const accessoryListView = new AccessoryListView();

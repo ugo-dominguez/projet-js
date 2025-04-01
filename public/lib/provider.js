@@ -75,6 +75,12 @@ export async function getParty() {
     return response.json();
 }
 
+export async function getMonsterFromParty(monsterId) {
+    const response = await fetch(`${ENDPOINT}/party?id=${monsterId}`);
+    const data = await response.json();
+    return data[0];
+}
+
 export async function getBackpack() {
     const response = await fetch(`${ENDPOINT}/backpack`);
     return response.json();
@@ -111,6 +117,28 @@ export async function removeMonsterFromParty(monsterId) {
         },
     });
 
+    return response.json();
+}
+
+export async function addAccessoryToMonster(monsterId, accessoryId) {
+    const currentParty = await getParty() || [];
+    const monster = currentParty.find(monster => String(monster.id) === String(monsterId));
+
+    if (monster.accessory) {
+        return alert("Ce monstre a déjà un accessoire !");
+    }
+
+    monster.accessory = accessoryId;
+
+    const response = await fetch(`${ENDPOINT}/party/${monsterId}`, {
+        method: 'PUT', 
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ accessory: String(monster.accessory) }),
+    });
+
+    alert("L'accessoire a été ajouté au monstre !");
     return response.json();
 }
 

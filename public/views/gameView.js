@@ -1,8 +1,8 @@
 import { MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH, BOXES_IMG_PATH, BOXES } from '../lib/config.js';
-import { getMonster, getRank, getAccessory, getAccessoriesByRank, getParty, removeMonsterFromParty, getBackpack, addAccessoryToBackpack } from '../lib/provider.js';
+import { getMonster, getRank, getAccessory, getAccessoriesByRank, getParty, getMonsterFromParty, removeMonsterFromParty, addAccessoryToMonster, getBackpack, addAccessoryToBackpack } from '../lib/provider.js';
 import { setHashParam } from '../lib/utils.js';
 import { GenericView } from './genericView.js';
-import { monsterDetailsView, accessoryDetailsView } from './detailsViews.js';
+import { monsterDetailsView, accessoryDetailsView, accessoryListView } from './detailsViews.js';
 
 
 class GameView extends GenericView {
@@ -20,20 +20,33 @@ class GameView extends GenericView {
             const accessoryId = await this.getRandomAccessoryId(boxName);
             await addAccessoryToBackpack(accessoryId);
         };
+        window.showAccessoryList = (monsterId) => {
+            setHashParam('equip', monsterId);
+            accessoryListView.render(monsterId);
+        };
+        window.addAccessoryTo = async (monsterId, accessoryId) => {
+            await addAccessoryToMonster(monsterId, accessoryId);
+            removeHashParam('equip');
+            await this.loadData();
+            this.render();
+        };
     }
 
     async handleRouting(hash, params) {
         const monsterDetail = params.get('monster');
         const accessoryDetail = params.get('accessory');
-
+        const equip = params.get('equip');
+    
         if (monsterDetail) {
             monsterDetailsView.render(monsterDetail);
         } else if (accessoryDetail) {
             accessoryDetailsView.render(accessoryDetail);
+        } else if (equip) {
+            accessoryListView.render(equip); 
         } else {
             monsterDetailsView.hide();
         }
-
+    
         await this.loadData();
         this.render();
         GenericView.previousHash = hash;
@@ -45,16 +58,35 @@ class GameView extends GenericView {
     }
 
     async renderPartyCard(monster) {
+        const monsterParty = await getMonsterFromParty(monster.id);
+
+        let accessory = null;
+        let buttonToAccessory = null;
+        if (monsterParty.accessory) {
+            accessory = await getAccessory(monsterParty.accessory);
+            buttonToAccessory = `
+                <div class='remove-button' onclick="event.stopPropagation(); setHashParam('accessory', ${accessory.id})">
+                    <span class="material-symbols-rounded">motion_photos_on</span>
+                </div>
+            `;
+        }
+
         return `
-            <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
+            <div id="${monster.id}" class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
                         <img src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" alt="${monster.name}">
                     </div>
                     <h2>${monster.name}</h2>
                 </div>
-                <div class='remove-button' onclick="event.stopPropagation(); removeMonsterFromParty(${monster.id})">
-                    <span class="material-symbols-rounded">delete</span>
+                <div class='card-buttons'>
+                    ${buttonToAccessory ? buttonToAccessory : ''}
+                    <div class='accessory-button' onclick="event.stopPropagation(); showAccessoryList(${monster.id})">
+                        <span class="material-symbols-rounded">add_link</span>
+                    </div>
+                    <div class='remove-button' onclick="event.stopPropagation(); removeMonsterFromParty(${monster.id})">
+                        <span class="material-symbols-rounded">delete</span>
+                    </div>
                 </div>
             </div>
         `;

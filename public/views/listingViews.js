@@ -47,20 +47,34 @@ class BaseListingView extends GenericView {
     async render() {
         this.details.innerHTML = '';
         let displayedItems = this.renderedItems;
-
+      
         this.app.innerHTML = `
-            <h1 class="title">${this.title}</h1>
-            ${await this.renderPagination()}
-            <div class="item-list" id="item-list"></div>
+          <h1 class="title">${this.title}</h1>
+          ${await this.renderPagination()}
+          <div class="item-list" id="item-list"></div>
         `;
         
         const itemListElement = document.getElementById('item-list');
         itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
-    }
-
-    async renderItemCard(item) {
-        throw new Error('renderItemCard() must be implemented by subclass');
-    }
+      
+        this.setupLazyLoading();
+      }
+      
+      setupLazyLoading() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              observer.unobserve(img);
+            }
+          });
+        });
+      
+        document.querySelectorAll('#item-list img[data-src]').forEach(img => {
+          observer.observe(img);
+        });
+      }
 }
 
 
@@ -103,7 +117,7 @@ class MonsterListingView extends BaseListingView {
             <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" alt="${monster.name}">
+                        <img src="placeholder.jpg" data-src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" loading="lazy" alt="${monster.name}">
                     </div>
                     <h2>${monster.name}</h2>
                 </div>
@@ -154,7 +168,7 @@ class AccessoryListingView extends BaseListingView {
             <div id=${item.id} class="monster-card" onclick="setHashParam('accessory', ${item.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="${ACCESSORY_IMG_PATH}" alt="${item.name}">
+                        <img src="placeholder.jpg" data-src="${ACCESSORY_IMG_PATH}" loading="lazy" alt="${item.name}">
                     </div>
                     <h2>${item.name}</h2>
                 </div>
