@@ -1,7 +1,7 @@
 import { getHashAndParams } from "./lib/utils.js";
 import { notFoundView } from "./views/404View.js";
 import { gameView } from "./views/gameView.js";
-import { monsterListingView, accessoryListingView } from "./views/listingViews.js";
+import { monsterListingView, accessoryListingView, favoriteListingView } from "./views/listingViews.js";
 
 
 // Routing
@@ -10,7 +10,8 @@ const routes = {
     "monsters": monsterListingView,
     "accessories": accessoryListingView,
     "404": notFoundView,
-    "game": gameView
+    "game": gameView,
+    "favoris": favoriteListingView 
 }
 
 function handleRouting() {

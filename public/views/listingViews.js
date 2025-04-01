@@ -1,5 +1,5 @@
 import { ITEMS_PER_PAGE, MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH } from '../lib/config.js';
-import { getMonsters, getAccessories, addMonsterToParty, getMonstersbyFamily, getMonstersbyRank, getRanks, getFamilies } from '../lib/provider.js';
+import { getMonsters, getMonster, getAccessories, addMonsterToParty, getMonstersbyFamily, getMonstersbyRank, getRanks, getFamilies, getFavorites, addToFavorites, removeFromFavorites, isFavorite } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
 import { monsterDetailsView, accessoryDetailsView } from './detailsViews.js';
 import { GenericView } from './genericView.js';
@@ -60,7 +60,6 @@ class BaseListingView extends GenericView {
     }
 
     async loadData() {
-        // À implémenter dans les classes enfants
         throw new Error('loadData() must be implemented by subclass');
     }
 
@@ -74,8 +73,7 @@ class BaseListingView extends GenericView {
             ${await this.renderPagination()}
             <div class="item-list" id="item-list"></div>
         `;
-        
-        // Configure les event listeners après le rendu
+
         if (this instanceof MonsterListingView) {
             document.getElementById('familyFilter').addEventListener('change', () => {
                 this.updateFilters();
@@ -107,6 +105,18 @@ class MonsterListingView extends BaseListingView {
     
         window.monsterListingInstance = this; 
         window.addMonsterToParty = addMonsterToParty.bind(this);
+
+        window.addToFavorites = async (monsterId) => {
+            await addToFavorites(monsterId);
+            this.loadData();
+            this.render();
+        };
+
+        window.removeFromFavorites = async (monsterId) => {
+            await removeFromFavorites(monsterId);
+            this.loadData();
+            this.render();
+        };
     }
 
     async handleRouting(hash, params) {
@@ -117,7 +127,7 @@ class MonsterListingView extends BaseListingView {
             monsterDetailsView.hide();
         }
     
-        await super.handleRouting(hash, params); // Appel au parent
+        await super.handleRouting(hash, params);
     }
 
     async loadData() {
@@ -175,6 +185,21 @@ class MonsterListingView extends BaseListingView {
     }
 
     async renderItemCard(monster) {
+        let favButton = null;
+        console.log(isFavorite(monster.id));
+        if (!(await isFavorite(monster.id))) {
+            favButton = `
+                <div class='add-button' onclick="event.stopPropagation(); addToFavorites(${monster.id});">
+                    <span class="material-symbols-rounded">favorite</span>
+                </div>
+            `
+        } else {
+            favButton = `
+                <div class='add-button' onclick="event.stopPropagation(); removeFromFavorites(${monster.id});">
+                    <span class="material-symbols-rounded">heart_minus</span>
+                </div>
+            `
+        }
         return `
             <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
@@ -183,8 +208,11 @@ class MonsterListingView extends BaseListingView {
                     </div>
                     <h2>${monster.name}</h2>
                 </div>
-                <div class='add-button' onclick="event.stopPropagation(); addMonsterToParty(${monster.id})">
-                    <span class="material-symbols-rounded">add</span>
+                <div class="card-buttons">
+                    <div class='add-button' onclick="event.stopPropagation(); addMonsterToParty(${monster.id})">
+                        <span class="material-symbols-rounded">add</span>
+                    </div>
+                    ${favButton? favButton : ''}
                 </div>
             </div>
         `;
@@ -193,17 +221,11 @@ class MonsterListingView extends BaseListingView {
     async updateFilters() {
         const familyFilter = document.getElementById('familyFilter');
         const rankFilter = document.getElementById('rankFilter');
-        
         let params = new URLSearchParams();
-        
         if (familyFilter.value) params.set('family', familyFilter.value);
         if (rankFilter.value) params.set('rank', rankFilter.value);
-        
-        // Force le reset de la page à 1 ET déclenche le re-rendu
         params.set('page', '1');
         window.location.hash = `monsters?${params.toString()}`;
-        
-        // Force le re-rendu immédiat (ajoutez cette ligne)
         await this.handleRouting('monsters', params);
     }
 }
@@ -271,5 +293,56 @@ class AccessoryListingView extends BaseListingView {
     }
 }
 
+class FavoriteListingView extends BaseListingView {
+    constructor() {
+        super();
+        this.title = 'Mes Favoris';
+        
+        window.removeFromFavoritesFav = async (monsterId) => {
+            await removeFromFavorites(monsterId);
+            await this.loadData();
+            this.render();
+        };
+    }
+
+    async loadData() {
+        const favorites = await getFavorites();
+        this.items = await Promise.all(favorites.map(async fav => {
+            const monster = await getMonster(fav.id);
+            return { ...monster, favoriteId: fav.id };
+        }));
+    }
+
+    async renderItemCard(monster) {
+        return `
+            <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
+                <div class="monster-card-content">
+                    <div class='image-container'>
+                        <img src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" alt="${monster.name}">
+                    </div>
+                    <h2>${monster.name}</h2>
+                </div>
+                <div class='card-buttons'>
+                    <div class='remove-button' onclick="event.stopPropagation(); removeFromFavoritesFav(${monster.favoriteId})">
+                        <span class="material-symbols-rounded">heart_minus</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    async handleRouting(hash, params) {
+        const monsterDetail = params.get('monster');
+        if (monsterDetail) {
+            monsterDetailsView.render(monsterDetail);
+        } else {
+            monsterDetailsView.hide();
+        }
+
+        await super.handleRouting(hash, params);
+    }
+}
+
 export const monsterListingView = new MonsterListingView();
 export const accessoryListingView = new AccessoryListingView();
+export const favoriteListingView = new FavoriteListingView();

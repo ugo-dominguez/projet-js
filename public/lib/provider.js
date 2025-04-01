@@ -135,3 +135,34 @@ export async function addAccessoryToBackpack(accessoryId, quantity = 1) {
     alert(`Vous obtenez un : ${accessory.name}`);
     return response.json();
 }
+
+export async function getFavorites() {
+    const response = await fetch(`${ENDPOINT}/favorites`);
+    return response.json();
+}
+
+export async function addToFavorites(monsterId) {
+    const response = await fetch(`${ENDPOINT}/favorites`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: String(monsterId) }),
+    });
+    return response.json();
+}
+
+export async function removeFromFavorites(monsterId) {
+    const response = await fetch(`${ENDPOINT}/favorites/${monsterId}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+    return response.json();
+}
+
+export async function isFavorite(monsterId) {
+    const favorites = await getFavorites();
+    return favorites.some(fav => fav.id === String(monsterId));
+}

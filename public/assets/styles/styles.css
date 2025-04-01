@@ -363,3 +363,7 @@ main {
     background-color: white;
     font-size: 16px;
 }
+
+.card-buttons {
+    display: flex;
+}

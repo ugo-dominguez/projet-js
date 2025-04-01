@@ -1,9 +1,27 @@
 {
+  "favorites": [
+    {
+      "id": "3"
+    }
+  ],
   "party": [
-
+    {
+      "id": "176"
+    }
   ],
   "backpack": [
-
+    {
+      "id": "76",
+      "quantity": 1
+    },
+    {
+      "id": "64",
+      "quantity": 1
+    },
+    {
+      "id": "8",
+      "quantity": 1
+    }
   ],
   "ranks": [
     {
