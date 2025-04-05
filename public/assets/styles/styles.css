@@ -375,3 +375,61 @@ main {
 .card-buttons {
     display: flex;
 }
+
+.filters-container {
+    display: flex;
+    gap: 10px;
+    margin: 15px auto;
+    justify-content: center; 
+    max-width: 80%; 
+    flex-wrap: wrap;
+}
+
+.filters-container select {
+    padding: 8px 12px;
+    border: 2px solid #aca899;
+    background: linear-gradient(180deg, #fdfdf9, #fef3d8);
+    color: #665418;
+    border-radius: 4px;
+    font-family: 'DragonQuest', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    appearance: none;
+    position: relative;
+}
+
+.filters-container select:hover {
+    outline: 3px solid #4CF8F1;
+}
+
+.filters-container select:focus {
+    outline: 3px solid #4CF8F1;
+    background-color: #f0f0f0;
+}
+
+.rating-section {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-stars {
+    display: inline-flex;
+    gap: 2px;
+}
+
+.rating-stars .star {
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.2s;
+}
+
+.rating-stars .filled {
+    color: gold;
+}
+
+.rating-stars .star:hover {
+    color: gold;
+}

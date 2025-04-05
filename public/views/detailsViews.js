@@ -1,5 +1,5 @@
 import { MONSTERS_MODELS_PATH, FAMILIES_ICONS_PATH, STATS_ICONS_PATH, STATS_MAP, ACCESSORY_IMG_PATH } from '../lib/config.js';
-import { getMonster, getFamily, getRank, getAccessory, getBackpack } from '../lib/provider.js';
+import { getMonster, getFamily, getRank, getAccessory, getBackpack, getRating, saveRating } from '../lib/provider.js';
 import { removeHashParam, getHashParam } from '../lib/utils.js';
 import { GenericView } from './genericView.js';
 
@@ -24,6 +24,14 @@ class BaseDetailsView extends GenericView {
 
 
 class MonsterDetailsView extends BaseDetailsView {
+    constructor() {
+        super();
+        window.rateMonster = async (monsterId, rating) => {
+            await saveRating(monsterId, rating);
+            this.render(monsterId);
+        };
+    }
+
     async setTotalStats(monster, family) {
         Object.keys(monster.stats).forEach(statKey => {
             if (family.bonuses[statKey]) {
@@ -40,6 +48,7 @@ class MonsterDetailsView extends BaseDetailsView {
         const family = await getFamily(monster.familyId);
         const rank = await getRank(monster.rankId);
         this.setTotalStats(monster, family);
+        const rating = await getRating(id) || 0;
 
         this.renderContainer(`
             <img class="monster-img" src="${MONSTERS_MODELS_PATH}/${monster.id}.jpg">
@@ -48,6 +57,20 @@ class MonsterDetailsView extends BaseDetailsView {
                     <h1>No. ${monster.id} ${monster.name}</h1>
                     <p>${monster.japaneseName}</p>
                 </div>
+
+                <div class="rating-section">
+                    <div class="rating-stars">
+                        ${[1, 2, 3, 4, 5].map(star => `
+                            <span class="star ${(rating.rating >= star) ? 'filled' : ''}" 
+                                data-value="${star}" 
+                                onclick="rateMonster(${monster.id}, ${star})">
+                                ★
+                            </span>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <hr color="#aca899" />
                 
                 <div class="infos">
                     <p>
@@ -98,6 +121,7 @@ class AccessoryDetailsView extends BaseDetailsView {
         removeHashParam('equip');
 
         const accessory = await getAccessory(id);
+        const rank = await getRank(accessory.rankId);
 
         const bonuses = Object.keys(accessory.bonuses)
             .map(key => `<li><strong>+${accessory.bonuses[key]} ${STATS_MAP[key]}</strong></li>`)
@@ -115,6 +139,8 @@ class AccessoryDetailsView extends BaseDetailsView {
 
                 <div class="infos">
                     <p>${accessory.description}</p>
+                    <p>Rank ${rank.name}</p>
+                    <p>Prix de vente : ${accessory.sellPrice} G</p>
                 </div>
                 
                 <hr color="#aca899" />

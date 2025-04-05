@@ -1,10 +1,9 @@
 {
-  "favorites": [],
+  "ratings": [],
   "money": {
     "amount": 2500
   },
   "party": [],
-  "backpack": [],
   "boxes": {
     "mimic": {
       "name": "Mimic Box",
@@ -97,11 +96,6 @@
       "id": "9",
       "name": "X",
       "identifier": "x"
-    },
-    {
-      "id": "10",
-      "name": "Any",
-      "identifier": "any"
     }
   ],
   "families": [

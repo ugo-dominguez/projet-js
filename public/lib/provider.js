@@ -57,18 +57,35 @@ export async function getBox(name) {
 }
 
 export async function getMonstersbyFamily(familyId) {
-    const response = await fetch(`${ENDPOINT}/monsters?id=${familyId}`);
+    const response = await fetch(`${ENDPOINT}/monsters?familyId=${familyId}`);
     return response.json();
 }
 
 export async function getMonstersbyRank(rankId) {
-    const response = await fetch(`${ENDPOINT}/monsters?id=${rankId}`);
+    const response = await fetch(`${ENDPOINT}/monsters?rankId=${rankId}`);
     return response.json();
 }
 
-export async function getAccessoriesByRank(rankiId) {
-    const response = await fetch(`${ENDPOINT}/accessories?rankId=${rankiId}`);
-    return response.json();
+export async function getMonstersByFamilyAndRank(familyId, rankId) {
+    if (familyId && rankId) {
+        const response = await fetch(`${ENDPOINT}/monsters?familyId=${familyId}&rankId=${rankId}`);
+        return response.json();
+    } else if (familyId) {
+        return await getMonstersbyFamily(familyId);
+    } else if (rankId) {
+        return await getMonstersbyRank(rankId);
+    } else {
+        return await getMonsters();
+    }
+}
+
+export async function getAccessoriesByRank(rankId) {
+    if (rankId) {
+        const response = await fetch(`${ENDPOINT}/accessories?rankId=${rankId}`);
+        return response.json();
+    } else {
+        return await getAccessories();
+    }
 }
 
 export let NUMBER_OF_MONSTERS = null;
@@ -79,6 +96,40 @@ export async function getNumberOfMonsters() {
     const monsters = await response.json();
     NUMBER_OF_MONSTERS = monsters.length;
     return NUMBER_OF_MONSTERS;
+}
+
+export async function getRating(id) {
+    const response = await fetch(`${ENDPOINT}/ratings?id=${id}`);
+    const data = await response.json();
+    return data[0];
+}
+
+export async function saveRating(monsterId, rating) {
+    const existingRating = await getRating(monsterId);
+    if (existingRating) {
+        await editRating(monsterId, rating)
+        return
+    }
+    
+    const response = await fetch(`${ENDPOINT}/ratings`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: String(monsterId), rating: rating }),
+    });
+    return response.json();
+}
+
+export async function editRating(monsterId, rating) {
+    const response = await fetch(`${ENDPOINT}/ratings/${monsterId}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ rating: rating }),
+    });
+    return response.json();
 }
 
 export async function getParty() {
@@ -131,34 +182,41 @@ export async function removeMonsterFromParty(monsterId) {
     return response.json();
 }
 
+function getLocalFavorites() {
+    const favorites = localStorage.getItem('favorites');
+    return favorites ? JSON.parse(favorites) : [];
+}
+
+function saveLocalFavorites(favorites) {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+
 export async function getFavorites() {
-    const response = await fetch(`${ENDPOINT}/favorites`);
-    return response.json();
+    return getLocalFavorites();
 }
 
 export async function addToFavorites(monsterId) {
-    const response = await fetch(`${ENDPOINT}/favorites`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ id: String(monsterId) }),
-    });
-    return response.json();
+    const favorites = getLocalFavorites();
+    const idString = String(monsterId);
+    
+    if (!favorites.some(fav => fav.id === idString)) {
+        favorites.push({ id: idString });
+        saveLocalFavorites(favorites);
+    }
+    return Promise.resolve({ id: idString });
 }
 
 export async function removeFromFavorites(monsterId) {
-    const response = await fetch(`${ENDPOINT}/favorites/${monsterId}`, {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    });
-    return response.json();
+    const favorites = getLocalFavorites();
+    const idString = String(monsterId);
+    const updatedFavorites = favorites.filter(fav => fav.id !== idString);
+    
+    saveLocalFavorites(updatedFavorites);
+    return Promise.resolve({ id: idString });
 }
 
-export async function isFavorite(monsterId) {
-    const favorites = await getFavorites();
+export async function isFavorite(monsterId) {
+    const favorites = getLocalFavorites();
     return favorites.some(fav => fav.id === String(monsterId));
 }
 
@@ -257,9 +315,9 @@ export async function removeMoney(amountToRemove) {
     const newAmount = Math.max(0, currentMoney - amountToRemove);
   
     const response = await fetch(`${ENDPOINT}/money`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: newAmount }),
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: newAmount }),
     });
   
     return response.json(); 

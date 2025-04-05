@@ -8,10 +8,10 @@ import { monsterListingView, accessoryListingView, favoriteListingView } from ".
 const routes = {
     "": monsterListingView,
     "monsters": monsterListingView,
+    "favorites": favoriteListingView,
     "accessories": accessoryListingView,
     "404": notFoundView,
     "game": gameView,
-    "favoris": favoriteListingView 
 }
 
 function handleRouting() {

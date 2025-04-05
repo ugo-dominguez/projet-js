@@ -1,5 +1,5 @@
 import { ITEMS_PER_PAGE, MONSTERS_THUMB_PATH, ACCESSORY_IMG_PATH } from '../lib/config.js';
-import { getMonsters, getMonster, getAccessories, addMonsterToParty, getMonstersbyFamily, getMonstersbyRank, getRanks, getFamilies, getFavorites, addToFavorites, removeFromFavorites, isFavorite } from '../lib/provider.js';
+import { getAccessoriesByRank, addMonsterToParty, getRanks, getFamilies, getMonstersByFamilyAndRank, addToFavorites, removeFromFavorites, isFavorite, getFavorites, getMonster } from '../lib/provider.js';
 import { getHashParam, setHashParam } from '../lib/utils.js';
 import { monsterDetailsView, accessoryDetailsView } from './detailsViews.js';
 import { GenericView } from './genericView.js';
@@ -44,68 +44,36 @@ class BaseListingView extends GenericView {
         return paginationHTML + '</div>';
     }
 
-    async handleRouting(hash, params) {
-        const pageChanged = params.get('page') !== GenericView.previousParams.get('page');
-        const filtersChanged = 
-            params.get('family') !== GenericView.previousParams.get('family') ||
-            params.get('rank') !== GenericView.previousParams.get('rank');
-
-        if (pageChanged || filtersChanged || hash !== GenericView.previousHash) {
-            await this.loadData();
-            await this.render();
-        }
-
-        GenericView.previousHash = hash;
-        GenericView.previousParams = params;
-    }
-
-    async loadData() {
-        throw new Error('loadData() must be implemented by subclass');
-    }
-
     async render() {
         this.details.innerHTML = '';
         let displayedItems = this.renderedItems;
-    
+      
         this.app.innerHTML = `
             <h1 class="title">${this.title}</h1>
-            ${this instanceof MonsterListingView ? await this.renderDropDown() : ''}
             ${await this.renderPagination()}
             <div class="item-list" id="item-list"></div>
         `;
-
-        if (this instanceof MonsterListingView) {
-            document.getElementById('familyFilter').addEventListener('change', () => {
-                this.updateFilters();
-            });
-            document.getElementById('rankFilter').addEventListener('change', () => {
-                this.updateFilters();
-            });
-        }
         
         const itemListElement = document.getElementById('item-list');
         itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
-        await this.setupLazyLoading();
+      
+        this.setupLazyLoading();
     }
-
+      
     async setupLazyLoading() {
         const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              img.src = img.dataset.src;
-              observer.unobserve(img);
-            }
-          });
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    observer.unobserve(img);
+                }
+            });
         });
       
         document.querySelectorAll('#item-list img[data-src]').forEach(img => {
-          observer.observe(img);
+            observer.observe(img);
         });
-    }
-
-    async renderItemCard(item) {
-        throw new Error('renderItemCard() must be implemented by subclass');
     }
 }
 
@@ -115,90 +83,92 @@ class MonsterListingView extends BaseListingView {
         super();
         this.title = 'Liste des monstres';
         this.itemsPerPage = ITEMS_PER_PAGE;
-        this.currentFilter = null;
-        window.filterByFamily = this.filterByFamily.bind(this);
-        window.filterByRank = this.filterByRank.bind(this);
-        this.updateFilters = this.updateFilters.bind(this);
-    
-        window.monsterListingInstance = this; 
+        this.currentRankFilter = getHashParam('rank');
+        this.currentFamilyFilter = getHashParam('family');
         window.addMonsterToParty = addMonsterToParty.bind(this);
-
+        window.monsterListingView = this;
         window.addToFavorites = async (monsterId) => {
             await addToFavorites(monsterId);
-            this.loadData();
             this.render();
         };
-
         window.removeFromFavorites = async (monsterId) => {
             await removeFromFavorites(monsterId);
-            this.loadData();
             this.render();
         };
     }
 
     async handleRouting(hash, params) {
         const monsterDetail = params.get('monster');
+        this.currentRankFilter = params.get('rank') || null;
+        this.currentFamilyFilter = params.get('family') || null;
+    
         if (monsterDetail) {
             monsterDetailsView.render(monsterDetail);
         } else {
             monsterDetailsView.hide();
         }
     
-        await super.handleRouting(hash, params);
-    }
-
-    async loadData() {
-        this.items = await getMonsters();
-        const familyId = getHashParam('family');
-        const rankId = getHashParam('rank');
-        
-        if (familyId || rankId) {
-            this.items = this.items.filter(monster => 
-                (!familyId || monster.familyId == familyId) && 
-                (!rankId || monster.rankId == rankId)
-            );
+        if (hash != "" && hash === GenericView.previousHash) {
+            let page = params.get('page');
+            if (page !== GenericView.previousParams.get('page') || 
+                this.currentRankFilter !== GenericView.previousParams.get('rank') ||
+                this.currentFamilyFilter !== GenericView.previousParams.get('family')) {
+                GenericView.previousParams = params;
+                this.render();
+                return;
+            } else {
+                return;
+            }
         }
+    
+        this.items = await getMonstersByFamilyAndRank(this.currentFamilyFilter, this.currentRankFilter);
+        this.render();
+        GenericView.previousHash = hash;
+        GenericView.previousParams = params;
     }
 
-    async renderDropDown() {
-        const families = await getFamilies();
+    async handleRankFilter(value) {
+        this.currentRankFilter = value;
+        setHashParam('rank', value);
+        await this.applyFilters();
+    }
+
+    async handleFamilyFilter(value) {
+        this.currentFamilyFilter = value;
+        setHashParam('family', value);
+        await this.applyFilters();
+    }
+
+    async applyFilters() {
+        this.items = await getMonstersByFamilyAndRank(this.currentFamilyFilter || null, this.currentRankFilter || null);
+        removeHashParam('page');
+        this.render();
+    }
+
+    async renderFiltersControls() {
         const ranks = await getRanks();
-        const currentFamily = getHashParam('family');
-        const currentRank = getHashParam('rank');
+        const families = await getFamilies();
+    
+        const rankOptions = ranks.map(rank => 
+            `<option value="${rank.id}" ${this.currentRankFilter === rank.id ? 'selected' : ''}>${rank.name}</option>`
+        ).join('');
+    
+        const familyOptions = families.map(family => 
+            `<option value="${family.id}" ${this.currentFamilyFilter === family.id ? 'selected' : ''}>${family.name}</option>`
+        ).join('');
     
         return `
             <div class="filters-container">
-                <select id="familyFilter" class="filter-dropdown">
-                    <option value="">Toutes les familles</option>
-                    ${families.map(family => `
-                        <option value="${family.id}" ${currentFamily === family.id.toString() ? 'selected' : ''}>
-                            ${family.name}
-                        </option>
-                    `).join('')}
-                </select>
-                
-                <select id="rankFilter" class="filter-dropdown">
+                <select id="rank-filter" onchange="monsterListingView.handleRankFilter(this.value)">
                     <option value="">Tous les rangs</option>
-                    ${ranks.map(rank => `
-                        <option value="${rank.id}" ${currentRank === rank.id.toString() ? 'selected' : ''}>
-                            ${rank.name}
-                        </option>
-                    `).join('')}
+                    ${rankOptions}
+                </select>
+                <select id="family-filter" onchange="monsterListingView.handleFamilyFilter(this.value)">
+                    <option value="">Toutes les familles</option>
+                    ${familyOptions}
                 </select>
             </div>
         `;
-    }
-
-    async filterByFamily(familyId) {
-        this.items = await getMonstersbyFamily(familyId);
-        this.currentFilter = `Famille: ${familyId}`;
-        super.render();
-    }
-
-    async filterByRank(rankId) {
-        this.items = await getMonstersbyRank(rankId);
-        this.currentFilter = `Rang: ${rankId}`;
-        super.render();
     }
 
     async renderItemCard(monster) {
@@ -220,7 +190,7 @@ class MonsterListingView extends BaseListingView {
             <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="placeholder.jpg" data-src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" loading="lazy" alt="${monster.name}">
+                        <img src="${ACCESSORY_IMG_PATH}" data-src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" loading="lazy" alt="${monster.name}">
                     </div>
                     <h2>${monster.name}</h2>
                 </div>
@@ -233,34 +203,51 @@ class MonsterListingView extends BaseListingView {
             </div>
         `;
     }
-    
-    async updateFilters() {
-        const familyFilter = document.getElementById('familyFilter');
-        const rankFilter = document.getElementById('rankFilter');
-        let params = new URLSearchParams();
-        if (familyFilter.value) params.set('family', familyFilter.value);
-        if (rankFilter.value) params.set('rank', rankFilter.value);
-        params.set('page', '1');
-        await this.handleRouting('monsters', params);
+
+    async render() {
+        this.details.innerHTML = '';
+        let displayedItems = this.renderedItems;
+      
+        this.app.innerHTML = `
+            <h1 class="title">${this.title}</h1>
+            ${await this.renderFiltersControls()}
+            ${await this.renderPagination()}
+            <div class="item-list" id="item-list"></div>
+        `;
+        
+        const itemListElement = document.getElementById('item-list');
+        itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+      
+        this.setupLazyLoading();
     }
 }
 
 
-class AccessoryListingView extends BaseListingView {
+class FavoritesListingView extends BaseListingView {
     constructor() {
         super();
-        this.title = 'Liste des accessoires';
+        this.title = 'Liste des monstres';
+        this.itemsPerPage = ITEMS_PER_PAGE;
+        window.addMonsterToParty = addMonsterToParty.bind(this);
+        window.favAddToFavorites = async (monsterId) => {
+            await addToFavorites(monsterId);
+            this.render();
+        };
+        window.favRemoveFromFavorites = async (monsterId) => {
+            await removeFromFavorites(monsterId);
+            this.render();
+        };
     }
 
     async handleRouting(hash, params) {
-        const accessoryDetail = params.get('accessory');
-
-        if (accessoryDetail) {
-            accessoryDetailsView.render(accessoryDetail);
+        const monsterDetail = params.get('monster');
+    
+        if (monsterDetail) {
+            monsterDetailsView.render(monsterDetail);
         } else {
-            accessoryDetailsView.hide();
+            monsterDetailsView.hide();
         }
-
+    
         if (hash != "" && hash === GenericView.previousHash) {
             let page = params.get('page');
             if (page !== GenericView.previousParams.get('page')) {
@@ -271,26 +258,130 @@ class AccessoryListingView extends BaseListingView {
                 return;
             }
         }
-
-        this.items = await getAccessories();
+    
+        this.items = await getFavorites();
         this.render();
         GenericView.previousHash = hash;
         GenericView.previousParams = params;
     }
 
-    async loadData() {
-        this.items = await getAccessories();
+    async renderItemCard(favorite) {
+        const monster = await getMonster(favorite.id);
+        
+        let favButton = null;
+        if (!(await isFavorite(monster.id))) {
+            favButton = `
+                <div class='add-button' onclick="event.stopPropagation(); favAddToFavorites(${monster.id});">
+                    <span class="material-symbols-rounded">favorite</span>
+                </div>
+            `
+        } else {
+            favButton = `
+                <div class='add-button' onclick="event.stopPropagation(); favRemoveFromFavorites(${monster.id});">
+                    <span class="material-symbols-rounded">heart_minus</span>
+                </div>
+            `
+        }
+        return `
+            <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
+                <div class="monster-card-content">
+                    <div class='image-container'>
+                        <img src="${ACCESSORY_IMG_PATH}" data-src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" loading="lazy" alt="${monster.name}">
+                    </div>
+                    <h2>${monster.name}</h2>
+                </div>
+                <div class="card-buttons">
+                    <div class='add-button' onclick="event.stopPropagation(); addMonsterToParty(${monster.id})">
+                        <span class="material-symbols-rounded">add</span>
+                    </div>
+                    ${favButton? favButton : ''}
+                </div>
+            </div>
+        `;
+    }
+
+    async render() {
+        this.details.innerHTML = '';
+        let displayedItems = this.renderedItems;
+      
+        this.app.innerHTML = `
+            <h1 class="title">${this.title}</h1>
+            ${await this.renderPagination()}
+            <div class="item-list" id="item-list"></div>
+        `;
+        
+        const itemListElement = document.getElementById('item-list');
+        itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+      
+        this.setupLazyLoading();
+    }
+}
+
+
+class AccessoryListingView extends BaseListingView {
+    constructor() {
+        super();
+        this.title = 'Liste des accessoires';
+        this.itemsPerPage = ITEMS_PER_PAGE;
+        this.currentRankFilter = getHashParam('rank');
+        window.accessoryListingView = this;
     }
 
     async handleRouting(hash, params) {
         const accessoryDetail = params.get('accessory');
+        this.currentRankFilter = params.get('rank') || null;
+
         if (accessoryDetail) {
             accessoryDetailsView.render(accessoryDetail);
         } else {
             accessoryDetailsView.hide();
         }
+    
+        if (hash != "" && hash === GenericView.previousHash) {
+            let page = params.get('page');
+            if (page !== GenericView.previousParams.get('page') || 
+                this.currentRankFilter !== GenericView.previousParams.get('rank')) {
+                GenericView.previousParams = params;
+                this.render();
+                return;
+            } else {
+                return;
+            }
+        }
+    
+        this.items = await getAccessoriesByRank(this.currentRankFilter);
+        this.render();
+        GenericView.previousHash = hash;
+        GenericView.previousParams = params;
+    }
 
-        await super.handleRouting(hash, params);
+    async handleRankFilter(value) {
+        this.currentRankFilter = value;
+        setHashParam('rank', value);
+        await this.applyFilters();
+    }
+
+    async applyFilters() {
+        this.items = await getAccessoriesByRank(this.currentRankFilter || null);
+        removeHashParam('page');
+        this.render();
+    }
+
+    async renderFiltersControls() {
+        const ranks = await getRanks();
+    
+        const rankOptions = ranks.map(rank => 
+            `<option value="${rank.id}" ${this.currentRankFilter === rank.id ? 'selected' : ''}>${rank.name}</option>`
+        ).join('');
+    
+        return `
+            <div class="filters-container">
+                <select id="rank-filter" onchange="accessoryListingView.handleRankFilter(this.value)">
+                    <option value="">Tous les rangs</option>
+                    ${rankOptions}
+                </select>
+            </div>
+        `;
     }
 
     async renderItemCard(item) {
@@ -298,65 +389,32 @@ class AccessoryListingView extends BaseListingView {
             <div id=${item.id} class="monster-card" onclick="setHashParam('accessory', ${item.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="placeholder.jpg" data-src="${ACCESSORY_IMG_PATH}" loading="lazy" alt="${item.name}">
+                        <img src="${ACCESSORY_IMG_PATH}" data-src="${ACCESSORY_IMG_PATH}" loading="lazy" alt="${item.name}">
                     </div>
                     <h2>${item.name}</h2>
                 </div>
             </div>
         `;
     }
-}
 
-class FavoriteListingView extends BaseListingView {
-    constructor() {
-        super();
-        this.title = 'Mes Favoris';
-        
-        window.removeFromFavoritesFav = async (monsterId) => {
-            await removeFromFavorites(monsterId);
-            await this.loadData();
-            this.render();
-        };
-    }
-
-    async loadData() {
-        const favorites = await getFavorites();
-        this.items = await Promise.all(favorites.map(async fav => {
-            const monster = await getMonster(fav.id);
-            return { ...monster, favoriteId: fav.id };
-        }));
-    }
-
-    async renderItemCard(monster) {
-        return `
-            <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
-                <div class="monster-card-content">
-                    <div class='image-container'>
-                        <img src="placeholder.jpg" data-src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" loading="lazy" alt="${monster.name}">
-                    </div>
-                    <h2>${monster.name}</h2>
-                </div>
-                <div class='card-buttons'>
-                    <div class='remove-button' onclick="event.stopPropagation(); removeFromFavoritesFav(${monster.favoriteId})">
-                        <span class="material-symbols-rounded">heart_minus</span>
-                    </div>
-                </div>
-            </div>
+    async render() {
+        this.details.innerHTML = '';
+        let displayedItems = this.renderedItems;
+      
+        this.app.innerHTML = `
+            <h1 class="title">${this.title}</h1>
+            ${await this.renderFiltersControls()}
+            ${await this.renderPagination()}
+            <div class="item-list" id="item-list"></div>
         `;
-    }
-
-    async handleRouting(hash, params) {
-        const monsterDetail = params.get('monster');
-        if (monsterDetail) {
-            monsterDetailsView.render(monsterDetail);
-        } else {
-            monsterDetailsView.hide();
-        }
-
-        await super.handleRouting(hash, params);
+        
+        const itemListElement = document.getElementById('item-list');
+        itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+      
+        this.setupLazyLoading();
     }
 }
 
 export const monsterListingView = new MonsterListingView();
 export const accessoryListingView = new AccessoryListingView();
-export const favoriteListingView = new FavoriteListingView();
+export const favoriteListingView = new FavoritesListingView();
