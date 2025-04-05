@@ -15,17 +15,3 @@ export const STATS_MAP = {
   agi: 'Agilité',
   wis: 'Sagesse'
 };
-export const BOXES = {
-  mimic: { 
-    ranks: [1, 2, 3], 
-    probabilities: [0.5, 0.3, 0.2] 
-  },
-  canni: { 
-    ranks: [4, 5, 6], 
-    probabilities: [0.5, 0.3, 0.2]
-  },
-  pandora: { 
-    ranks: [7, 8, 9],
-     probabilities: [0.5, 0.3, 0.2]
-  }
-};

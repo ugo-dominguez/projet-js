@@ -45,6 +45,17 @@ export async function getAccessory(id) {
     return data[0];
 }
 
+export async function getBoxes() {
+    const response = await fetch(`${ENDPOINT}/boxes`);
+    return response.json();
+}
+
+export async function getBox(name) {
+    const response = await fetch(`${ENDPOINT}/boxes`);
+    const data = await response.json();
+    return data[name.toLowerCase()];
+}
+
 export async function getMonstersbyFamily(familyId) {
     const response = await fetch(`${ENDPOINT}/monsters?id=${familyId}`);
     return response.json();
@@ -142,24 +153,83 @@ export async function addAccessoryToMonster(monsterId, accessoryId) {
     return response.json();
 }
 
+export async function getAccessoryFromBackpack(accessoryId) {
+    const response = await fetch(`${ENDPOINT}/backpack`);
+    const backpack = await response.json();
+    return backpack.find(item => String(item.id) === String(accessoryId));
+}
+
 export async function addAccessoryToBackpack(accessoryId, quantity = 1) {
     const accessory = await getAccessory(accessoryId);
-    const backpackResponse = await fetch(`${ENDPOINT}/backpack`);
-    const backpack = await backpackResponse.json();
-    const existingItem = backpack.find(item => item.id === accessoryId);
+    const existingItem = await getAccessoryFromBackpack(accessoryId);
 
+    let response;
     if (existingItem) {
-        quantity += existingItem.quantity;
+        const newQuantity = existingItem.quantity + quantity;
+        response = await fetch(`${ENDPOINT}/backpack/${accessoryId}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ quantity: newQuantity }),
+        });
+    } else {
+        response = await fetch(`${ENDPOINT}/backpack`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: accessoryId, quantity }),
+        });
     }
 
-    const response = await fetch(`${ENDPOINT}/backpack`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ id: accessoryId, quantity }),
-    });
+    const result = await response.json();
+    alert(`Vous obtenez : ${accessory.name} (x${quantity})`);
+    return result;
+}
 
-    alert(`Vous obtenez un : ${accessory.name}`);
-    return response.json();
+export async function removeAccessoryFromBackpack(accessoryId, quantityToRemove = 1) {
+    const existingItem = await getAccessoryFromBackpack(accessoryId);
+    const newQuantity = existingItem.quantity - quantityToRemove;
+    let response;
+
+    if (newQuantity <= 0) {
+        response = await fetch(`${ENDPOINT}/backpack/${accessoryId}`, {
+            method: 'DELETE'
+        });
+    } else {
+        response = await fetch(`${ENDPOINT}/backpack/${accessoryId}`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ quantity: newQuantity }),
+        });
+    }
+}
+
+export async function getMoney() {
+    const response = await fetch(`${ENDPOINT}/money`);
+    const moneyData = await response.json();
+    return moneyData.amount;
+}
+
+export async function addMoney(amountToAdd) {
+    const currentMoney = await getMoney();
+    const newAmount = currentMoney + amountToAdd;
+  
+    const response = await fetch(`${ENDPOINT}/money`, {
+      method: "PATCH", 
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount: newAmount }),
+    });
+  
+    return response.json(); 
+}
+
+export async function removeMoney(amountToRemove) {
+    const currentMoney = await getMoney();
+    const newAmount = Math.max(0, currentMoney - amountToRemove);
+  
+    const response = await fetch(`${ENDPOINT}/money`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount: newAmount }),
+    });
+  
+    return response.json(); 
 }
