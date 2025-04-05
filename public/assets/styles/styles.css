@@ -122,7 +122,11 @@ main {
     outline: 4px solid #4CF8F1;
 }
 
-.monster-card:hover:not(:has(.add-button:hover, .remove-button:hover)) img {
+.monster-card:hover:not(:has(.add-button:hover, .remove-button:hover, .accessory-button:hover)) {
+    outline: 4px solid #4CF8F1;
+}
+
+.monster-card:hover:not(:has(.add-button:hover, .remove-button:hover, .accessory-button:hover)) img {
     transform: scale(1.1);
 }
 
@@ -153,7 +157,11 @@ main {
     color: #665418;
 }
 
-.add-button, .remove-button {
+.card-buttons {
+    display: flex;
+}
+
+.add-button, .remove-button, .accessory-button {
     background: linear-gradient(180deg, #fdfdf9, #fef3d8);
     border: 2px solid #aca899;
     border-radius: 10px;
@@ -166,11 +174,11 @@ main {
     transition: all 0.2s;
 }
 
-.add-button span, .remove-button span {
+.add-button span, .remove-button span, .accessory-button span {
     font-size: 2.5em;
 }
 
-.add-button:hover, .remove-button:hover {
+.add-button:hover, .remove-button:hover, .accessory-button:hover {
     outline: 4px solid #4CF8F1;
     color: #4CF8F1;
 }

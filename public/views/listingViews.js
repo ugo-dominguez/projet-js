@@ -85,6 +85,23 @@ class BaseListingView extends GenericView {
         
         const itemListElement = document.getElementById('item-list');
         itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        await this.setupLazyLoading();
+    }
+
+    async setupLazyLoading() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              observer.unobserve(img);
+            }
+          });
+        });
+      
+        document.querySelectorAll('#item-list img[data-src]').forEach(img => {
+          observer.observe(img);
+        });
     }
 
     async renderItemCard(item) {
@@ -204,7 +221,7 @@ class MonsterListingView extends BaseListingView {
             <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" alt="${monster.name}">
+                        <img src="placeholder.jpg" data-src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" loading="lazy" alt="${monster.name}">
                     </div>
                     <h2>${monster.name}</h2>
                 </div>
@@ -225,7 +242,6 @@ class MonsterListingView extends BaseListingView {
         if (familyFilter.value) params.set('family', familyFilter.value);
         if (rankFilter.value) params.set('rank', rankFilter.value);
         params.set('page', '1');
-        window.location.hash = `monsters?${params.toString()}`;
         await this.handleRouting('monsters', params);
     }
 }
@@ -235,7 +251,6 @@ class AccessoryListingView extends BaseListingView {
     constructor() {
         super();
         this.title = 'Liste des accessoires';
-        this.itemsPerPage = ITEMS_PER_PAGE;
     }
 
     async handleRouting(hash, params) {
@@ -284,7 +299,7 @@ class AccessoryListingView extends BaseListingView {
             <div id=${item.id} class="monster-card" onclick="setHashParam('accessory', ${item.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="${ACCESSORY_IMG_PATH}" alt="${item.name}">
+                        <img src="placeholder.jpg" data-src="${ACCESSORY_IMG_PATH}" loading="lazy" alt="${item.name}">
                     </div>
                     <h2>${item.name}</h2>
                 </div>
@@ -318,7 +333,7 @@ class FavoriteListingView extends BaseListingView {
             <div id=${monster.id} class="monster-card" onclick="setHashParam('monster', ${monster.id})">
                 <div class="monster-card-content">
                     <div class='image-container'>
-                        <img src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" alt="${monster.name}">
+                        <img src="placeholder.jpg" data-src="${MONSTERS_THUMB_PATH}/${monster.identifier}-thumb.png" loading="lazy" alt="${monster.name}">
                     </div>
                     <h2>${monster.name}</h2>
                 </div>
