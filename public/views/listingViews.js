@@ -203,7 +203,6 @@ class MonsterListingView extends BaseListingView {
 
     async renderItemCard(monster) {
         let favButton = null;
-        console.log(isFavorite(monster.id));
         if (!(await isFavorite(monster.id))) {
             favButton = `
                 <div class='add-button' onclick="event.stopPropagation(); addToFavorites(${monster.id});">

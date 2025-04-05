@@ -1,9 +1,5 @@
 {
-  "favorites": [
-    {
-      "id": "3"
-    }
-  ],
+  "favorites": [],
   "money": {
     "amount": 2500
   },
