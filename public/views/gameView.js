@@ -109,13 +109,20 @@ class GameView extends GenericView {
                 </div>
             </div>
         `;
-
-        document.getElementById('party-menu-item').addEventListener('click', () => this.switchView('party'));
-        document.getElementById('accessories-menu-item').addEventListener('click', () => this.switchView('accessories'));
-        document.getElementById('boxes-menu-item').addEventListener('click', () => this.switchView('boxes'));
     }
 
     async renderParty() {
+        if (this.party.length === 0) {
+            return `
+                <div class="game-section">
+                    <h2>Équipe principale</h2>
+                    <div id="not-found">
+                        <h2>Aucun monstres dans votre équipe !</h2>
+                    </div>
+                </div>
+            `;
+        }
+    
         let partyCards = '';
         for (const m of this.party) {
             const monster = await getMonster(m.id);
@@ -149,8 +156,20 @@ class GameView extends GenericView {
     }
 
     async renderAccessories() {
+        const backpack = await getBackpack();
+        if (backpack.length === 0) {
+            return `
+                <div class="game-section">
+                    <h2>Accessoires</h2>
+                    <div id="not-found">
+                        <h2>Votre sac à dos est vide ! Allez ouvrir des boîtes.</h2>
+                    </div>
+                </div>
+            `;
+        }
+
         let accessoryCards = '';
-        for (const accessory of await getBackpack()) {
+        for (const accessory of backpack) {
             accessoryCards += await this.renderAccessoryCard(accessory);
         }
         

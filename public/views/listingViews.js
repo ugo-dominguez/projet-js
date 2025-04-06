@@ -55,7 +55,15 @@ class BaseListingView extends GenericView {
         `;
         
         const itemListElement = document.getElementById('item-list');
-        itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        if (displayedItems.length === 0) {
+            itemListElement.innerHTML = `
+                <div class="title" id="not-found">
+                    <h3>Aucun monstres trouvés !</h3>
+                </div>
+            `;
+        } else {
+            itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        }
       
         this.setupLazyLoading();
     }
@@ -216,7 +224,15 @@ class MonsterListingView extends BaseListingView {
         `;
         
         const itemListElement = document.getElementById('item-list');
-        itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        if (displayedItems.length === 0) {
+            itemListElement.innerHTML = `
+                <div class="title" id="not-found">
+                    <h3>Aucun monstres trouvés !</h3>
+                </div>
+            `;
+        } else {
+            itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        }
       
         this.setupLazyLoading();
     }
@@ -311,7 +327,15 @@ class FavoritesListingView extends BaseListingView {
         `;
         
         const itemListElement = document.getElementById('item-list');
-        itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        if (displayedItems.length === 0) {
+            itemListElement.innerHTML = `
+                <div class="title" id="not-found">
+                    <h3>Aucun monstres trouvés !</h3>
+                </div>
+            `;
+        } else {
+            itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        }
       
         this.setupLazyLoading();
     }
@@ -409,7 +433,15 @@ class AccessoryListingView extends BaseListingView {
         `;
         
         const itemListElement = document.getElementById('item-list');
-        itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        if (displayedItems.length === 0) {
+            itemListElement.innerHTML = `
+                <div class="title" id="not-found">
+                    <h3>Aucun accessoires trouvés !</h3>
+                </div>
+            `;
+        } else {
+            itemListElement.innerHTML = (await Promise.all(displayedItems.map(item => this.renderItemCard(item)))).join('');
+        }
       
         this.setupLazyLoading();
     }

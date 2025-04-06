@@ -1,9 +1,10 @@
 {
   "ratings": [],
   "money": {
-    "amount": 2500
+    "amount": 500
   },
   "party": [],
+  "backpack": [],
   "boxes": {
     "mimic": {
       "name": "Mimic Box",
